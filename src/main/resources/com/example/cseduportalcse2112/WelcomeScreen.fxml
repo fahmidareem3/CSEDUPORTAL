@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.WelcomeScreenController">
+   <left>
+      <AnchorPane prefHeight="680.0" prefWidth="405.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="680.0" prefWidth="566.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="401.0" fitWidth="467.0" layoutX="85.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Rumel/IdeaProjects/CSEDU-PORTAL-CSE-2112/src/main/assets/CoverImage.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
