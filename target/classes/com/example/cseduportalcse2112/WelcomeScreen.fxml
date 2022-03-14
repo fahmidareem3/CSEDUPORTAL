@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -8,18 +11,40 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.WelcomeScreenController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1000.0" styleClass="WelcomeScreen" stylesheets="@../../../CSS/WelcomeScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.WelcomeScreenController">
    <left>
-      <AnchorPane prefHeight="680.0" prefWidth="405.0" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="680.0" prefWidth="1004.0" styleClass="WelcomeHeader" stylesheets="@../../../CSS/WelcomeScreen.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="47.0" fitWidth="149.0" layoutX="33.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Rumel/IdeaProjects/CSEDU-PORTAL-CSE-2112/src/main/assets/CSEDU%20PORTAL.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="33.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeHeader" text="CSEDU PORTAL">
+               <font>
+                  <Font name="Sitka Display" size="74.0" />
+               </font>
+            </Text>
+            <Text layoutX="33.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeSubHeader" text="All Classes in one place" />
+            <Button layoutX="33.0" layoutY="393.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="292.0" styleClass="WelcomeButton" stylesheets="@../../../CSS/WelcomeScreen.css" text="GET STARTED" />
+            <Text layoutX="33.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeLogin" text="Already have an account ? Log in" />
+            <Text layoutX="33.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeHeader" text="WELCOME TO " wrappingWidth="585.3642578125">
+               <font>
+                  <Font name="Georgia Bold" size="74.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="209.0" fitWidth="198.0" layoutX="357.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Rumel/IdeaProjects/CSEDU-PORTAL-CSE-2112/src/main/assets/abstraxt%20c.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
    </left>
    <right>
-      <AnchorPane prefHeight="680.0" prefWidth="566.0" BorderPane.alignment="CENTER">
-         <children>
-            <ImageView fitHeight="401.0" fitWidth="467.0" layoutX="85.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="file:/C:/Users/Rumel/IdeaProjects/CSEDU-PORTAL-CSE-2112/src/main/assets/CoverImage.png" />
-               </image></ImageView>
-         </children>
-      </AnchorPane>
+      <ImageView fitHeight="386.0" fitWidth="474.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="file:/C:/Users/Rumel/IdeaProjects/CSEDU-PORTAL-CSE-2112/src/main/assets/AbstractCircle.png" />
+         </image>
+      </ImageView>
    </right>
 </BorderPane>
