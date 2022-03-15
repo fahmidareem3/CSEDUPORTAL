@@ -25,7 +25,7 @@
                   <Font name="Sitka Display" size="74.0" />
                </font>
             </Text>
-            <Text layoutX="33.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeSubHeader" text="All Classes in one place" />
+            <Text layoutX="33.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeSubHeader" text="ALL CLASSES IN ONE PLACE" />
             <Button layoutX="33.0" layoutY="393.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="292.0" styleClass="WelcomeButton" stylesheets="@../../../CSS/WelcomeScreen.css" text="GET STARTED" />
             <Text layoutX="33.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeLogin" text="Already have an account ? Log in" />
             <Text layoutX="33.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeHeader" text="WELCOME TO " wrappingWidth="585.3642578125">
