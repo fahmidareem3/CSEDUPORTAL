@@ -1,0 +1,30 @@
+.DashboardScreen{
+    -fx-background-color: #F3F3FF;
+}
+.DashboardScreenStudentImageBackground{
+    -fx-background-color: #9B7CC2;
+    -fx-background-radius: 50%;
+}
+.DashboardScreenStudentName{
+     -fx-font-size:16px;
+     -fx-line-spacing:-5px;
+     -fx-font-family:'Sitka display';
+     -fx-font-weight:500;
+     -fx-fill:#6A6A6A;
+}
+.DashboardScreenMenu{
+     -fx-background-color: #EBEBFF;
+     -fx-background-radius: 40px;
+}
+.DashboardScreenMenuOverlap{
+-fx-background-color: #EBEBFF;
+}
+.DashboardScreenMenuItemActive{
+    -fx-background-color: #50238A;
+    -fx-background-radius: 50%;
+}
+
+.DashboardScreenMenuItem{
+    -fx-background-color: #D4D4D4;
+    -fx-background-radius: 50%;
+}
