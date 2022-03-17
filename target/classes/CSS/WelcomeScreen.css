@@ -4,20 +4,20 @@
 
 .WelcomeHeader{
     -fx-font-size:74px;
-    -fx-font-family:'Sitka display';
+    -fx-font-family:'Cambria';
     -fx-font-weight:900;
     -fx-fill:#ffffff;
 }
 
 .WelcomeSubHeader{
     -fx-font-size:37px;
-   -fx-font-family:'Sitka display';
+   -fx-font-family:'Cambria';
     -fx-font-weight:200;
     -fx-fill:#D4D4D4;
 }
 .WelcomeButton{
     -fx-font-size:24px;
-    -fx-font-family:'Sitka display';
+    -fx-font-family:'Cambria';
     -fx-font-weight:300;
     -fx-fill:#ffffff;
     -fx-background-radius:80px;
@@ -28,7 +28,7 @@
 }
 .WelcomeLogin{
      -fx-font-size:18px;
-        -fx-font-family:'Sitka display';
+        -fx-font-family:'Cambria';
         -fx-font-weight:300;
         -fx-fill:#D4D4D4;
 }
