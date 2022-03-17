@@ -21,7 +21,7 @@
                      <children>
                         <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../assets/Dashboard/HomeIcon.png" />
+                              <Image url="@../../../assets/Dashboard/HomeIconActive.png" />
                            </image>
                         </ImageView>
                      </children>
