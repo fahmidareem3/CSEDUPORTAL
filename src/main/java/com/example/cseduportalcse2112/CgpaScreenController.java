@@ -5,7 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class CgpaScreenController {
+import java.util.ArrayList;
+
+public class CgpaScreenController extends CgpaCalculator{
     @FXML
      private TextField Textfield1;
      @FXML
@@ -35,12 +37,16 @@ public class CgpaScreenController {
         double mark3 = Double.parseDouble(t3);
         double mark4 = Double.parseDouble(t4);
         double mark5 = Double.parseDouble(t5);
+       super.MarkToGpaConverter(mark1,mark2,mark3,mark4,mark5);
 
 
-        cgpacalculated.setText(t5);
+      super.CgpaCalculator();
+
+
 
 
 
 
     }
+
 }

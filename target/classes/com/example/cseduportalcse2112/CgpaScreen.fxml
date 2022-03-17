@@ -20,7 +20,7 @@
       </Text>
       <ImageView fitHeight="400.0" fitWidth="300.0" layoutX="599.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" styleClass="gradechart">
          <image>
-            <Image url="@../../../../assets/cgpa.png" />
+            <Image url="@../../../assets/cgpa.png" />
          </image>
       </ImageView>
       <TextField alignment="CENTER" layoutX="100.0" layoutY="222.0" styleClass="Coursename" stylesheets="@../../../CSS/Cgpa.css" />
