@@ -2,11 +2,17 @@ package com.example.cseduportalcse2112;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class LoginController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class LoginController  {
+
+
 
     @FXML
     private Label mylable;
@@ -28,5 +34,6 @@ public class LoginController {
             mylable.setText("Incorrect Username or Password");
         }
     }
+
 
 }

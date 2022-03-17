@@ -9,7 +9,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="701.0" prefWidth="944.0" styleClass="Background" stylesheets="@../../../CSS/Cgpa.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.CgpaScreenController">
    <children>
       <Text layoutX="429.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" />
@@ -24,5 +23,41 @@
             <Image url="@../../../../assets/cgpa.png" />
          </image>
       </ImageView>
+      <TextField alignment="CENTER" layoutX="100.0" layoutY="222.0" styleClass="Coursename" stylesheets="@../../../CSS/Cgpa.css" />
+      <TextField alignment="CENTER" layoutX="258.0" layoutY="222.0" styleClass="Coursename" />
+      <TextField alignment="CENTER" layoutX="415.0" layoutY="222.0" styleClass="Coursename" />
+      <Text fill="WHITE" layoutX="155.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Textinside" text="Course">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="321.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Textinside" text="Credit" />
+      <Text fill="#fcfcfc" layoutX="447.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Textinside" text="Obtained marks" textAlignment="CENTER" />
+      <TextField alignment="CENTER" layoutX="100.0" layoutY="257.0" styleClass="courseid" text="CSE-2101" />
+      <TextField alignment="CENTER" layoutX="100.0" layoutY="290.0" styleClass="courseid" text="CSE-2102" />
+      <TextField alignment="CENTER" layoutX="98.0" layoutY="326.0" styleClass="courseid" text="CSE-2103" />
+      <TextField alignment="CENTER" layoutX="98.0" layoutY="363.0" styleClass="courseid" text="CSE-2104" />
+      <TextField alignment="CENTER" layoutX="98.0" layoutY="405.0" styleClass="courseid" text="CSE-2105" />
+      <TextField alignment="CENTER" layoutX="258.0" layoutY="257.0" text="3" />
+      <TextField alignment="CENTER" layoutX="258.0" layoutY="290.0" text="3" />
+      <TextField alignment="CENTER" layoutX="258.0" layoutY="326.0" text="3" />
+      <TextField alignment="CENTER" layoutX="258.0" layoutY="363.0" text="2" />
+      <TextField alignment="CENTER" layoutX="258.0" layoutY="405.0" text="3" />
+      <TextField fx:id="Textfield1" layoutX="415.0" layoutY="257.0" promptText="Enter Marks" />
+      <TextField fx:id="Textfield2" layoutX="415.0" layoutY="290.0" promptText="Enter Marks" />
+      <TextField fx:id="Textfield3" layoutX="415.0" layoutY="326.0" promptText="Enter Marks" />
+      <TextField fx:id="Textfield4" layoutX="415.0" layoutY="363.0" promptText="Enter Marks" />
+      <TextField fx:id="Textfield5" layoutX="415.0" layoutY="405.0" promptText="Enter Marks" />
+      <Button layoutX="112.0" layoutY="469.0" mnemonicParsing="false" onAction="#CalculateCgpa" prefHeight="35.0" prefWidth="456.0" text="Calculate CGPA" textFill="#eeeaea" />
+      <Label layoutX="95.0" layoutY="569.0" prefHeight="35.0" prefWidth="137.0" text="Your Cgpa is">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="cgpacalculated" layoutX="232.0" layoutY="573.0" text="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
