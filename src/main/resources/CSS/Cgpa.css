@@ -1,0 +1,19 @@
+.Background{
+
+  -fx-background-color: #EBEBFF;
+
+}
+.Heading1{
+         -fx-font-size:35px;
+         -fx-font-family:'Sitka display';
+         -fx-font-weight:900;
+         -fx-fill:#383759;
+
+}
+.Heading2{
+         -fx-font-size:35px;
+         -fx-font-family:'Sitka display';
+         -fx-font-weight:900;
+         -fx-fill:#2AE052;
+
+}
