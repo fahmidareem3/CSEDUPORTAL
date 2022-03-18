@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" styleClass="BookletScreen" stylesheets="@../../../CSS/BookletScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.BookletScreenController">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" styleClass="BookletScreen" stylesheets="@../../../CSS/BookletScreen.css" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.BookletScreenController">
    <left>
       <AnchorPane prefHeight="580.0" prefWidth="85.0" BorderPane.alignment="CENTER">
          <children>
@@ -163,7 +163,6 @@
                   <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Recommended By" wrappingWidth="116.9931640625" />
                </children>
             </AnchorPane>
-            <Text layoutX="389.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
          </children>
       </AnchorPane>
    </right>
@@ -192,4 +191,4 @@
          </children>
       </AnchorPane>
    </top>
-</BorderPane>
+</fx:root>

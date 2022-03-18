@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" styleClass="BookletScreen" stylesheets="@../../../CSS/BookletScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.BookletScreenController">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" styleClass="BookletScreen" stylesheets="@../../../CSS/BookletScreen.css" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.BookletScreenController">
    <left>
       <AnchorPane prefHeight="580.0" prefWidth="85.0" BorderPane.alignment="CENTER">
          <children>
@@ -24,7 +24,7 @@
                         </ImageView>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="17.0" layoutY="112.0" onMouseClicked="#sf" prefHeight="51.0" prefWidth="53.0" styleClass="DashboardScreenMenuItemActive" stylesheets="@../../../CSS/DashboardScreen.css">
+                  <AnchorPane layoutX="17.0" layoutY="112.0" prefHeight="51.0" prefWidth="53.0" styleClass="DashboardScreenMenuItemActive" stylesheets="@../../../CSS/DashboardScreen.css">
                      <children>
                         <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -191,4 +191,4 @@
          </children>
       </AnchorPane>
    </top>
-</BorderPane>
+</fx:root>
