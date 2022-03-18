@@ -5,13 +5,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Dashboard extends Application {
-
+public class CGPACalculator extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(CSEDUPORTAL.class.getResource("DashboardScreen.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(CSEDUPORTAL.class.getResource("CGPACalculatorScreen.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1100, 680);
-        stage.setTitle("CSEDU PORTAL");
+        stage.setTitle("CGPA Calculator");
         stage.setScene(scene);
         stage.show();
     }

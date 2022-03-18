@@ -25,8 +25,8 @@
                   <Font name="Sitka Display" size="74.0" />
                </font>
             </Text>
-            <Text layoutX="33.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeSubHeader" text="ALL CLASSES IN ONE PLACE" />
-            <Button layoutX="33.0" layoutY="393.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="292.0" styleClass="WelcomeButton" stylesheets="@../../../CSS/WelcomeScreen.css" text="GET STARTED" />
+            <Text layoutX="33.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeSubHeader" text="ALL CLASSES IN ONE PLACE" />
+            <Button layoutX="33.0" layoutY="393.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="292.0" styleClass="WelcomeButton" stylesheets="@../../../CSS/WelcomeScreen.css" text="GET STARTED" />
             <Text layoutX="33.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeLogin" text="Already have an account ? Log in" />
             <Text layoutX="33.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeHeader" text="WELCOME TO " wrappingWidth="585.3642578125">
                <font>
@@ -38,14 +38,8 @@
                   <Image url="@../../../assets/abstraxtc.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="386.0" fitWidth="474.0" layoutX="520.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="file:/C:/NewProject/src/main/assets/AbstractCircle.png" />
-               </image>
-            </ImageView>
          </children></AnchorPane>
    </left>
-<<<<<<< HEAD
    <right>
       <ImageView fitHeight="386.0" fitWidth="474.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
@@ -53,6 +47,4 @@
          </image>
       </ImageView>
    </right>
-=======
->>>>>>> ad868e3ae284345981626eb9b20d17a3123f3b72
 </BorderPane>
