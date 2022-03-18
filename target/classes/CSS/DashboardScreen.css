@@ -16,6 +16,10 @@
      -fx-background-color: #EBEBFF;
      -fx-background-radius: 40px;
 }
+.DashboardScreenMenuItemButton{
+    -fx-background-color: #D4D4D4;
+    -fx-background-radius: 50%;
+}
 .DashboardScreenMenuOverlap{
 -fx-background-color: #EBEBFF;
 }

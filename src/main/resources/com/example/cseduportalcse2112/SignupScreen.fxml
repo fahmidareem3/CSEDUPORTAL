@@ -9,7 +9,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1000.0" styleClass="signUpScreen" stylesheets="@../../../CSS/SignupScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.SignupScreenController">
    <right>
       <AnchorPane prefHeight="680.0" prefWidth="463.0" styleClass="signUpScreenRight" stylesheets="@../../../CSS/SignupScreen.css" BorderPane.alignment="CENTER">
@@ -24,7 +23,7 @@
       </AnchorPane>
    </right>
    <left>
-      <AnchorPane prefHeight="680.0" prefWidth="537.0" styleClass="signUpScreen" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="680.0" prefWidth="537.0" styleClass="signUpScreen" stylesheets="@../../../CSS/LoginScreen.css" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="45.0" fitWidth="140.0" layoutX="36.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -61,6 +60,8 @@
             <ChoiceBox layoutX="34.0" layoutY="397.0" prefHeight="41.0" prefWidth="205.0" styleClass="signUpScreenLeftInput" />
             <ChoiceBox layoutX="253.0" layoutY="397.0" prefHeight="41.0" prefWidth="250.0" styleClass="signUpScreenLeftInput" />
             <Button layoutX="32.0" layoutY="498.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="472.0" styleClass="signUpScreenLeftButton" text="SIGNUP" />
+            <Text layoutX="48.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DontHaveAccount" text="Already Have an Account ?" />
+            <Button fx:id="SignupScreenLogin" layoutX="239.0" layoutY="558.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="85.0" styleClass="LoginSignupButton" stylesheets="@../../../CSS/WelcomeScreen.css" text="Login" />
          </children>
       </AnchorPane>
    </left>

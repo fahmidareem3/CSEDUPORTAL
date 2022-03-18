@@ -15,7 +15,7 @@
     -fx-font-weight:200;
     -fx-fill:#D4D4D4;
 }
-.WelcomeButton{
+.WelcomeButton,.WelcomeLoginButton{
     -fx-font-size:24px;
     -fx-font-family:'Cambria';
     -fx-font-weight:300;
@@ -31,4 +31,7 @@
         -fx-font-family:'Cambria';
         -fx-font-weight:300;
         -fx-fill:#D4D4D4;
+}
+.WelcomeLoginButton{
+    -fx-background-color: transparent;
 }

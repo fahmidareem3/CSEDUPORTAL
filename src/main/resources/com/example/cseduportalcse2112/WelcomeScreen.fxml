@@ -26,8 +26,8 @@
                </font>
             </Text>
             <Text layoutX="33.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeSubHeader" text="ALL CLASSES IN ONE PLACE" />
-            <Button layoutX="33.0" layoutY="393.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="292.0" styleClass="WelcomeButton" stylesheets="@../../../CSS/WelcomeScreen.css" text="GET STARTED" />
-            <Text layoutX="33.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeLogin" text="Already have an account ? Log in" />
+            <Button fx:id="getStartedButton" layoutX="33.0" layoutY="393.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="292.0" styleClass="WelcomeButton" stylesheets="@../../../CSS/WelcomeScreen.css" text="GET STARTED" />
+            <Text layoutX="33.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeLogin" text="Already have an account ?" />
             <Text layoutX="33.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="WelcomeHeader" text="WELCOME TO " wrappingWidth="585.3642578125">
                <font>
                   <Font name="Georgia Bold" size="74.0" />
@@ -38,6 +38,7 @@
                   <Image url="@../../../assets/abstraxtc.png" />
                </image>
             </ImageView>
+            <Button fx:id="WelcomeScreenLogin" layoutX="215.0" layoutY="604.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="110.0" styleClass="WelcomeLoginButton" stylesheets="@../../../CSS/WelcomeScreen.css" text="Login" />
          </children></AnchorPane>
    </left>
    <right>
