@@ -24,7 +24,7 @@
                         </ImageView>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="17.0" layoutY="112.0" onMouseClicked="#sf" prefHeight="51.0" prefWidth="53.0" styleClass="DashboardScreenMenuItemActive" stylesheets="@../../../CSS/DashboardScreen.css">
+                  <AnchorPane layoutX="17.0" layoutY="112.0" prefHeight="51.0" prefWidth="53.0" styleClass="DashboardScreenMenuItemActive" stylesheets="@../../../CSS/DashboardScreen.css">
                      <children>
                         <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -163,6 +163,7 @@
                   <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Recommended By" wrappingWidth="116.9931640625" />
                </children>
             </AnchorPane>
+            <Text layoutX="389.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
          </children>
       </AnchorPane>
    </right>
