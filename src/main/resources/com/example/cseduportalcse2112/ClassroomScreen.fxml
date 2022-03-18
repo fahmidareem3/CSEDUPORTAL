@@ -159,8 +159,8 @@
             </AnchorPane>
             <AnchorPane layoutX="504.0" layoutY="81.0" prefHeight="200.0" prefWidth="453.0" styleClass="ClassroomScreenItem" stylesheets="@../../../CSS/ClassroomScreen.css">
                <children>
-                  <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemTitle" text="Object Oriented Programming" />
-                  <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="CSE - 2102" />
+                  <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemTitle" text="Data Structure and Algorithm" />
+                  <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="CSE - 2101" />
                   <AnchorPane layoutX="359.0" prefHeight="102.0" prefWidth="94.0" styleClass="ClassroomScreenTeacherImageBackground" stylesheets="@../../../CSS/ClassroomScreen.css">
                      <children>
                         <ImageView fitHeight="84.0" fitWidth="65.0" layoutX="15.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
@@ -170,7 +170,7 @@
                         </ImageView>
                      </children>
                   </AnchorPane>
-                  <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="Dr. Muhammad Ibrahim" />
+                  <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="Dr. Md. Rezaul Karim" />
                   <AnchorPane layoutX="106.0" layoutY="135.0" prefHeight="51.0" prefWidth="223.0" styleClass="ClassroomScreenEnrolledButtonSecondary" stylesheets="@../../../CSS/ClassroomScreen.css">
                      <children>
                         <Text layoutX="93.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Enroll" />
