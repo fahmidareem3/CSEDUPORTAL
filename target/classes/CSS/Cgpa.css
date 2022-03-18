@@ -1,0 +1,40 @@
+.Background{
+
+  -fx-background-color: #EBEBFF;
+
+}
+.Heading1{
+         -fx-font-size:35px;
+         -fx-font-family:'Sitka display';
+         -fx-font-weight:900;
+         -fx-fill:#383759;
+
+}
+.Heading2{
+         -fx-font-size:35px;
+         -fx-font-family:'Sitka display';
+         -fx-font-weight:900;
+         -fx-fill:#2AE052;
+
+}
+.Coursename{
+       -fx-background-color: #50238A;
+        -fx-fill:#FFFFFF;
+
+}
+.Textinside{
+        -fx-fill:#FFFFFF;
+        -fx-font-weight:900;
+        -fx-font-family:'Sitka display';
+
+}
+.courseid{
+      -fx-background-color: #EBEBFF;
+    -fx-border : 4px;
+     -fx-border-width:2px;
+
+    -fx-border-radius:50%;
+}
+.button{
+     -fx-background-color: #50238A;
+}
