@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" stylesheets="@../../../CSS/CGPACalculator.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.CGPACalculatorScreenController">
+   <left>
+      <AnchorPane prefHeight="680.0" prefWidth="85.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutY="37.0" prefHeight="534.0" prefWidth="86.0" styleClass="DashboardScreenMenu" stylesheets="@../../../CSS/DashboardScreen.css">
+               <children>
+                  <AnchorPane prefHeight="534.0" prefWidth="43.0" styleClass="DashboardScreenMenuOverlap" stylesheets="@../../../CSS/DashboardScreen.css" />
+                  <AnchorPane layoutX="15.0" layoutY="30.0" prefHeight="51.0" prefWidth="53.0" styleClass="DashboardScreenMenuItem" stylesheets="@../../../CSS/DashboardScreen.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Classroom/HomeIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="17.0" layoutY="112.0" prefHeight="51.0" prefWidth="53.0" styleClass="DashboardScreenMenuItemActive" stylesheets="@../../../CSS/DashboardScreen.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Classroom/ClassroomActive.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="17.0" layoutY="195.0" prefHeight="51.0" prefWidth="53.0" styleClass="DashboardScreenMenuItem" stylesheets="@../../../CSS/DashboardScreen.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Dashboard/AttendanceIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="17.0" layoutY="274.0" prefHeight="51.0" prefWidth="53.0" styleClass="DashboardScreenMenuItem" stylesheets="@../../../CSS/DashboardScreen.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Dashboard/BookletIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="15.0" layoutY="350.0" prefHeight="51.0" prefWidth="53.0" styleClass="DashboardScreenMenuItem" stylesheets="@../../../CSS/DashboardScreen.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Dashboard/CGPAICON.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="17.0" layoutY="436.0" prefHeight="51.0" prefWidth="53.0" styleClass="DashboardScreenMenuItem" stylesheets="@../../../CSS/DashboardScreen.css">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="23.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Dashboard/Logout.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="83.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="72.0" prefWidth="1100.0">
+               <children>
+                  <AnchorPane layoutX="1002.0" layoutY="17.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../../../CSS/DashboardScreen.css">
+                     <children>
+                        <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Dashboard/Student.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="61.0" fitWidth="106.0" layoutX="32.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/CSEDUPORTALPRIMARY.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="981.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenStudentName" text="Shahriar Rumel" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="597.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="377.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenHeader" text="CHECK YOUR CGPA" />
+            <Text layoutX="226.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenSubHeader" text="YEAR TWO SEMESTER ONE" />
+            <AnchorPane layoutX="73.0" layoutY="126.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="57.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="Course" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="251.0" layoutY="126.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="60.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="Credit" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="429.0" layoutY="126.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="60.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="Marks" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="73.0" layoutY="177.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="251.0" layoutY="177.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="251.0" layoutY="224.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="73.0" layoutY="224.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2103" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="73.0" layoutY="272.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="252.0" layoutY="272.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="251.0" layoutY="320.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="73.0" layoutY="320.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="73.0" layoutY="416.0" prefHeight="41.0" prefWidth="529.0" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="236.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="Course" />
+               </children>
+            </AnchorPane>
+            <TextField layoutX="429.0" layoutY="177.0" prefHeight="41.0" prefWidth="173.0" promptText="Mark" styleClass="markInputField" stylesheets="@../../../CSS/CGPACalculator.css">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </TextField>
+            <TextField layoutX="429.0" layoutY="224.0" prefHeight="41.0" prefWidth="173.0" promptText="Mark" styleClass="markInputField" stylesheets="@../../../CSS/CGPACalculator.css">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </TextField>
+            <TextField layoutX="429.0" layoutY="272.0" prefHeight="41.0" prefWidth="173.0" promptText="Mark" styleClass="markInputField" stylesheets="@../../../CSS/CGPACalculator.css">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </TextField>
+            <TextField layoutX="429.0" layoutY="320.0" prefHeight="41.0" prefWidth="173.0" promptText="Mark" styleClass="markInputField" stylesheets="@../../../CSS/CGPACalculator.css">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </TextField>
+            <TextField layoutX="429.0" layoutY="369.0" prefHeight="41.0" prefWidth="173.0" promptText="Mark" styleClass="markInputField" stylesheets="@../../../CSS/CGPACalculator.css">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </TextField>
+            <AnchorPane layoutX="73.0" layoutY="369.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="251.0" layoutY="369.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
+               <children>
+                  <Text layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="332.0" fitWidth="299.0" layoutX="670.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/CGPA/GPACHART.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
