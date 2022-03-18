@@ -81,7 +81,7 @@ public class CgpaCalculator {
 
         cgpa = (gpa[0] * credits[0] + gpa[1] * credits[1] + gpa[2] * credits[2] + gpa[3] * credits[3] + gpa[4] * credits[4])/total_credit;
 
-        String Cgpa = String.valueOf(cgpa);
+        String Cgpa = String.valueOf(String.format("%.2f",cgpa));
         cgpacalculated.setText(Cgpa);
     }
 }

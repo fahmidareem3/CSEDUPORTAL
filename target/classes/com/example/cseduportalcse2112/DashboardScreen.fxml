@@ -9,8 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" styleClass="DashboardScreen" stylesheets="@../../../CSS/DashboardScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" styleClass="DashboardScreen" stylesheets="@../../../CSS/DashboardScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.DashboardScreenController">
    <left>
       <AnchorPane prefHeight="574.0" prefWidth="135.0" BorderPane.alignment="CENTER">
          <children>
@@ -103,13 +102,13 @@
             <Text layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClasses" text="Upcoming Classes" />
             <AnchorPane layoutX="14.0" layoutY="63.0" prefHeight="84.0" prefWidth="918.0" styleClass="DashboardScreenUpcomingClassesItem" stylesheets="@../../../CSS/DashboardScreen.css">
                <children>
-                  <Text layoutX="37.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" />
+                  <Text fx:id="upcomingclassname1" layoutX="37.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" />
                   <Text layoutX="37.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Scheduled By " />
-                  <Text layoutX="120.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTeacher" text="Dr. Muhammad Ibrahim" />
+                  <Text fx:id="upcomingclassteachername1" layoutX="120.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTeacher" text="Dr. Muhammad Ibrahim" />
                   <AnchorPane layoutX="704.0" layoutY="12.0" prefHeight="59.0" prefWidth="200.0">
                      <children>
-                        <Text layoutX="32.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemDate" text="Wednesday,March 7" />
-                        <Text layoutX="51.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTime" text="10:00 AM ">
+                        <Text fx:id="upcominclassdate1" layoutX="32.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemDate" text="Wednesday,March 7" />
+                        <Text fx:id="upcominclasstime1" layoutX="51.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTime" text="10:00 AM ">
                            <font>
                               <Font name="Symbol" size="12.0" />
                            </font>
@@ -123,13 +122,13 @@
             </AnchorPane>
             <AnchorPane layoutX="14.0" layoutY="153.0" prefHeight="84.0" prefWidth="918.0" styleClass="DashboardScreenUpcomingClassesItem" stylesheets="@../../../CSS/DashboardScreen.css">
                <children>
-                  <Text layoutX="37.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" />
+                  <Text fx:id="upcomingclassname2" layoutX="37.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" />
                   <Text layoutX="37.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Scheduled By " />
-                  <Text layoutX="120.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTeacher" text="Dr. Muhammad Ibrahim" />
+                  <Text fx:id="upcomingclassteachername2" layoutX="120.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTeacher" text="Dr. Muhammad Ibrahim" />
                   <AnchorPane layoutX="704.0" layoutY="12.0" prefHeight="59.0" prefWidth="200.0">
                      <children>
-                        <Text layoutX="32.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemDate" text="Wednesday,March 7" />
-                        <Text layoutX="51.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTime" text="10:00 AM ">
+                        <Text fx:id="upcominclassdate2" layoutX="32.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemDate" text="Wednesday,March 7" />
+                        <Text fx:id="upcominclasstime2" layoutX="51.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTime" text="10:00 AM ">
                            <font>
                               <Font name="Symbol" size="12.0" />
                            </font>
@@ -143,13 +142,13 @@
             </AnchorPane>
             <AnchorPane layoutX="14.0" layoutY="243.0" prefHeight="84.0" prefWidth="918.0" styleClass="DashboardScreenUpcomingClassesItem" stylesheets="@../../../CSS/DashboardScreen.css">
                <children>
-                  <Text layoutX="37.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" />
+                  <Text fx:id="upcomingclassname3" layoutX="37.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" />
                   <Text layoutX="37.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Scheduled By " />
-                  <Text layoutX="120.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTeacher" text="Dr. Muhammad Ibrahim" />
+                  <Text fx:id="upcomingclassteachername3" layoutX="120.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTeacher" text="Dr. Muhammad Ibrahim" />
                   <AnchorPane layoutX="704.0" layoutY="12.0" prefHeight="59.0" prefWidth="200.0">
                      <children>
-                        <Text layoutX="32.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemDate" text="Wednesday,March 7" />
-                        <Text layoutX="51.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTime" text="10:00 AM ">
+                        <Text fx:id="upcominclassdate3" layoutX="32.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemDate" text="Wednesday,March 7" />
+                        <Text fx:id="upcominclasstime3" layoutX="51.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTime" text="10:00 AM ">
                            <font>
                               <Font name="Symbol" size="12.0" />
                            </font>
@@ -163,13 +162,13 @@
             </AnchorPane>
             <AnchorPane layoutX="14.0" layoutY="333.0" prefHeight="84.0" prefWidth="918.0" styleClass="DashboardScreenUpcomingClassesItem" stylesheets="@../../../CSS/DashboardScreen.css">
                <children>
-                  <Text layoutX="37.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" />
+                  <Text fx:id="upcomingclassname4" layoutX="37.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" />
                   <Text layoutX="37.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Scheduled By " />
-                  <Text layoutX="120.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTeacher" text="Dr. Muhammad Ibrahim" />
+                  <Text fx:id="upcomingclassteachername4" layoutX="120.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTeacher" text="Dr. Muhammad Ibrahim" />
                   <AnchorPane layoutX="704.0" layoutY="12.0" prefHeight="59.0" prefWidth="200.0">
                      <children>
-                        <Text layoutX="32.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemDate" text="Wednesday,March 7" />
-                        <Text layoutX="51.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTime" text="10:00 AM ">
+                        <Text fx:id="upcominclassdate4" layoutX="32.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemDate" text="Wednesday,March 7" />
+                        <Text fx:id="upcominclasstime4" layoutX="51.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTime" text="10:00 AM ">
                            <font>
                               <Font name="Symbol" size="12.0" />
                            </font>
@@ -183,13 +182,13 @@
             </AnchorPane>
             <AnchorPane layoutX="14.0" layoutY="423.0" prefHeight="84.0" prefWidth="918.0" styleClass="DashboardScreenUpcomingClassesItem" stylesheets="@../../../CSS/DashboardScreen.css">
                <children>
-                  <Text layoutX="37.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" />
+                  <Text fx:id="upcomingclassname5" layoutX="37.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" />
                   <Text layoutX="37.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Scheduled By " />
-                  <Text layoutX="120.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTeacher" text="Dr. Muhammad Ibrahim" />
+                  <Text fx:id="upcomingclassteachername5" layoutX="120.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTeacher" text="Dr. Muhammad Ibrahim" />
                   <AnchorPane layoutX="704.0" layoutY="12.0" prefHeight="59.0" prefWidth="200.0">
                      <children>
-                        <Text layoutX="32.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemDate" text="Wednesday,March 7" />
-                        <Text layoutX="51.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTime" text="10:00 AM ">
+                        <Text fx:id="upcominclassdate5" layoutX="32.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemDate" text="Wednesday,March 7" />
+                        <Text fx:id="upcominclasstime5" layoutX="51.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemTime" text="10:00 AM ">
                            <font>
                               <Font name="Symbol" size="12.0" />
                            </font>
@@ -201,6 +200,7 @@
                   </AnchorPane>
                </children>
             </AnchorPane>
+            <Button layoutX="426.0" layoutY="526.0" mnemonicParsing="false" onAction="#getupcomingclasses" prefHeight="25.0" prefWidth="90.0" styleClass="DashboardButton" text="Get Classes" textFill="WHITE" />
          </children>
       </AnchorPane>
    </center>

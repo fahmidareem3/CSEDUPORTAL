@@ -110,7 +110,7 @@
                   <Text layoutX="53.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AttendanceScreenPercentage" text="85%" textAlignment="CENTER" />
                   <Text layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" wrappingWidth="155.697265625" />
                   <Text layoutX="17.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Second Year First Semester" wrappingWidth="226.697265625" />
-                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButton" stylesheets="@../../../CSS/AttendanceScreen.css" text="Above Average" />
+                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButton" stylesheets="@../../../CSS/AttendanceScreen.css" text="ABOVE AVERAGE" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="345.0" layoutY="70.0" prefHeight="236.0" prefWidth="260.0" styleClass="AttendanceScreenItem" stylesheets="@../../../CSS/AttendanceScreen.css">
@@ -118,7 +118,7 @@
                   <Text layoutX="53.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AttendanceScreenPercentage" text="85%" textAlignment="CENTER" />
                   <Text layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" wrappingWidth="155.697265625" />
                   <Text layoutX="17.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Second Year First Semester" wrappingWidth="226.697265625" />
-                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButton" stylesheets="@../../../CSS/AttendanceScreen.css" text="Above Average" />
+                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButton" stylesheets="@../../../CSS/AttendanceScreen.css" text="ABOVE AVERAGE" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="628.0" layoutY="70.0" prefHeight="236.0" prefWidth="260.0" styleClass="AttendanceScreenItem" stylesheets="@../../../CSS/AttendanceScreen.css">
@@ -126,7 +126,7 @@
                   <Text layoutX="53.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AttendanceScreenPercentage" text="85%" textAlignment="CENTER" />
                   <Text layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" wrappingWidth="155.697265625" />
                   <Text layoutX="17.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Second Year First Semester" wrappingWidth="226.697265625" />
-                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButtonSecondary" stylesheets="@../../../CSS/AttendanceScreen.css" text="Above Average" />
+                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButtonSecondary" stylesheets="@../../../CSS/AttendanceScreen.css" text="BELOW AVERAGE" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="62.0" layoutY="321.0" prefHeight="236.0" prefWidth="260.0" styleClass="AttendanceScreenItem" stylesheets="@../../../CSS/AttendanceScreen.css">
@@ -134,7 +134,7 @@
                   <Text layoutX="53.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AttendanceScreenPercentage" text="85%" textAlignment="CENTER" />
                   <Text layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" wrappingWidth="155.697265625" />
                   <Text layoutX="17.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Second Year First Semester" wrappingWidth="226.697265625" />
-                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButton" stylesheets="@../../../CSS/AttendanceScreen.css" text="Above Average" />
+                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButton" stylesheets="@../../../CSS/AttendanceScreen.css" text="ABOVE AVERAGE" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="345.0" layoutY="321.0" prefHeight="236.0" prefWidth="260.0" styleClass="AttendanceScreenItem" stylesheets="@../../../CSS/AttendanceScreen.css">
@@ -142,7 +142,7 @@
                   <Text layoutX="53.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AttendanceScreenPercentage" text="85%" textAlignment="CENTER" />
                   <Text layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" wrappingWidth="155.697265625" />
                   <Text layoutX="17.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Second Year First Semester" wrappingWidth="226.697265625" />
-                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButton" stylesheets="@../../../CSS/AttendanceScreen.css" text="Above Average" />
+                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButton" stylesheets="@../../../CSS/AttendanceScreen.css" text="ABOVE AVERAGE" />
                </children>
             </AnchorPane>
          </children>
