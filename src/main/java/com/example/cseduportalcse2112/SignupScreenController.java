@@ -17,7 +17,6 @@ public class SignupScreenController  implements Initializable {
         SignupScreenLogin.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                System.out.println("Button Clicked");
                 CSEDUPORTALUtils.changeScence(actionEvent,"LoginScreen.fxml","Log in",null);
             }
         });

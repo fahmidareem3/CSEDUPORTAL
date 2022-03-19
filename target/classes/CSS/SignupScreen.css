@@ -6,15 +6,15 @@
 }
 .signUpScreenRightText{
    -fx-font-size:35px;
-   -fx-line-spacing:-15px;
+   -fx-line-spacing:-5px;
    -fx-font-family:'Cambria';
    -fx-font-weight:900;
    -fx-fill:#ffffff;
 
 }
 .signUpScreenLeftSignUp,.signUpScreenLeftSubheader{
-     -fx-font-size:24px;
-     -fx-line-spacing:-15px;
+     -fx-font-size:36px;
+     -fx-line-spacing:-5px;
      -fx-font-family:'Cambria';
      -fx-font-weight:900;
      -fx-fill:#50238A;

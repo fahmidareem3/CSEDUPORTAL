@@ -28,14 +28,12 @@ public class WelcomeScreenController implements Initializable{
             getStartedButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                System.out.println("Button Clicked");
-                CSEDUPORTALUtils.changeScence(actionEvent,"SignupScreen.fxml","Log in",null);
+                CSEDUPORTALUtils.changeScence(actionEvent,"SignupScreen.fxml","Sign Up",null);
             }
         });
             WelcomeScreenLogin.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent actionEvent) {
-                    System.out.println("Button Clicked");
                     CSEDUPORTALUtils.changeScence(actionEvent,"LoginScreen.fxml","Log in",null);
                 }
             });
