@@ -9,7 +9,7 @@ public class Dashboard extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(CSEDUPORTAL.class.getResource("DashboardScreen.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(CSEDUPORTAL.class.getResource("DasghboardScreen.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1100, 680);
         stage.setTitle("CSEDU PORTAL");
         stage.setScene(scene);

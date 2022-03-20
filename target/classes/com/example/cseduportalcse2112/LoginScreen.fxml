@@ -9,8 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" stylesheets="@../../../CSS/LoginScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" stylesheets="@../../../CSS/LoginScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.LoginScreenController">
    <right>
       <AnchorPane prefHeight="702.0" prefWidth="507.0" BorderPane.alignment="CENTER">
          <children>
@@ -47,6 +46,8 @@
                   <Image url="@../../../assets/Login/LoginPlanet.png" />
                </image>
             </ImageView>
+            <Button fx:id="LoginScreenSignup" layoutX="233.0" layoutY="457.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="110.0" styleClass="LoginSignupButton" stylesheets="@../../../CSS/WelcomeScreen.css" text="Signup" />
+            <Text layoutX="76.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DontHaveAccount" text="Don't have an account ?" />
          </children>
       </AnchorPane>
    </center>
