@@ -200,7 +200,7 @@
                   </AnchorPane>
                </children>
             </AnchorPane>
-            <Button layoutX="426.0" layoutY="526.0" mnemonicParsing="false" onAction="#getupcomingclasses" prefHeight="25.0" prefWidth="90.0" styleClass="DashboardButton" text="Get Classes" textFill="WHITE" />
+            <Button layoutX="426.0" layoutY="526.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" styleClass="DashboardButton" text="Get Classes" textFill="WHITE" />
          </children>
       </AnchorPane>
    </center>
