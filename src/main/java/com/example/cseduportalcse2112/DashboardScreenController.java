@@ -5,17 +5,19 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class DashboardScreenController implements Initializable {
+public class DashboardScreenController extends Dashboard implements Initializable  {
 //    @FXML
 //    private Button logoutButton;
     @FXML
@@ -27,12 +29,13 @@ public class DashboardScreenController implements Initializable {
     private AnchorPane CgpaCalculatorPane;
 
     @FXML
-    private Text studentName;
+    private Label studentName;
+
+    private String name;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        studentName.setText("NULL");
         LogoutImage.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
@@ -45,6 +48,17 @@ public class DashboardScreenController implements Initializable {
                 CSEDUPORTALUtils.changeScenceforMouseEvent(mouseEvent,"CGPACalculatorScreen.fxml","CGPA Calculator",null);
             }
         });
+        studentName.setText(getStudentName());
 
+    }
+    public DashboardScreenController() {
+        super();
+        setName(super.getName());
+    }
+    public void setName(String Name){
+        this.name = Name;
+    }
+    public String getStudentName() {
+        return this.name;
     }
 }

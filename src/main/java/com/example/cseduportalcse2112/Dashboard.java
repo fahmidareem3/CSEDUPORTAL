@@ -6,26 +6,35 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Dashboard extends Application {
+public class Dashboard {
+    protected static CSEDU CSEDUDEPT;
+//
+//    public void getData(){
+//        CSEDUDEPT = new CSEDU();
+//        CSEDUDEPT.setYearList(1);
+//        CSEDUDEPT.YearList.get(0).setSemesterList(1);
+//        CSEDUDEPT.YearList.get(0).getSemesterList().get(0).setClassroomList("OOP","CSE-2102","MIB",1.5);
+//        if(CSEDUDEPT.getYearList().get(0).getSemesterList().get(0).getClassroomList().get(0).getClassroomTeacherName() != null)
+//            System.out.println(CSEDUDEPT.getYearList().get(0).getSemesterList().get(0).getClassroomList().get(0).getClassroomTeacherName());
+//
+//    }
+    public String getName(){
+        CSEDUDEPT = new CSEDU();
+        CSEDUDEPT.setYearList(1);
+        CSEDUDEPT.YearList.get(0).setSemesterList(1);
+        CSEDUDEPT.YearList.get(0).getSemesterList().get(0).setClassroomList("OOP","CSE-2102","MIB",1.5);
+        CSEDUDEPT.YearList.get(0).getSemesterList().get(0).getClassroomList().get(0).setStudentList("Fahmida Ara","Demo","Demo",2,1,31,201971);
 
+//        System.out.println(CSEDUDEPT.getYearList().get(0).getSemesterList().get(0).getClassroomList().get(0).getStudentList().get(0).getStudentName());
+        return CSEDUDEPT.getYearList().get(0).getSemesterList().get(0).getClassroomList().get(0).getStudentList().get(0).getStudentName();
 
-    @Override
-    public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(CSEDUPORTAL.class.getResource("DashboardScreen.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1100, 680);
-        stage.setTitle("CSEDU PORTAL");
-        stage.setScene(scene);
-        stage.show();
     }
-    public static void main(String[] args) {
-        launch();
-    }
-
-
 }

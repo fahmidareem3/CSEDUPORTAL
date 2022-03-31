@@ -11,23 +11,42 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 
-public class CSEDUPORTALUtils {
-
-    public static ArrayList<String>CourseList;
+public class CSEDUPORTALUtils  {
     public static void courseGenerate(String Year, String Semester){
-        CourseList = new ArrayList<>();
-        CourseList.add("Name");
         getUserData(Year,Semester);
     }
-    public static ArrayList<String> getCourses(){
-        return CourseList;
-    }
     public static void changeScence(ActionEvent event, String fxmlFile, String Title, String StudentName){
+        Parent root = null;
+        if(StudentName != null){
+            try{
+                FXMLLoader loader = new FXMLLoader(CSEDUPORTALUtils.class.getResource(fxmlFile));
+                root = loader.load();
+                DashboardScreenController DashboardScreenController = loader.getController();
+                DashboardScreenController.getClass();
+            }
+
+            catch (IOException e){
+                System.out.println(e.getStackTrace());
+            }
+        }else{
+            try{
+                root = FXMLLoader.load(CSEDUPORTALUtils.class.getResource(fxmlFile));
+            }catch (IOException e){
+                System.out.println("Can't Load File");
+            }
+        }
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setTitle(Title);
+        stage.setScene(new Scene(root,1100,680));
+        stage.show();
+    }
+    public static void changeScenceWindow(WindowEvent event, String fxmlFile, String Title, String StudentName){
         Parent root = null;
         if(StudentName != null){
             try{
@@ -161,7 +180,7 @@ public class CSEDUPORTALUtils {
 
                     if(retrivedPassword.equals(Password)){
                         changeScence(event,"DashboardScreen.fxml","Dashboard",null);
-                        courseGenerate("1","2");
+                        courseGenerate("1","1");
                     }
                     else{
                         System.out.println("Password did not match");
@@ -206,6 +225,7 @@ public class CSEDUPORTALUtils {
             preparedStatement = connection.prepareStatement("SELECT Year,Semester,CourseName FROM course WHERE Year = ? ");
             preparedStatement.setString(1,year);
             resultSet = preparedStatement.executeQuery();
+
             if(!resultSet.isBeforeFirst()){
                 System.out.println("User Not Found");
                 Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -219,13 +239,12 @@ public class CSEDUPORTALUtils {
 
                     if(retrivedYear.equals(year) && retrivedSemester.equals(semester)){
                         System.out.println(retrivedName);
-                        CourseList.add(year);
                     }
                     else{
                         System.out.println("No Data Found");
-                        Alert alert = new Alert(Alert.AlertType.ERROR);
-                        alert.setContentText("Can't Find Semester!");
-                        alert.show();
+//                        Alert alert = new Alert(Alert.AlertType.ERROR);
+//                        alert.setContentText("Can't Find Semester!");
+//                        alert.show();
                     }
                 }
             }

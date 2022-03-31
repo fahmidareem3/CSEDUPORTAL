@@ -38,13 +38,7 @@ public class CGPACalculatorScreenController extends CGPACalculator{
         double mark5 = Double.parseDouble(t5);
         super.MarkToGpaConverter(mark1,mark2,mark3,mark4,mark5);
 
-
         super.CgpaCalculator();
-
-
-
-
-
 
     }
 

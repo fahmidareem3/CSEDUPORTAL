@@ -8,6 +8,13 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class CGPACalculator extends Application {
+
+    private double[] marks = new double[5];
+    private double[] gpa = new double [5];
+    private double[] credits = new double[5];
+    static double total_credit;
+    double cgpa;
+
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader(CSEDUPORTAL.class.getResource("CGPACalculatorScreen.fxml"));
@@ -19,13 +26,6 @@ public class CGPACalculator extends Application {
     public static void main(String[] args) {
         launch();
     }
-
-    private double[] marks = new double[5];
-    private double[] gpa = new double [5];
-    private double[] credits = new double[5];
-    static double total_credit;
-    double cgpa;
-
 
 
     @FXML

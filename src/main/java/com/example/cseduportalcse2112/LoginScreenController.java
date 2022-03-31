@@ -10,7 +10,7 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoginScreenController implements Initializable {
+public class LoginScreenController extends Login implements Initializable {
     @FXML
     private  Button LoginScreenSignup;
 
@@ -26,12 +26,14 @@ public class LoginScreenController implements Initializable {
             @Override
             public void handle(ActionEvent actionEvent) {
                 CSEDUPORTALUtils.changeScence(actionEvent,"SignupScreen.fxml","Sign Up",null);
+
             }
         });
         loginButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
                 CSEDUPORTALUtils.loginUser(actionEvent,userRegistration.getText(),userPassword.getText());
+
             }
         });
     }

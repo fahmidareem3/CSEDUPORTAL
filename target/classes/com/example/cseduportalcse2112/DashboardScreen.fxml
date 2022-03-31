@@ -13,7 +13,7 @@
    <left>
       <AnchorPane prefHeight="574.0" prefWidth="135.0" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane layoutY="-85.0" prefHeight="680.0" prefWidth="163.0" styleClass="DashboardScreenMenu" stylesheets="@../../../CSS/DashboardScreen.css">
+            <AnchorPane layoutY="-79.0" prefHeight="680.0" prefWidth="163.0" styleClass="DashboardScreenMenu" stylesheets="@../../../CSS/DashboardScreen.css">
                <children>
                   <AnchorPane layoutX="6.0" layoutY="149.0" prefHeight="50.0" prefWidth="146.0" styleClass="DashboardScreenMenuItemActive" stylesheets="@../../../CSS/DashboardScreen.css">
                      <children>
@@ -61,7 +61,7 @@
       </AnchorPane>
    </left>
    <top>
-      <AnchorPane prefHeight="55.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="79.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
          <children>
             <AnchorPane layoutX="1002.0" layoutY="17.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../../../CSS/DashboardScreen.css">
                <children>
@@ -72,12 +72,12 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <Text fx:id="studentName" layoutX="981.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenStudentName" text="Shahriar Rumel" />
             <ImageView fitHeight="33.0" fitWidth="103.0" layoutX="14.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../assets/CSEDUPORTALPRIMARY.png" />
                </image>
             </ImageView>
+            <Label fx:id="studentName" layoutX="1014.0" layoutY="66.0" text="Label" />
          </children>
       </AnchorPane>
    </top>
