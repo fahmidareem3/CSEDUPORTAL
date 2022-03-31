@@ -30,8 +30,11 @@ public class DashboardScreenController extends Dashboard implements Initializabl
 
     @FXML
     private Label studentName;
+    @FXML
+    private Text upcomingclassname1;
 
     private String name;
+    private ArrayList<String>CourseNameList;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -49,16 +52,26 @@ public class DashboardScreenController extends Dashboard implements Initializabl
             }
         });
         studentName.setText(getStudentName());
+        upcomingclassname1.setText(getUpcomingList());
 
     }
     public DashboardScreenController() {
         super();
         setName(super.getName());
+        super.getCourseName();
+//        setUpcomingList(super.getCourseName());
     }
     public void setName(String Name){
         this.name = Name;
     }
     public String getStudentName() {
         return this.name;
+    }
+    public void setUpcomingList(String result){
+        CourseNameList.add(result);
+    }
+    public String getUpcomingList(){
+        String s = "okay";
+        return s;
     }
 }

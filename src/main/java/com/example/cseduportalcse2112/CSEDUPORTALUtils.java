@@ -18,8 +18,15 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class CSEDUPORTALUtils  {
+    protected static ArrayList<String>TeacherName;
+    protected static  ArrayList<String>CourseName = new ArrayList<>();
+    protected static ArrayList<String>CourseCode;
     public static void courseGenerate(String Year, String Semester){
         getUserData(Year,Semester);
+    }
+    public static ArrayList<String> getCourseName(){
+        getUserData("1","1");
+        return CourseName;
     }
     public static void changeScence(ActionEvent event, String fxmlFile, String Title, String StudentName){
         Parent root = null;
@@ -238,7 +245,7 @@ public class CSEDUPORTALUtils  {
                     String retrivedName = resultSet.getString("CourseName");
 
                     if(retrivedYear.equals(year) && retrivedSemester.equals(semester)){
-                        System.out.println(retrivedName);
+                        CourseName.add(retrivedName);
                     }
                     else{
                         System.out.println("No Data Found");

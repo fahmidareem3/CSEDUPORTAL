@@ -12,20 +12,13 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class Dashboard {
     protected static CSEDU CSEDUDEPT;
-//
-//    public void getData(){
-//        CSEDUDEPT = new CSEDU();
-//        CSEDUDEPT.setYearList(1);
-//        CSEDUDEPT.YearList.get(0).setSemesterList(1);
-//        CSEDUDEPT.YearList.get(0).getSemesterList().get(0).setClassroomList("OOP","CSE-2102","MIB",1.5);
-//        if(CSEDUDEPT.getYearList().get(0).getSemesterList().get(0).getClassroomList().get(0).getClassroomTeacherName() != null)
-//            System.out.println(CSEDUDEPT.getYearList().get(0).getSemesterList().get(0).getClassroomList().get(0).getClassroomTeacherName());
-//
-//    }
+    protected static String CourseName;
+
     public String getName(){
         CSEDUDEPT = new CSEDU();
         CSEDUDEPT.setYearList(1);
@@ -33,8 +26,13 @@ public class Dashboard {
         CSEDUDEPT.YearList.get(0).getSemesterList().get(0).setClassroomList("OOP","CSE-2102","MIB",1.5);
         CSEDUDEPT.YearList.get(0).getSemesterList().get(0).getClassroomList().get(0).setStudentList("Fahmida Ara","Demo","Demo",2,1,31,201971);
 
-//        System.out.println(CSEDUDEPT.getYearList().get(0).getSemesterList().get(0).getClassroomList().get(0).getStudentList().get(0).getStudentName());
         return CSEDUDEPT.getYearList().get(0).getSemesterList().get(0).getClassroomList().get(0).getStudentList().get(0).getStudentName();
 
+    }
+    public String getCourseName(){
+        if(CSEDUPORTALUtils.getCourseName().get(0) != null)
+        CourseName = CSEDUPORTALUtils.getCourseName().get(0);
+        System.out.println(CourseName);
+        return CourseName;
     }
 }
