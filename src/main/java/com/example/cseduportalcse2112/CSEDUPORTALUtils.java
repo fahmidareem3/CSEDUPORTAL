@@ -14,9 +14,19 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.*;
+import java.util.ArrayList;
 
 public class CSEDUPORTALUtils {
 
+    public static ArrayList<String>CourseList;
+    public static void courseGenerate(String Year, String Semester){
+        CourseList = new ArrayList<>();
+        CourseList.add("Name");
+        getUserData(Year,Semester);
+    }
+    public static ArrayList<String> getCourses(){
+        return CourseList;
+    }
     public static void changeScence(ActionEvent event, String fxmlFile, String Title, String StudentName){
         Parent root = null;
         if(StudentName != null){
@@ -128,7 +138,7 @@ public class CSEDUPORTALUtils {
         }
 
     }
-    public static void loginUser(ActionEvent event,String Registration,String Password){
+    public static void loginUser(ActionEvent event, String Registration, String Password){
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
@@ -146,8 +156,12 @@ public class CSEDUPORTALUtils {
                 while(resultSet.next()) {
                     String retrivedPassword = resultSet.getString("Password");
                     String retrivedRegistration = resultSet.getString("Registration");
+//                    String retrivedYear = resultSet.getString("Year");
+//                    String retrivedSemester = resultSet.getString("Semester");
+
                     if(retrivedPassword.equals(Password)){
                         changeScence(event,"DashboardScreen.fxml","Dashboard",null);
+                        courseGenerate("1","2");
                     }
                     else{
                         System.out.println("Password did not match");
@@ -183,7 +197,62 @@ public class CSEDUPORTALUtils {
             }
         }
     }
-    void getUserData(int year,int semester){
+    public static void getUserData(String  year, String semester){
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        try{
+            connection = DriverManager.getConnection("jdbc:mysql://localhost/cseduportal","root","user");
+            preparedStatement = connection.prepareStatement("SELECT Year,Semester,CourseName FROM course WHERE Year = ? ");
+            preparedStatement.setString(1,year);
+            resultSet = preparedStatement.executeQuery();
+            if(!resultSet.isBeforeFirst()){
+                System.out.println("User Not Found");
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setContentText("User Not Found");
+                alert.show();
+            }else{
+                while(resultSet.next()) {
+                    String retrivedYear = resultSet.getString("Year");
+                    String retrivedSemester = resultSet.getString("Semester");
+                    String retrivedName = resultSet.getString("CourseName");
 
+                    if(retrivedYear.equals(year) && retrivedSemester.equals(semester)){
+                        System.out.println(retrivedName);
+                        CourseList.add(year);
+                    }
+                    else{
+                        System.out.println("No Data Found");
+                        Alert alert = new Alert(Alert.AlertType.ERROR);
+                        alert.setContentText("Can't Find Semester!");
+                        alert.show();
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+            if(resultSet != null){
+                try{
+                    resultSet.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if(preparedStatement != null){
+                try{
+                    preparedStatement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }if(connection != null){
+                try{
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }

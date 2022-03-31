@@ -72,7 +72,7 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <Text layoutX="981.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenStudentName" text="Shahriar Rumel" />
+            <Text fx:id="studentName" layoutX="981.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenStudentName" text="Shahriar Rumel" />
             <ImageView fitHeight="33.0" fitWidth="103.0" layoutX="14.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../assets/CSEDUPORTALPRIMARY.png" />
