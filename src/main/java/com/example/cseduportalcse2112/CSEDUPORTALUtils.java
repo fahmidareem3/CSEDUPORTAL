@@ -128,4 +128,62 @@ public class CSEDUPORTALUtils {
         }
 
     }
+    public static void loginUser(ActionEvent event,String Registration,String Password){
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        try{
+            connection = DriverManager.getConnection("jdbc:mysql://localhost/cseduportal","root","user");
+            preparedStatement = connection.prepareStatement("SELECT Registration,Password FROM student WHERE Registration = ? ");
+            preparedStatement.setString(1,Registration);
+            resultSet = preparedStatement.executeQuery();
+            if(!resultSet.isBeforeFirst()){
+                System.out.println("User Not Found");
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setContentText("User Not Found");
+                alert.show();
+            }else{
+                while(resultSet.next()) {
+                    String retrivedPassword = resultSet.getString("Password");
+                    String retrivedRegistration = resultSet.getString("Registration");
+                    if(retrivedPassword.equals(Password)){
+                        changeScence(event,"DashboardScreen.fxml","Dashboard",null);
+                    }
+                    else{
+                        System.out.println("Password did not match");
+                        Alert alert = new Alert(Alert.AlertType.ERROR);
+                        alert.setContentText("The provided credentials are incorrect!");
+                        alert.show();
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+            if(resultSet != null){
+                try{
+                    resultSet.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if(preparedStatement != null){
+                try{
+                    preparedStatement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }if(connection != null){
+                try{
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+    void getUserData(int year,int semester){
+
+    }
 }

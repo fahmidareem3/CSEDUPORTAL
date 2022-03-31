@@ -2,7 +2,7 @@
     -fx-background-color: #F3F3FF;
 }
 .DashboardScreenStudentImageBackground{
-    -fx-background-color: #9B7CC2;
+    -fx-background-color: #D6D6D6;
     -fx-background-radius: 50%;
 }
 .DashboardScreenStudentName{
@@ -14,7 +14,7 @@
 }
 .DashboardScreenMenu{
      -fx-background-color: #EBEBFF;
-     -fx-background-radius: 40px;
+     -fx-background-radius: 0px;
 }
 .DashboardScreenMenuItemButton{
     -fx-background-color: #D4D4D4;
@@ -23,9 +23,10 @@
 .DashboardScreenMenuOverlap{
 -fx-background-color: #EBEBFF;
 }
+
 .DashboardScreenMenuItemActive{
     -fx-background-color: #50238A;
-    -fx-background-radius: 50%;
+    -fx-background-radius: 30px;
 }
 
 .DashboardScreenMenuItem{
@@ -33,8 +34,19 @@
     -fx-background-radius: 50%;
 }
 .DashboardScreenUpcomingClasses,.DashboardScreenUpcomingClassesItemHeader,.DashboardScreenUpcomingClassesItemTeacher,.DashboardScreenUpcomingClassesItemTime,.DashboardScreenUpcomingClassesItemDate,
-.DashboardScreenUpcomingClassesItemScheduledBy,.DashboardScreenUpcomingClassesItemTime{
+.DashboardScreenUpcomingClassesItemScheduledBy,.DashboardScreenUpcomingClassesItemTime,.DashboardScreenMenuItemTextActive,.DashboardScreenMenuItemText{
     -fx-font-family:'Cambria';
+}
+.DashboardScreenMenuItemTextActive,.DashboardScreenMenuItemText{
+      -fx-font-size:16px;
+     -fx-line-spacing:-5px;
+     -fx-letter-spacing:-3px;
+     -fx-fill:#FFFFFF;
+     -fx-font-weight:600;
+
+}
+.DashboardScreenMenuItemText{
+      -fx-fill:#4B4B4B;
 }
 .DashboardScreenUpcomingClasses{
       -fx-font-size:24px;
@@ -56,14 +68,14 @@
      -fx-font-size:14px;
      -fx-line-spacing:-5px;
      -fx-font-weight:500;
-     -fx-fill:#A0A0A0;
+     -fx-fill:#CCCCCC;
 }
 .DashboardScreenUpcomingClassesItemTeacher{
     -fx-font-weight:500;
     -fx-font-size:16px;
 }
 .DashboardScreenUpcomingClassesItemDate{
-    -fx-font-size:16px;
+    -fx-font-size:14px;
 }
 .DashboardScreenUpcomingClassesItemTime{
     -fx-font-size:24px;

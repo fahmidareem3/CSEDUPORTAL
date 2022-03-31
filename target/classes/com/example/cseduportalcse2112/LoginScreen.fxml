@@ -30,13 +30,13 @@
                </image>
             </ImageView>
             <Text layoutX="104.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="LoginScreenHeader" text="HEY , WELCOME BACK !" />
-            <Button layoutX="60.0" layoutY="392.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="472.0" styleClass="signUpScreenLeftButton" stylesheets="@../../../CSS/SignupScreen.css" text="LOGIN" />
-            <TextField layoutX="62.0" layoutY="341.0" prefHeight="41.0" prefWidth="471.0" promptText="Password" styleClass="signUpScreenLeftInput" stylesheets="@../../../CSS/SignupScreen.css">
+            <Button fx:id="loginButton" layoutX="60.0" layoutY="392.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="472.0" styleClass="signUpScreenLeftButton" stylesheets="@../../../CSS/SignupScreen.css" text="LOGIN" />
+            <TextField fx:id="userPassword" layoutX="62.0" layoutY="341.0" prefHeight="41.0" prefWidth="471.0" promptText="Password" styleClass="signUpScreenLeftInput" stylesheets="@../../../CSS/SignupScreen.css">
                <padding>
                   <Insets left="20.0" />
                </padding>
             </TextField>
-            <TextField layoutX="63.0" layoutY="292.0" prefHeight="41.0" prefWidth="468.0" promptText="Registration" styleClass="signUpScreenLeftInput" stylesheets="@../../../CSS/SignupScreen.css">
+            <TextField fx:id="userRegistration" layoutX="63.0" layoutY="292.0" prefHeight="41.0" prefWidth="468.0" promptText="Registration" styleClass="signUpScreenLeftInput" stylesheets="@../../../CSS/SignupScreen.css">
                <padding>
                   <Insets left="20.0" />
                </padding>
