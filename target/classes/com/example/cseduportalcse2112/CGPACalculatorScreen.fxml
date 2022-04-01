@@ -80,42 +80,42 @@
             </AnchorPane>
             <AnchorPane layoutX="70.0" layoutY="246.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
                <children>
-                  <Text layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
+                  <Text fx:id="coursecode1" layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="248.0" layoutY="246.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
                <children>
-                  <Text layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
+                  <Text fx:id="coursecredit1" layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="248.0" layoutY="293.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
                <children>
-                  <Text layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
+                  <Text fx:id="coursecredit2" layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="70.0" layoutY="293.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
                <children>
-                  <Text layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2103" />
+                  <Text fx:id="coursecode2" layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2103" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="70.0" layoutY="341.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
                <children>
-                  <Text layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
+                  <Text fx:id="coursecode3" layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="249.0" layoutY="341.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
                <children>
-                  <Text layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
+                  <Text fx:id="coursecredit3" layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="248.0" layoutY="389.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
                <children>
-                  <Text layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
+                  <Text fx:id="coursecredit4" layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="70.0" layoutY="389.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
                <children>
-                  <Text layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
+                  <Text fx:id="coursecode4" layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
                </children>
             </AnchorPane>
             <TextField fx:id="Textfield1" layoutX="426.0" layoutY="246.0" prefHeight="41.0" prefWidth="173.0" promptText="Mark" styleClass="markInputField" stylesheets="@../../../CSS/CGPACalculator.css">
@@ -145,12 +145,12 @@
             </TextField>
             <AnchorPane layoutX="70.0" layoutY="438.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
                <children>
-                  <Text layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
+                  <Text fx:id="coursecode5" layoutX="43.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="248.0" layoutY="438.0" prefHeight="41.0" prefWidth="172.0" styleClass="CGPAScreenCalculatorCourse" stylesheets="@../../../CSS/CGPACalculator.css">
                <children>
-                  <Text layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
+                  <Text fx:id="coursecredit5" layoutX="73.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
                </children>
             </AnchorPane>
             <ImageView fitHeight="332.0" fitWidth="299.0" layoutX="622.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">

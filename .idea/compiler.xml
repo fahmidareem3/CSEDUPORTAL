@@ -9,7 +9,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="1st April" target="17" />
+      <module name="cseduportalwithdb" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

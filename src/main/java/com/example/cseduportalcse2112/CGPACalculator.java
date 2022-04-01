@@ -7,7 +7,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public class CGPACalculator extends Application {
+import java.util.ArrayList;
+
+public class CGPACalculator  {
 
     private double[] marks = new double[5];
     private double[] gpa = new double [5];
@@ -15,17 +17,17 @@ public class CGPACalculator extends Application {
     static double total_credit;
     double cgpa;
 
-    @Override
-    public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(CSEDUPORTAL.class.getResource("CGPACalculatorScreen.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1100, 680);
-        stage.setTitle("CGPA Calculator");
-        stage.setScene(scene);
-        stage.show();
-    }
-    public static void main(String[] args) {
-        launch();
-    }
+//    @Override
+//    public void start(Stage stage) throws Exception {
+//        FXMLLoader fxmlLoader = new FXMLLoader(CSEDUPORTAL.class.getResource("CGPACalculatorScreen.fxml"));
+//        Scene scene = new Scene(fxmlLoader.load(), 1100, 680);
+//        stage.setTitle("CGPA Calculator");
+//        stage.setScene(scene);
+//        stage.show();
+//    }
+//    public static void main(String[] args) {
+//        launch();
+//    }
 
 
     @FXML
@@ -77,12 +79,23 @@ public class CGPACalculator extends Application {
         }
 
     }
+
     public void getCredit(){
-        credits[0] = 3;
-        credits[1] = 3;
-        credits[2] = 3;
-        credits[3] = 2;
-        credits[4] = 3;
+
+        ArrayList<String> credit_string = new ArrayList<>();
+        for(int i = 0; i < 5; i++){
+            credit_string.add(DBDATAGETTER.getCourseCredit().get(i));
+        }
+
+        for(int i = 0; i < 5; i++){
+            credits[i] = Double.parseDouble(credit_string.get(i));
+            //System.out.println(credits[i]);
+        }
+//        credits[0] = 3;
+//        credits[1] = 3;
+//        credits[2] = 3;
+//        credits[3] = 2;
+//        credits[4] = 3;
 
 
     }

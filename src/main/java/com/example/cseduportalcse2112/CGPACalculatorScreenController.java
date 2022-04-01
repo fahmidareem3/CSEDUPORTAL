@@ -1,11 +1,20 @@
 package com.example.cseduportalcse2112;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 
-public class CGPACalculatorScreenController extends CGPACalculator{
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
+
+public class CGPACalculatorScreenController extends CGPACalculator implements Initializable {
     @FXML
     private TextField Textfield1;
     @FXML
@@ -18,9 +27,77 @@ public class CGPACalculatorScreenController extends CGPACalculator{
     private TextField Textfield5;
 
     @FXML
+    private ImageView LogoutImage;
+
+    @FXML
+    private ImageView cgpaCalculatorIcon;
+    @FXML
     private Label cgpacalculated;
 
+    @FXML
+    private Text coursecode1;
+    @FXML
+    private Text coursecode2;
+    @FXML
+    private Text coursecode3;
+    @FXML
+    private Text coursecode4;
+    @FXML
+    private Text coursecode5;
 
+    @FXML
+    private Text coursecredit1;
+    @FXML
+    private Text coursecredit2;
+    @FXML
+    private Text coursecredit3;
+    @FXML
+    private Text coursecredit4;
+    @FXML
+    private Text coursecredit5;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        LogoutImage.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                CSEDUPORTALUtils.changeScenceforMouseEvent(mouseEvent,"LoginScreen.fxml","Log in",null);
+            }
+        });
+        cgpaCalculatorIcon.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                CSEDUPORTALUtils.changeScenceforMouseEvent(mouseEvent,"CGPACalculatorScreen.fxml","CGPA Calculator",null);
+            }
+        });
+//        studentName.setText(getStudentName());
+//        upcomingclassname1.setText(getUpcomingList());
+//        upcomingclassteachername1.setText(getTeacherName());
+
+        ArrayList<String>CourseCode = new ArrayList<>();
+        ArrayList<String>CourseCredit = new ArrayList<>();
+        for(int i = 0; i < 5; i++){
+            CourseCode.add(DBDATAGETTER.getCourseCode().get(i));
+
+            CourseCredit.add(DBDATAGETTER.getCourseCredit().get(i));
+        }
+        coursecode1.setText(CourseCode.get(0));
+        coursecode2.setText(CourseCode.get(1));
+        coursecode3.setText(CourseCode.get(2));
+        coursecode4.setText(CourseCode.get(3));
+        coursecode5.setText(CourseCode.get(4));
+
+        coursecredit1.setText(CourseCredit.get(0));
+        coursecredit2.setText(CourseCredit.get(1));
+        coursecredit3.setText(CourseCredit.get(2));
+        coursecredit4.setText(CourseCredit.get(3));
+        coursecredit5.setText(CourseCredit.get(4));
+
+
+
+
+    }
 
 
     public void CalculateCgpa(ActionEvent actionEvent) {
