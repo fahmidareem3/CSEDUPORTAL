@@ -18,8 +18,7 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class DashboardScreenController extends Dashboard implements Initializable  {
-//    @FXML
-//    private Button logoutButton;
+
     @FXML
     private ImageView LogoutImage;
     @FXML
