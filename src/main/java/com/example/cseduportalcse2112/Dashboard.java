@@ -18,6 +18,8 @@ import java.util.ResourceBundle;
 public class Dashboard {
     protected static CSEDU CSEDUDEPT;
     protected static String CourseName;
+    protected static String TeacherName;
+
 
     public String getName(){
         CSEDUDEPT = new CSEDU();
@@ -30,9 +32,15 @@ public class Dashboard {
 
     }
     public String getCourseName(){
-        if(CSEDUPORTALUtils.getCourseName().get(0) != null)
-        CourseName = CSEDUPORTALUtils.getCourseName().get(0);
+        if(DBDATAGETTER.getCourseName().get(0) != null)
+        CourseName = DBDATAGETTER.getCourseName().get(0);
         System.out.println(CourseName);
         return CourseName;
+    }
+    public String getTeacherName(){
+        if(DBDATAGETTER.getTeacherName().get(0) != null)
+            TeacherName = DBDATAGETTER.getTeacherName().get(0);
+        System.out.println(TeacherName);
+        return TeacherName;
     }
 }
