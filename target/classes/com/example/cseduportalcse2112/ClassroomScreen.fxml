@@ -62,133 +62,163 @@
          </children>
       </AnchorPane>
    </left>
-   <center>
-      <AnchorPane prefHeight="680.0" prefWidth="926.0" styleClass="DashboardScreenUpcomingClasses" BorderPane.alignment="CENTER">
-         <children>
-            <Text layoutX="37.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClasses" text="CLASSROOMS" />
-            <AnchorPane layoutX="14.0" layoutY="167.0" prefHeight="200.0" prefWidth="453.0" styleClass="ClassroomScreenItem" stylesheets="@../../../CSS/ClassroomScreen.css">
-               <children>
-                  <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemTitle" text="Object Oriented Programming" />
-                  <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="CSE - 2102" />
-                  <AnchorPane layoutX="359.0" prefHeight="102.0" prefWidth="94.0" styleClass="ClassroomScreenTeacherImageBackground" stylesheets="@../../../CSS/ClassroomScreen.css">
-                     <children>
-                        <ImageView fitHeight="84.0" fitWidth="65.0" layoutX="15.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../assets/Classroom/TeacherIcon.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-                  <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="Dr. Muhammad Ibrahim" />
-                  <AnchorPane layoutX="106.0" layoutY="135.0" prefHeight="51.0" prefWidth="223.0" styleClass="ClassroomScreenEnrolledButton" stylesheets="@../../../CSS/ClassroomScreen.css">
-                     <children>
-                        <Text layoutX="93.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Enrolled" />
-                        <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../assets/Classroom/CheckedIcon.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="14.0" layoutY="383.0" prefHeight="200.0" prefWidth="453.0" styleClass="ClassroomScreenItem" stylesheets="@../../../CSS/ClassroomScreen.css">
-               <children>
-                  <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemTitle" text="Object Oriented Programming" />
-                  <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="CSE - 2102" />
-                  <AnchorPane layoutX="359.0" prefHeight="102.0" prefWidth="94.0" styleClass="ClassroomScreenTeacherImageBackground" stylesheets="@../../../CSS/ClassroomScreen.css">
-                     <children>
-                        <ImageView fitHeight="84.0" fitWidth="65.0" layoutX="15.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../assets/Classroom/TeacherIcon.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-                  <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="Dr. Muhammad Ibrahim" />
-                  <AnchorPane layoutX="106.0" layoutY="135.0" prefHeight="51.0" prefWidth="223.0" styleClass="ClassroomScreenEnrolledButton" stylesheets="@../../../CSS/ClassroomScreen.css">
-                     <children>
-                        <Text layoutX="93.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Enrolled" />
-                        <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../assets/Classroom/CheckedIcon.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="475.0" layoutY="167.0" prefHeight="200.0" prefWidth="453.0" styleClass="ClassroomScreenItem" stylesheets="@../../../CSS/ClassroomScreen.css">
-               <children>
-                  <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemTitle" text="Data Structure and Algorithm" />
-                  <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="CSE - 2101" />
-                  <AnchorPane layoutX="359.0" prefHeight="102.0" prefWidth="94.0" styleClass="ClassroomScreenTeacherImageBackground" stylesheets="@../../../CSS/ClassroomScreen.css">
-                     <children>
-                        <ImageView fitHeight="84.0" fitWidth="65.0" layoutX="15.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../assets/Classroom/TeacherIcon.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-                  <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="Dr. Md. Rezaul Karim" />
-                  <AnchorPane layoutX="106.0" layoutY="135.0" prefHeight="51.0" prefWidth="223.0" styleClass="ClassroomScreenEnrolledButtonSecondary" stylesheets="@../../../CSS/ClassroomScreen.css">
-                     <children>
-                        <Text layoutX="93.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Enroll" />
-                        <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../assets/Classroom/PendingIcon.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="475.0" layoutY="383.0" prefHeight="200.0" prefWidth="453.0" styleClass="ClassroomScreenItem" stylesheets="@../../../CSS/ClassroomScreen.css">
-               <children>
-                  <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemTitle" text="Object Oriented Programming" />
-                  <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="CSE - 2102" />
-                  <AnchorPane layoutX="359.0" prefHeight="102.0" prefWidth="94.0" styleClass="ClassroomScreenTeacherImageBackground" stylesheets="@../../../CSS/ClassroomScreen.css">
-                     <children>
-                        <ImageView fitHeight="84.0" fitWidth="65.0" layoutX="15.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../assets/Classroom/TeacherIcon.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-                  <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="Dr. Muhammad Ibrahim" />
-                  <AnchorPane layoutX="106.0" layoutY="135.0" prefHeight="51.0" prefWidth="223.0" styleClass="ClassroomScreenEnrolledButton" stylesheets="@../../../CSS/ClassroomScreen.css">
-                     <children>
-                        <Text layoutX="93.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Enrolled" />
-                        <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../assets/Classroom/CheckedIcon.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-            <Text layoutX="834.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenStudentName" text="Shahriar Rumel" />
-            <AnchorPane layoutX="850.0" layoutY="14.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../../../CSS/DashboardScreen.css">
-               <children>
-                  <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../assets/Dashboard/Student.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-         </children>
-         <stylesheets>
-            <URL value="@../../../CSS/ClassroomScreen.css" />
-            <URL value="@../../../CSS/DashboardScreen.css" />
-         </stylesheets>
-      </AnchorPane>
-   </center>
    <stylesheets>
       <URL value="@../../../CSS/ClassroomScreen.css" />
       <URL value="@../../../CSS/DashboardScreen.css" />
    </stylesheets>
+   <center>
+      <ScrollPane prefHeight="512.0" prefWidth="908.0" styleClass="Scrollpane" stylesheets="@../../../CSS/ClassroomScreen.css" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="680.0" prefWidth="926.0" styleClass="ClassroomScreen">
+               <children>
+                  <Text layoutX="20.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClasses" text="CLASSROOMS" />
+                  <Text layoutX="834.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenStudentName" text="Shahriar Rumel" />
+                  <AnchorPane layoutX="850.0" layoutY="14.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../../../CSS/DashboardScreen.css">
+                     <children>
+                        <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Dashboard/Student.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="489.0" layoutY="171.0" prefHeight="200.0" prefWidth="453.0" styleClass="ClassroomScreenItem" stylesheets="@../../../CSS/ClassroomScreen.css">
+                     <children>
+                        <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemTitle" text="Data Structure and Algorithm" />
+                        <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="CSE - 2101" />
+                        <AnchorPane layoutX="359.0" prefHeight="102.0" prefWidth="94.0" styleClass="ClassroomScreenTeacherImageBackground" stylesheets="@../../../CSS/ClassroomScreen.css">
+                           <children>
+                              <ImageView fitHeight="84.0" fitWidth="65.0" layoutX="15.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/Classroom/TeacherIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="Dr. Md. Rezaul Karim" />
+                        <AnchorPane layoutX="106.0" layoutY="135.0" prefHeight="51.0" prefWidth="223.0" styleClass="ClassroomScreenEnrolledButtonSecondary" stylesheets="@../../../CSS/ClassroomScreen.css">
+                           <children>
+                              <Text layoutX="93.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Enroll" />
+                              <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/Classroom/PendingIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="393.0" prefHeight="200.0" prefWidth="453.0" styleClass="ClassroomScreenItem" stylesheets="@../../../CSS/ClassroomScreen.css">
+                     <children>
+                        <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemTitle" text="Object Oriented Programming" />
+                        <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="CSE - 2102" />
+                        <AnchorPane layoutX="359.0" prefHeight="102.0" prefWidth="94.0" styleClass="ClassroomScreenTeacherImageBackground" stylesheets="@../../../CSS/ClassroomScreen.css">
+                           <children>
+                              <ImageView fitHeight="84.0" fitWidth="65.0" layoutX="15.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/Classroom/TeacherIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="Dr. Muhammad Ibrahim" />
+                        <AnchorPane layoutX="106.0" layoutY="135.0" prefHeight="51.0" prefWidth="223.0" styleClass="ClassroomScreenEnrolledButton" stylesheets="@../../../CSS/ClassroomScreen.css">
+                           <children>
+                              <Text layoutX="93.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Enrolled" />
+                              <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/Classroom/CheckedIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="171.0" prefHeight="200.0" prefWidth="453.0" styleClass="ClassroomScreenItem" stylesheets="@../../../CSS/ClassroomScreen.css">
+                     <children>
+                        <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemTitle" text="Object Oriented Programming" />
+                        <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="CSE - 2102" />
+                        <AnchorPane layoutX="359.0" prefHeight="102.0" prefWidth="94.0" styleClass="ClassroomScreenTeacherImageBackground" stylesheets="@../../../CSS/ClassroomScreen.css">
+                           <children>
+                              <ImageView fitHeight="84.0" fitWidth="65.0" layoutX="15.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/Classroom/TeacherIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="Dr. Muhammad Ibrahim" />
+                        <AnchorPane layoutX="106.0" layoutY="135.0" prefHeight="51.0" prefWidth="223.0" styleClass="ClassroomScreenEnrolledButton" stylesheets="@../../../CSS/ClassroomScreen.css">
+                           <children>
+                              <Text layoutX="93.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Enrolled" />
+                              <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/Classroom/CheckedIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="489.0" layoutY="393.0" prefHeight="200.0" prefWidth="453.0" styleClass="ClassroomScreenItem" stylesheets="@../../../CSS/ClassroomScreen.css">
+                     <children>
+                        <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemTitle" text="Object Oriented Programming" />
+                        <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="CSE - 2102" />
+                        <AnchorPane layoutX="359.0" prefHeight="102.0" prefWidth="94.0" styleClass="ClassroomScreenTeacherImageBackground" stylesheets="@../../../CSS/ClassroomScreen.css">
+                           <children>
+                              <ImageView fitHeight="84.0" fitWidth="65.0" layoutX="15.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/Classroom/TeacherIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="Dr. Muhammad Ibrahim" />
+                        <AnchorPane layoutX="106.0" layoutY="135.0" prefHeight="51.0" prefWidth="223.0" styleClass="ClassroomScreenEnrolledButton" stylesheets="@../../../CSS/ClassroomScreen.css">
+                           <children>
+                              <Text layoutX="93.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Enrolled" />
+                              <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/Classroom/CheckedIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="608.0" prefHeight="200.0" prefWidth="453.0" styleClass="ClassroomScreenItem" stylesheets="@../../../CSS/ClassroomScreen.css">
+                     <children>
+                        <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemTitle" text="Object Oriented Programming" />
+                        <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="CSE - 2102" />
+                        <AnchorPane layoutX="359.0" prefHeight="102.0" prefWidth="94.0" styleClass="ClassroomScreenTeacherImageBackground" stylesheets="@../../../CSS/ClassroomScreen.css">
+                           <children>
+                              <ImageView fitHeight="84.0" fitWidth="65.0" layoutX="15.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/Classroom/TeacherIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="Dr. Muhammad Ibrahim" />
+                        <AnchorPane layoutX="106.0" layoutY="135.0" prefHeight="51.0" prefWidth="223.0" styleClass="ClassroomScreenEnrolledButton" stylesheets="@../../../CSS/ClassroomScreen.css">
+                           <children>
+                              <Text layoutX="93.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Enrolled" />
+                              <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/Classroom/CheckedIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <stylesheets>
+                  <URL value="@../../../CSS/ClassroomScreen.css" />
+                  <URL value="@../../../CSS/DashboardScreen.css" />
+               </stylesheets>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
 </BorderPane>

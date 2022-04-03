@@ -9,80 +9,6 @@
 <?import javafx.scene.layout.*?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" styleClass="BookletScreen" stylesheets="@../../../CSS/BookletScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.BookletScreenController">
-   <right>
-      <AnchorPane prefHeight="680.0" prefWidth="948.0" BorderPane.alignment="CENTER">
-         <children>
-            <Text layoutX="297.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenHeader" text="RECOMMENDED BOOKS" />
-            <Text layoutX="53.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenSubHeader" text="SECOND YEAR FIRST SEMESTER" />
-            <AnchorPane layoutX="53.0" layoutY="173.0" prefHeight="202.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../../../CSS/BookletScreen.css">
-               <children>
-                  <ImageView fitHeight="125.0" fitWidth="110.0" layoutX="105.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../assets/Booklet/EDITION-min.png" />
-                     </image>
-                  </ImageView>
-                  <Text layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="270.9931640625" />
-                  <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="72.9931640625" />
-                  <Text layoutX="89.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="99.9931640625" />
-                  <Text layoutX="139.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Dr.Muhammad Ibrahim" wrappingWidth="154.9931640625" />
-                  <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Recommended By" wrappingWidth="116.9931640625" />
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="389.0" layoutY="173.0" prefHeight="202.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../../../CSS/BookletScreen.css">
-               <children>
-                  <ImageView fitHeight="125.0" fitWidth="110.0" layoutX="105.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../assets/Booklet/EDITION-min.png" />
-                     </image>
-                  </ImageView>
-                  <Text layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="270.9931640625" />
-                  <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="72.9931640625" />
-                  <Text layoutX="89.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="99.9931640625" />
-                  <Text layoutX="139.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Dr.Muhammad Ibrahim" wrappingWidth="154.9931640625" />
-                  <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Recommended By" wrappingWidth="116.9931640625" />
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="389.0" layoutY="409.0" prefHeight="202.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../../../CSS/BookletScreen.css">
-               <children>
-                  <ImageView fitHeight="125.0" fitWidth="110.0" layoutX="105.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../assets/Booklet/EDITION-min.png" />
-                     </image>
-                  </ImageView>
-                  <Text layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="270.9931640625" />
-                  <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="72.9931640625" />
-                  <Text layoutX="89.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="99.9931640625" />
-                  <Text layoutX="139.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Dr.Muhammad Ibrahim" wrappingWidth="154.9931640625" />
-                  <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Recommended By" wrappingWidth="116.9931640625" />
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="53.0" layoutY="409.0" prefHeight="202.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../../../CSS/BookletScreen.css">
-               <children>
-                  <ImageView fitHeight="125.0" fitWidth="110.0" layoutX="105.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../assets/Booklet/EDITION-min.png" />
-                     </image>
-                  </ImageView>
-                  <Text layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="270.9931640625" />
-                  <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="72.9931640625" />
-                  <Text layoutX="89.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="99.9931640625" />
-                  <Text layoutX="139.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Dr.Muhammad Ibrahim" wrappingWidth="154.9931640625" />
-                  <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Recommended By" wrappingWidth="116.9931640625" />
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="850.0" layoutY="14.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../../../CSS/DashboardScreen.css">
-               <children>
-                  <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../assets/Dashboard/Student.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <Text layoutX="834.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenStudentName" text="Shahriar Rumel" />
-         </children>
-      </AnchorPane>
-   </right>
    <left>
       <AnchorPane prefHeight="680.0" prefWidth="163.0" styleClass="DashboardScreenMenu" stylesheets="@../../../CSS/DashboardScreen.css" BorderPane.alignment="CENTER">
          <children>
@@ -131,4 +57,96 @@
          </children>
       </AnchorPane>
    </left>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../../../CSS/ClassroomScreen.css" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="680.0" prefWidth="1039.0">
+               <children>
+                  <Text layoutX="288.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenHeader" text="RECOMMENDED BOOKS" />
+                  <Text layoutX="27.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenSubHeader" text="SECOND YEAR FIRST SEMESTER" />
+                  <AnchorPane layoutX="27.0" layoutY="172.0" prefHeight="202.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../../../CSS/BookletScreen.css">
+                     <children>
+                        <ImageView fitHeight="125.0" fitWidth="110.0" layoutX="105.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Booklet/EDITION-min.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="270.9931640625" />
+                        <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="72.9931640625" />
+                        <Text layoutX="89.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="99.9931640625" />
+                        <Text layoutX="139.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Dr.Muhammad Ibrahim" wrappingWidth="154.9931640625" />
+                        <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Recommended By" wrappingWidth="116.9931640625" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="363.0" layoutY="172.0" prefHeight="202.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../../../CSS/BookletScreen.css">
+                     <children>
+                        <ImageView fitHeight="125.0" fitWidth="110.0" layoutX="105.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Booklet/EDITION-min.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="270.9931640625" />
+                        <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="72.9931640625" />
+                        <Text layoutX="89.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="99.9931640625" />
+                        <Text layoutX="139.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Dr.Muhammad Ibrahim" wrappingWidth="154.9931640625" />
+                        <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Recommended By" wrappingWidth="116.9931640625" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="363.0" layoutY="408.0" prefHeight="202.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../../../CSS/BookletScreen.css">
+                     <children>
+                        <ImageView fitHeight="125.0" fitWidth="110.0" layoutX="105.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Booklet/EDITION-min.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="270.9931640625" />
+                        <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="72.9931640625" />
+                        <Text layoutX="89.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="99.9931640625" />
+                        <Text layoutX="139.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Dr.Muhammad Ibrahim" wrappingWidth="154.9931640625" />
+                        <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Recommended By" wrappingWidth="116.9931640625" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="27.0" layoutY="408.0" prefHeight="202.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../../../CSS/BookletScreen.css">
+                     <children>
+                        <ImageView fitHeight="125.0" fitWidth="110.0" layoutX="105.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Booklet/EDITION-min.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="270.9931640625" />
+                        <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="72.9931640625" />
+                        <Text layoutX="89.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="99.9931640625" />
+                        <Text layoutX="139.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Dr.Muhammad Ibrahim" wrappingWidth="154.9931640625" />
+                        <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Recommended By" wrappingWidth="116.9931640625" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="850.0" layoutY="14.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../../../CSS/DashboardScreen.css">
+                     <children>
+                        <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Dashboard/Student.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Text layoutX="834.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenStudentName" text="Shahriar Rumel" />
+                  <AnchorPane layoutX="700.0" layoutY="172.0" prefHeight="202.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../../../CSS/BookletScreen.css">
+                     <children>
+                        <ImageView fitHeight="125.0" fitWidth="110.0" layoutX="105.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Booklet/EDITION-min.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="270.9931640625" />
+                        <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="72.9931640625" />
+                        <Text layoutX="89.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="99.9931640625" />
+                        <Text layoutX="139.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Dr.Muhammad Ibrahim" wrappingWidth="154.9931640625" />
+                        <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Recommended By" wrappingWidth="116.9931640625" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
 </BorderPane>

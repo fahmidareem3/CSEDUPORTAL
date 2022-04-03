@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.AttendanceScreenController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="61.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClasses" text="Your Attendance Summary" />
+            <AnchorPane layoutX="61.0" layoutY="119.0" prefHeight="236.0" prefWidth="260.0" styleClass="AttendanceScreenItem" stylesheets="@../../../CSS/AttendanceScreen.css">
+               <children>
+                  <Text layoutX="53.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AttendanceScreenPercentage" text="85%" textAlignment="CENTER" />
+                  <Text layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" wrappingWidth="155.697265625" />
+                  <Text layoutX="17.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Second Year First Semester" wrappingWidth="226.697265625" />
+                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButton" stylesheets="@../../../CSS/AttendanceScreen.css" text="ABOVE AVERAGE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="344.0" layoutY="119.0" prefHeight="236.0" prefWidth="260.0" styleClass="AttendanceScreenItem" stylesheets="@../../../CSS/AttendanceScreen.css">
+               <children>
+                  <Text layoutX="53.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AttendanceScreenPercentage" text="85%" textAlignment="CENTER" />
+                  <Text layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" wrappingWidth="155.697265625" />
+                  <Text layoutX="17.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Second Year First Semester" wrappingWidth="226.697265625" />
+                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButton" stylesheets="@../../../CSS/AttendanceScreen.css" text="ABOVE AVERAGE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="627.0" layoutY="119.0" prefHeight="236.0" prefWidth="260.0" styleClass="AttendanceScreenItem" stylesheets="@../../../CSS/AttendanceScreen.css">
+               <children>
+                  <Text layoutX="53.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AttendanceScreenPercentage" text="85%" textAlignment="CENTER" />
+                  <Text layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" wrappingWidth="155.697265625" />
+                  <Text layoutX="17.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Second Year First Semester" wrappingWidth="226.697265625" />
+                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButtonSecondary" stylesheets="@../../../CSS/AttendanceScreen.css" text="BELOW AVERAGE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="61.0" layoutY="370.0" prefHeight="236.0" prefWidth="260.0" styleClass="AttendanceScreenItem" stylesheets="@../../../CSS/AttendanceScreen.css">
+               <children>
+                  <Text layoutX="53.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AttendanceScreenPercentage" text="85%" textAlignment="CENTER" />
+                  <Text layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" wrappingWidth="155.697265625" />
+                  <Text layoutX="17.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Second Year First Semester" wrappingWidth="226.697265625" />
+                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButton" stylesheets="@../../../CSS/AttendanceScreen.css" text="ABOVE AVERAGE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="344.0" layoutY="370.0" prefHeight="236.0" prefWidth="260.0" styleClass="AttendanceScreenItem" stylesheets="@../../../CSS/AttendanceScreen.css">
+               <children>
+                  <Text layoutX="53.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="AttendanceScreenPercentage" text="85%" textAlignment="CENTER" />
+                  <Text layoutX="14.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemHeader" text="Object Oriented Programming" wrappingWidth="155.697265625" />
+                  <Text layoutX="17.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemScheduledBy" text="Second Year First Semester" wrappingWidth="226.697265625" />
+                  <Button layoutX="19.0" layoutY="176.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="230.0" styleClass="AttendanceStatusButton" stylesheets="@../../../CSS/AttendanceScreen.css" text="ABOVE AVERAGE" />
+               </children>
+            </AnchorPane>
+            <Text layoutX="834.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenStudentName" text="Shahriar Rumel" />
+            <AnchorPane layoutX="850.0" layoutY="14.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../../../CSS/DashboardScreen.css">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/Dashboard/Student.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <stylesheets>
+      <URL value="@../../../CSS/DashboardScreen.css" />
+      <URL value="@../../../CSS/AttendanceScreen.css" />
+   </stylesheets>
+   <left>
+      <AnchorPane prefHeight="660.0" prefWidth="163.0" styleClass="DashboardScreenMenu" stylesheets="@../../../CSS/DashboardScreen.css" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="11.0" layoutY="321.0" prefHeight="50.0" prefWidth="146.0" styleClass="DashboardScreenMenuItemActive" stylesheets="@../../../CSS/DashboardScreen.css" />
+            <ImageView fx:id="LogoutImage" fitHeight="27.0" fitWidth="23.0" layoutX="24.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/Dashboard/Logout.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cgpaCalculatorIcon" fitHeight="30.0" fitWidth="25.0" layoutX="23.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/Dashboard/CGPAICON.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="24.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/Dashboard/BookletIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="24.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/Dashboard/AttendanceIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="24.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/Dashboard/ClassroomIcon.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="classroom" layoutX="65.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Classrooms" />
+            <Text fx:id="attendance" layoutX="65.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemTextActive" text="Attendance" />
+            <Text fx:id="booklet" layoutX="65.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Booklet" />
+            <Text fx:id="cgpa" layoutX="65.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="CGPA" />
+            <Text fx:id="logout" layoutX="65.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Logout" />
+            <ImageView fitHeight="61.0" fitWidth="106.0" layoutX="26.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/CSEDUPORTALPRIMARY.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="23.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" styleClass="DashboardScreenMenu">
+               <image>
+                  <Image url="@../../../assets/Classroom/HomeIcon.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="home" layoutX="65.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Home" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

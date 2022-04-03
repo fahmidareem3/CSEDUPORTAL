@@ -1,4 +1,4 @@
-.ClassroomScreen{
+.ClassroomScreen,.Scrollpane{
     -fx-background-color: #F3F3FF;
 }
 .ClassroomScreen,.ClassroomScreenItemTitle,.ClassroomScreenEnrolledButton{
@@ -30,4 +30,34 @@
 }
 .ClassroomScreenEnrolledButtonSecondary{
     -fx-background-color:#E02A2A;
+}
+.scroll-pane > .corner {
+    -fx-background-color: #F3F3FF;
+}
+.scroll-pane {
+    -fx-background-color: #F3F3FF;
+    -fx-padding-right: 20px;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #50238A;
+     -fx-background-width: 5em;
+    -fx-background-radius: 5em;
 }
