@@ -18,27 +18,27 @@
                   <AnchorPane layoutX="12.0" layoutY="242.0" prefHeight="50.0" prefWidth="146.0" styleClass="DashboardScreenMenuItemActive" stylesheets="@../../../CSS/DashboardScreen.css" />
                   <ImageView fx:id="LogoutImage" fitHeight="27.0" fitWidth="23.0" layoutX="24.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../assets/Dashboard/Logout.png" />
+                        <Image url="@../../../assets/NavigationPrimary/Logout.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="cgpaCalculatorIcon" fitHeight="30.0" fitWidth="25.0" layoutX="23.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../assets/Dashboard/CGPAICON.png" />
+                        <Image url="@../../../assets/NavigationPrimary/CGPA.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="24.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../assets/Dashboard/BookletIcon.png" />
+                        <Image url="@../../../assets/NavigationPrimary/Booklet.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="24.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../assets/Dashboard/AttendanceIcon.png" />
+                        <Image url="@../../../assets/NavigationPrimary/Attendance.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="24.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../assets/Classroom/ClassroomActive.png" />
+                        <Image url="@../../../assets/NavigationSecondary/ClassroomActive.png" />
                      </image>
                   </ImageView>
                   <Text fx:id="classroom" layoutX="65.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemTextActive" text="Classrooms" />
@@ -53,7 +53,7 @@
                   </ImageView>
                   <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="23.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" styleClass="DashboardScreenMenu">
                      <image>
-                        <Image url="@../../../assets/Classroom/HomeIcon.png" />
+                        <Image url="@../../../assets/NavigationPrimary/Home.png" />
                      </image>
                   </ImageView>
                   <Text fx:id="home" layoutX="65.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Home" />
@@ -186,7 +186,7 @@
                         </AnchorPane>
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="20.0" layoutY="608.0" prefHeight="200.0" prefWidth="453.0" styleClass="ClassroomScreenItem" stylesheets="@../../../CSS/ClassroomScreen.css">
+                  <AnchorPane layoutX="20.0" layoutY="614.0" prefHeight="200.0" prefWidth="453.0" styleClass="ClassroomScreenItem" stylesheets="@../../../CSS/ClassroomScreen.css">
                      <children>
                         <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemTitle" text="Object Oriented Programming" />
                         <Text layoutX="14.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="ClassroomScreenItemCourseCode" text="CSE - 2102" />
