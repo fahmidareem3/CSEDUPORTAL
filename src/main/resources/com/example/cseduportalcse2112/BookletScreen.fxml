@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" styleClass="BookletScreen" stylesheets="@../../../CSS/BookletScreen.css" type="BorderPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.BookletScreenController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" styleClass="BookletScreen" stylesheets="@../../../CSS/BookletScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cseduportalcse2112.BookletScreenController">
    <right>
       <AnchorPane prefHeight="680.0" prefWidth="948.0" BorderPane.alignment="CENTER">
          <children>
@@ -70,7 +70,7 @@
                   <Text layoutX="14.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Recommended By" wrappingWidth="116.9931640625" />
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="840.0" layoutY="12.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../../../CSS/DashboardScreen.css">
+            <AnchorPane layoutX="850.0" layoutY="14.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../../../CSS/DashboardScreen.css">
                <children>
                   <ImageView fitHeight="42.0" fitWidth="35.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -79,7 +79,7 @@
                   </ImageView>
                </children>
             </AnchorPane>
-            <Text layoutX="824.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenStudentName" text="Shahriar Rumel" />
+            <Text layoutX="834.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenStudentName" text="Shahriar Rumel" />
          </children>
       </AnchorPane>
    </right>
@@ -107,7 +107,7 @@
                   <Image url="@../../../assets/Dashboard/AttendanceIcon.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="classroom" fitHeight="30.0" fitWidth="25.0" layoutX="24.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="24.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../assets/Dashboard/ClassroomIcon.png" />
                </image>
@@ -131,4 +131,4 @@
          </children>
       </AnchorPane>
    </left>
-</fx:root>
+</BorderPane>

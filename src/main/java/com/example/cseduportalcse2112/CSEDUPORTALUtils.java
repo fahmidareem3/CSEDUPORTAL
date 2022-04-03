@@ -1,22 +1,18 @@
 package com.example.cseduportalcse2112;
 
 import javafx.event.ActionEvent;
-import javafx.event.Event;
-import javafx.event.EventHandler;
-import javafx.event.EventType;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 import java.sql.*;
-import java.util.ArrayList;
 
 public class CSEDUPORTALUtils  {
 
@@ -44,6 +40,9 @@ public class CSEDUPORTALUtils  {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle(Title);
         stage.setScene(new Scene(root,1100,680));
+//        stage.getIcons().add(new Image("CSEDUPORTALPRIMARY.png"));
+//        Image image = new Image("/image/icons/CSEDUPORTALPRIMARY.png");
+//        stage.getIcons().add(image);
         stage.show();
     }
     public static void changeScenceWindow(WindowEvent event, String fxmlFile, String Title, String StudentName){

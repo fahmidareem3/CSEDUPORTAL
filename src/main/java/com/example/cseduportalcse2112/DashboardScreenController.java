@@ -27,7 +27,7 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     private AnchorPane CgpaCalculatorPane;
 
     @FXML
-    private Label studentName;
+    private Text studentName;
     @FXML
     private Text upcomingclassname1;
     @FXML
