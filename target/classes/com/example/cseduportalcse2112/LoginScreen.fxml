@@ -31,11 +31,6 @@
             </ImageView>
             <Text layoutX="104.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="LoginScreenHeader" text="HEY , WELCOME BACK !" />
             <Button fx:id="loginButton" layoutX="60.0" layoutY="392.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="472.0" styleClass="signUpScreenLeftButton" stylesheets="@../../../CSS/SignupScreen.css" text="LOGIN" />
-            <TextField fx:id="userPassword" layoutX="62.0" layoutY="341.0" prefHeight="41.0" prefWidth="471.0" promptText="Password" styleClass="signUpScreenLeftInput" stylesheets="@../../../CSS/SignupScreen.css">
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </TextField>
             <TextField fx:id="userRegistration" layoutX="63.0" layoutY="292.0" prefHeight="41.0" prefWidth="468.0" promptText="Registration" styleClass="signUpScreenLeftInput" stylesheets="@../../../CSS/SignupScreen.css">
                <padding>
                   <Insets left="20.0" />
@@ -48,6 +43,11 @@
             </ImageView>
             <Button fx:id="LoginScreenSignup" layoutX="233.0" layoutY="457.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="110.0" styleClass="LoginSignupButton" stylesheets="@../../../CSS/WelcomeScreen.css" text="Signup" />
             <Text layoutX="76.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DontHaveAccount" text="Don't have an account ?" />
+            <PasswordField fx:id="userPassword" layoutX="63.0" layoutY="340.0" prefHeight="41.0" prefWidth="468.0" promptText="Password" styleClass="signUpScreenLeftInput" stylesheets="@../../../CSS/SignupScreen.css">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </PasswordField>
          </children>
       </AnchorPane>
    </center>

@@ -5,6 +5,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
@@ -17,7 +18,7 @@ public class LoginScreenController extends Login implements Initializable {
     @FXML
     private TextField userRegistration;
     @FXML
-    private TextField userPassword;
+    private PasswordField userPassword;
     @FXML
     private Button loginButton;
     @Override
