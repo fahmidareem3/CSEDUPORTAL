@@ -19,8 +19,7 @@ import java.util.ResourceBundle;
 
 public class DashboardScreenController extends Dashboard implements Initializable  {
 
-    @FXML
-    private ImageView LogoutImage;
+
     @FXML
     private ImageView cgpaCalculatorIcon;
 
@@ -34,12 +33,30 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     @FXML
     private Text upcomingclassteachername1;
 
+    //Navigation
+    @FXML
+    private Text home;
+    @FXML
+    private Text classroom;
+    @FXML
+    private Text attendance;
+    @FXML
+    private Text booklet;
+    @FXML
+    private Text cgpa;
+    @FXML
+    private Text logout;
+    @FXML
+    private ImageView LogoutImage;
+
     private String name;
     private ArrayList<String>CourseNameList = new ArrayList<>();
     private ArrayList<String>TeacherNameList = new ArrayList<>();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        NavigationHandler.HandleNavigation(home,classroom,attendance,booklet,cgpa,logout);
 
         LogoutImage.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override

@@ -27,9 +27,6 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
     private TextField Textfield5;
 
     @FXML
-    private ImageView LogoutImage;
-
-    @FXML
     private ImageView cgpaCalculatorIcon;
     @FXML
     private Label cgpacalculated;
@@ -55,9 +52,27 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
     private Text coursecredit4;
     @FXML
     private Text coursecredit5;
+    //Navigation
+    @FXML
+    private Text home;
+    @FXML
+    private Text classroom;
+    @FXML
+    private Text attendance;
+    @FXML
+    private Text booklet;
+    @FXML
+    private Text cgpa;
+    @FXML
+    private Text logout;
+    @FXML
+    private ImageView LogoutImage;
+
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        NavigationHandler.HandleNavigation(home,classroom,attendance,booklet,cgpa,logout);
 
         LogoutImage.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override

@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
@@ -215,62 +216,5 @@ public class CSEDUPORTALUtils  {
             }
         }
     }
-//    public static void getUserData(String  year, String semester){
-//        Connection connection = null;
-//        PreparedStatement preparedStatement = null;
-//        ResultSet resultSet = null;
-//        try{
-//            connection = DriverManager.getConnection("jdbc:mysql://localhost/cseduportal","root","user");
-//            preparedStatement = connection.prepareStatement("SELECT Year,Semester,CourseName FROM course WHERE Year = ? ");
-//            preparedStatement.setString(1,year);
-//            resultSet = preparedStatement.executeQuery();
-//
-//            if(!resultSet.isBeforeFirst()){
-//                System.out.println("User Not Found");
-//                Alert alert = new Alert(Alert.AlertType.ERROR);
-//                alert.setContentText("User Not Found");
-//                alert.show();
-//            }else{
-//                while(resultSet.next()) {
-//                    String retrivedYear = resultSet.getString("Year");
-//                    String retrivedSemester = resultSet.getString("Semester");
-//                    String retrivedName = resultSet.getString("CourseName");
-//
-//                    if(retrivedYear.equals(year) && retrivedSemester.equals(semester)){
-//                        CourseName.add(retrivedName);
-//                    }
-//                    else{
-//                        System.out.println("No Data Found");
-////                        Alert alert = new Alert(Alert.AlertType.ERROR);
-////                        alert.setContentText("Can't Find Semester!");
-////                        alert.show();
-//                    }
-//                }
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        finally {
-//            if(resultSet != null){
-//                try{
-//                    resultSet.close();
-//                } catch (SQLException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//            if(preparedStatement != null){
-//                try{
-//                    preparedStatement.close();
-//                } catch (SQLException e) {
-//                    e.printStackTrace();
-//                }
-//            }if(connection != null){
-//                try{
-//                    connection.close();
-//                } catch (SQLException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-//        }
-//    }
+
 }

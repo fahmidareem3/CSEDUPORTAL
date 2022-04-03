@@ -39,11 +39,11 @@
                   <Image url="@../../../assets/Dashboard/ClassroomIcon.png" />
                </image>
             </ImageView>
-            <Text layoutX="65.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Classrooms" />
-            <Text layoutX="65.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Attendance" />
-            <Text layoutX="65.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Booklet" />
-            <Text layoutX="65.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemTextActive" text="CGPA" />
-            <Text layoutX="65.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Logout" />
+            <Text fx:id="classroom" layoutX="65.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Classrooms" />
+            <Text fx:id="attendance" layoutX="65.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Attendance" />
+            <Text fx:id="booklet" layoutX="65.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Booklet" />
+            <Text fx:id="cgpa" layoutX="65.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemTextActive" text="CGPA" />
+            <Text fx:id="logout" layoutX="65.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Logout" />
             <ImageView fitHeight="61.0" fitWidth="106.0" layoutX="26.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../assets/CSEDUPORTALPRIMARY.png" />
@@ -54,7 +54,7 @@
                   <Image url="@../../../assets/Classroom/HomeIcon.png" />
                </image>
             </ImageView>
-            <Text layoutX="65.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Home" />
+            <Text fx:id="home" layoutX="65.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenMenuItemText" text="Home" />
          </children>
       </AnchorPane>
    </left>
