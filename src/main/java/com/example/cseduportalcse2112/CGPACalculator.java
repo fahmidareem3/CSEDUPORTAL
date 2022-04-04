@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
@@ -32,6 +33,8 @@ public class CGPACalculator  {
 
     @FXML
     private Label cgpacalculated;
+    @FXML
+    private Text cgpacalculated2;
 
     public void MarkToGpaConverter(double mark1, double mark2, double mark3, double mark4, double mark5) {
         marks[0] = mark1;
@@ -115,10 +118,13 @@ public class CGPACalculator  {
 
         String Cgpa = String.valueOf(String.format("%.2f",cgpa));
         cgpacalculated.setText(Cgpa);
+        cgpacalculated2.setText(Cgpa);
+
     }
     public void reset(){
         cgpa = 0.0;
         String Cgpa = String.valueOf(String.format("%.2f",cgpa));
         cgpacalculated.setText(Cgpa);
+        cgpacalculated2.setText(Cgpa);
     }
 }

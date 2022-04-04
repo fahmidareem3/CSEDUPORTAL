@@ -31,6 +31,8 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
     @FXML
     private Label cgpacalculated;
 
+
+
     @FXML
     private Text coursecode1;
     @FXML

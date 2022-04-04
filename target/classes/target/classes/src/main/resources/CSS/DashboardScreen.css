@@ -4,13 +4,19 @@
 .DashboardScreenStudentImageBackground{
     -fx-background-color: #D6D6D6;
     -fx-background-radius: 50%;
+     -fx-background-color: linear-gradient(to top,hsba(266, 57%, 54%, 1),hsba(266, 59%, 83%, 1));
 }
-.DashboardScreenStudentName{
+.DashboardScreenStudentName,.DashboardScreenUpcomingClassesIcon{
      -fx-font-size:12px;
      -fx-line-spacing:-5px;
      -fx-font-family:'Cambria';
      -fx-font-weight:500;
      -fx-fill:#6A6A6A;
+}
+.DashboardScreenUpcomingClassesIcon{
+     -fx-font-size:30px;
+     -fx-font-weight:700;
+     -fx-fill:#FFFFFF;
 }
 .DashboardScreenMenu{
      -fx-background-color: #EBEBFF;
@@ -27,6 +33,7 @@
 .DashboardScreenMenuItemActive{
     -fx-background-color: #50238A;
     -fx-background-radius: 30px;
+     -fx-background-color: linear-gradient(to top,hsba(266, 57%, 52%, 1),hsba(266, 56%, 39%, 1));
 }
 
 .DashboardScreenMenuItem{
@@ -57,6 +64,7 @@
 .DashboardScreenUpcomingClassesItem{
     -fx-background-color: #50238A;
     -fx-background-radius: 13px;
+    -fx-background-color: linear-gradient(to top,hsba(266, 58%, 60%, 1),hsba(266, 57%, 52%, 1));
 }
 .DashboardScreenUpcomingClassesItemHeader,.DashboardScreenUpcomingClassesItemTeacher,.DashboardScreenUpcomingClassesItemTime,.DashboardScreenUpcomingClassesItemDate{
      -fx-font-size:18px;
@@ -81,5 +89,5 @@
     -fx-font-size:24px;
 }
 .DashboardButton{
-        -fx-background-color: #50238A;
+    -fx-background-color: #50238A;
 }
