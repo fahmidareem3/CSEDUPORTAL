@@ -6,7 +6,7 @@
 }
 .ClassroomScreenItem{
     -fx-background-color:#EBEBFF;
-    -fx-background-color: linear-gradient(to top,hsba(292, 97%, 73%, 1), hsba(266, 97%, 73%, 1));
+    -fx-backgfround-color: linear-gradient(to top,hsba(292, 97%, 73%, 1), hsba(266, 97%, 73%, 1));
 
     -fx-background-radius:13px;
 }

@@ -165,7 +165,7 @@ public class CSEDUPORTALUtils  {
             preparedStatement = connection.prepareStatement("SELECT Registration,Password FROM student WHERE Registration = ? ");
             preparedStatement.setString(1,Registration);
             resultSet = preparedStatement.executeQuery();
-            if(!resultSet.isBeforeFirst()){
+            if(!resultSet.isBeforeFirst() || Registration ==null){
                 System.out.println("User Not Found");
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setContentText("User Not Found");

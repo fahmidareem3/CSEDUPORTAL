@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -33,7 +34,15 @@ public class LoginScreenController extends Login implements Initializable {
         loginButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                CSEDUPORTALUtils.loginUser(actionEvent,userRegistration.getText(),userPassword.getText());
+                if(!userRegistration.getText().equals("")){
+
+                    CSEDUPORTALUtils.loginUser(actionEvent,userRegistration.getText(),userPassword.getText());
+                }else{
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText("Registration Can't Be Empty");
+                    alert.show();
+                }
+
 
             }
         });
