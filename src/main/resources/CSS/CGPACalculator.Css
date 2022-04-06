@@ -21,7 +21,7 @@
 }
 .CGPAScreenCalculatorTItleBox{
     -fx-background-color:#50238A;
-    -fx-background-radius:5px;
+    -fx-background-radius:35px;
     -fx-font-size:14px;
     -fx-font-family:'Cambria';
      -fx-background-color: linear-gradient(to top,hsba(266, 56%, 35%, 1),hsba(266, 58%, 60%, 1));
@@ -63,6 +63,7 @@
 }
 .resetButton{
      -fx-background-color:#50238A;
+     -fx-background-radius:35px;
       -fx-background-color: linear-gradient(to top,hsba(266, 56%, 35%, 1),hsba(266, 58%, 60%, 1));
 }
 .CGPACalculatorItembg{
