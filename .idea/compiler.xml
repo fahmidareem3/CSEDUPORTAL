@@ -9,8 +9,5 @@
         <module name="CSEDU-PORTAL-CSE-2112" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="1st April" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
