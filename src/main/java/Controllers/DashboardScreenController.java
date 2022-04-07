@@ -81,7 +81,7 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     }
 
     public void setName(String Name){
-        this.name = "Shahriar Rumel";
+        this.name = Name;
     }
     public String getStudentName() {
         return this.name;

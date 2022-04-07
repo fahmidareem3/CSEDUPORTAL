@@ -17,6 +17,10 @@ public class DBDATAGETTER {
     private static String Year;
     private static String Semester;
 
+
+
+    private static String StudentName;
+
     public DBDATAGETTER() {
         getUserData(Year,Semester);
     }
@@ -27,12 +31,14 @@ public class DBDATAGETTER {
     public static String getSemester() {
         return Semester;
     }
-
-    public static void courseGenerate(String year, String semester){
+    public static String getStudentName() {
+        return StudentName;
+    }
+    public static void courseGenerate(String year, String semester,String studentName){
         Year = year;
         Semester = semester;
+        StudentName = studentName;
         getUserData(Year,Semester);
-        System.out.println(DBDATAGETTER.getYear());
     }
     public static ArrayList<String> getCourseName(){
         getUserData(Year,Semester);

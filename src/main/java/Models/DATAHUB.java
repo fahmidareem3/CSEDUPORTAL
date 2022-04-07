@@ -14,7 +14,9 @@ public class DATAHUB {
                     DBDATAGETTER.getCourseName().get(i),DBDATAGETTER.getCourseCode().get(i),DBDATAGETTER.getTeacherName().get(i),
                     Double.parseDouble(DBDATAGETTER.getCourseCredit().get(i))
             );
+
         }
+        CSEDUDEPT.getYearList().get(0).getSemesterList().get(0).getClassroomList().get(1).setStudentList(DBDATAGETTER.getStudentName(),null,null,1,1,0,0);
 
         return CSEDUDEPT;
     }
