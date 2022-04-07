@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" styleClass="signUpScreen" stylesheets="@../CSS/SignupScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Models.SignupScreenController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" styleClass="signUpScreen" stylesheets="@../CSS/SignupScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SignupScreenController">
    <right>
       <AnchorPane prefHeight="680.0" prefWidth="463.0" styleClass="signUpScreenRight" stylesheets="@../CSS/SignupScreen.css" BorderPane.alignment="CENTER">
          <children>

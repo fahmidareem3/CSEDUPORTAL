@@ -1,5 +1,6 @@
-package Models;
+package Controllers;
 
+import Models.CSEDUPORTALUtils;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -35,11 +36,11 @@ public class SignupScreenController  implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        signupSemesterChoicebox.getItems().addAll("Semester One","Semester Two");
-        signupSemesterChoicebox.setValue("Semester One");
+        signupSemesterChoicebox.getItems().addAll("1","2");
+        signupSemesterChoicebox.setValue("1");
 
-        signupYearChoicebox.getItems().addAll("Year One","Year Two","Year Three","Year Four");
-        signupYearChoicebox.setValue("Year Two");
+        signupYearChoicebox.getItems().addAll("1","2","3","4");
+        signupYearChoicebox.setValue("2");
 
         SignupScreenLogin.setOnAction(new EventHandler<ActionEvent>() {
             @Override

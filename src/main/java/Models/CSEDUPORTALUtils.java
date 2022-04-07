@@ -162,7 +162,7 @@ public class CSEDUPORTALUtils  {
         ResultSet resultSet = null;
         try{
             connection = DriverManager.getConnection("jdbc:mysql://localhost/cseduportal","root","user");
-            preparedStatement = connection.prepareStatement("SELECT Registration,Password FROM student WHERE Registration = ? ");
+            preparedStatement = connection.prepareStatement("SELECT Registration,Password,Year,Semester FROM student WHERE Registration = ? ");
             preparedStatement.setString(1,Registration);
             resultSet = preparedStatement.executeQuery();
             if(!resultSet.isBeforeFirst() || Registration ==null){
@@ -174,12 +174,13 @@ public class CSEDUPORTALUtils  {
                 while(resultSet.next()) {
                     String retrivedPassword = resultSet.getString("Password");
                     String retrivedRegistration = resultSet.getString("Registration");
-//                    String retrivedYear = resultSet.getString("Year");
-//                    String retrivedSemester = resultSet.getString("Semester");
+                    String retrivedYear = resultSet.getString("Year");
+                    String retrivedSemester = resultSet.getString("Semester");
 
                     if(retrivedPassword.equals(Password)){
+                        DBDATAGETTER.courseGenerate(retrivedYear,retrivedSemester);
                         changeScence(event,"DashboardScreen.fxml","Dashboard",null);
-                        DBDATAGETTER.courseGenerate("1","1");
+
                     }
                     else{
                         System.out.println("Password did not match");

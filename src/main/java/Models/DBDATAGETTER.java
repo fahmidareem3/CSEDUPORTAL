@@ -12,28 +12,42 @@ public class DBDATAGETTER {
     protected static ArrayList<String>CourseCode = new ArrayList<>();
     protected static ArrayList<String>CourseCredit = new ArrayList<>();
 
+
+
+    private static String Year;
+    private static String Semester;
+
     public DBDATAGETTER() {
-        getUserData("1","2");
-    }
-
-
-    public static void courseGenerate(String Year, String Semester){
         getUserData(Year,Semester);
     }
+    public static String getYear() {
+        return Year;
+    }
+
+    public static String getSemester() {
+        return Semester;
+    }
+
+    public static void courseGenerate(String year, String semester){
+        Year = year;
+        Semester = semester;
+        getUserData(Year,Semester);
+        System.out.println(DBDATAGETTER.getYear());
+    }
     public static ArrayList<String> getCourseName(){
-        getUserData("1","2");
+        getUserData(Year,Semester);
         return CourseName;
     }
     public static ArrayList<String> getTeacherName(){
-        getUserData("1","2");
+        getUserData(Year,Semester);
         return TeacherName;
     }
     public static ArrayList<String> getCourseCode(){
-        getUserData("1","2");
+        getUserData(Year,Semester);
         return CourseCode;
     }
     public static ArrayList<String> getCourseCredit(){
-        getUserData("1","2");
+        getUserData(Year,Semester);
         return CourseCredit;
     }
     public static void getUserData(String  year, String semester){
