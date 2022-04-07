@@ -30,6 +30,25 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     private Text upcomingclassname1;
     @FXML
     private Text upcomingclassteachername1;
+    @FXML
+    private Text upcomingclassname2;
+    @FXML
+    private Text upcomingclassteachername2;
+    @FXML
+    private Text upcomingclassname3;
+    @FXML
+    private Text upcomingclassteachername3;
+    @FXML
+    private Text upcomingclassname4;
+    @FXML
+    private Text upcomingclassteachername4;
+    @FXML
+    private Text upcomingclassname5;
+    @FXML
+    private Text upcomingclassteachername5;
+
+
+
 
     //Navigation
     @FXML
@@ -51,6 +70,37 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     private ArrayList<String>CourseNameList = new ArrayList<>();
     private ArrayList<String>TeacherNameList = new ArrayList<>();
 
+    public DashboardScreenController() {
+        super();
+//        setName(super.getName());
+        setUpcomingList(super.getCourseName());
+        setTeacherName(super.getTeacherName());
+    }
+
+    public void setName(String Name){
+        this.name = Name;
+    }
+    public String getStudentName() {
+        return this.name;
+    }
+    public void setUpcomingList(ArrayList<String> result){
+        for(int i  = 0 ; i < 5 ; i++){
+            CourseNameList.add(result.get(i));
+        }
+    }
+    public ArrayList<String> getUpcomingList(){
+
+        return CourseNameList;
+    }
+    private void setTeacherName(ArrayList<String> teacherName) {
+        for(int i  = 0 ; i < 5 ; i++){
+            TeacherNameList.add(teacherName.get(i));
+        };
+    }
+    public ArrayList<String> getTeacherNameList() {
+        return TeacherNameList;
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -69,35 +119,17 @@ public class DashboardScreenController extends Dashboard implements Initializabl
             }
         });
         studentName.setText(getStudentName());
-        upcomingclassname1.setText(getUpcomingList());
-        upcomingclassteachername1.setText(getTeacherName());
+        upcomingclassname1.setText(getUpcomingList().get(0));
+        upcomingclassteachername1.setText(getTeacherNameList().get(0));
+        upcomingclassname2.setText(getUpcomingList().get(1));
+        upcomingclassteachername2.setText(getTeacherNameList().get(1));
+        upcomingclassname3.setText(getUpcomingList().get(2));
+        upcomingclassteachername3.setText(getTeacherNameList().get(2));
+        upcomingclassname4.setText(getUpcomingList().get(3));
+        upcomingclassteachername4.setText(getTeacherNameList().get(3));
+        upcomingclassname5.setText(getUpcomingList().get(4));
+        upcomingclassteachername5.setText(getTeacherNameList().get(4));
 
     }
-    public DashboardScreenController() {
-        super();
-        setName(super.getName());
-        setUpcomingList(super.getCourseName());
-        setTeacherName(super.getTeacherName());
-    }
 
-    public void setName(String Name){
-        this.name = Name;
-    }
-    public String getStudentName() {
-        return this.name;
-    }
-    public void setUpcomingList(String result){
-
-        CourseNameList.add(result);
-    }
-    public String getUpcomingList(){
-
-        return CourseNameList.get(0);
-    }
-    private void setTeacherName(String teacherName) {
-        TeacherNameList.add(teacherName);
-    }
-    public String getTeacherNameList() {
-        return TeacherNameList.get(0);
-    }
 }

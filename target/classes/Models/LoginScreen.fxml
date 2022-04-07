@@ -11,9 +11,9 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" stylesheets="@../CSS/LoginScreen.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginScreenController">
    <right>
-      <AnchorPane prefHeight="702.0" prefWidth="507.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="683.0" prefWidth="436.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="684.0" fitWidth="525.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="684.0" fitWidth="590.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/Login/LoginCover.png" />
                </image>

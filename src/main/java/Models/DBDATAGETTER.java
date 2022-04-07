@@ -12,12 +12,8 @@ public class DBDATAGETTER {
     protected static ArrayList<String>CourseCode = new ArrayList<>();
     protected static ArrayList<String>CourseCredit = new ArrayList<>();
 
-
-
     private static String Year;
     private static String Semester;
-
-
 
     private static String StudentName;
 
