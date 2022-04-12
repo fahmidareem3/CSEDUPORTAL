@@ -9,6 +9,7 @@ public class Classroom extends Semester implements ClassroomInterface{
     private double Credit;
     ArrayList<Book>BookList = new ArrayList<>();
     ArrayList<Student>StudentList = new ArrayList<>();
+    ArrayList<classSchedule>ClassScheduleList = new ArrayList<>();
 
     public Classroom() {
     }
@@ -61,6 +62,16 @@ public class Classroom extends Semester implements ClassroomInterface{
     @Override
     public ArrayList<Student> getStudentList() {
         return StudentList;
+    }
+
+    @Override
+    public void setClassScheduleList(String classScheduleDay,String classScheduleTime) {
+        ClassScheduleList.add(new classSchedule(classScheduleTime,classScheduleDay));
+    }
+
+    @Override
+    public ArrayList<classSchedule> getClassSchedueList() {
+        return ClassScheduleList;
     }
 
 }

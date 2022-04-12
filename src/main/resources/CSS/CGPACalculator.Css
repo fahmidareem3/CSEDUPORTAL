@@ -41,6 +41,7 @@
 .markInputField{
     -fx-font-size:14px;
     -fx-font-family:'Cambria';
+    -fx-text-align:center;
     -fx-border-style: none;
     -fx-border-width:0;
     -fx-background-color:#ffffff;

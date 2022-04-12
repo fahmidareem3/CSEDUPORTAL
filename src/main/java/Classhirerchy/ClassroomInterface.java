@@ -13,4 +13,7 @@ public interface ClassroomInterface {
     void setStudentList(String Name, String Email , String Password, int Year, int Semester, int RollNumber, int RegistrationNumber);
     ArrayList<Student>getStudentList();
 
+    void setClassScheduleList(String ClassScheduleDay,String classScheduleTime);
+    ArrayList<classSchedule>getClassSchedueList();
+
 }
