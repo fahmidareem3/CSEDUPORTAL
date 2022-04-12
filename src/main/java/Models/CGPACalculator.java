@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class CGPACalculator  {
 
-    private double[] marks = new double[5];
+
     private double[] gpa = new double [5];
     private double[] credits = new double[5];
     static double total_credit;
@@ -32,48 +32,17 @@ public class CGPACalculator  {
     @FXML
     private Text cgpacalculated2;
 
-    public void MarkToGpaConverter(double mark1, double mark2, double mark3, double mark4, double mark5) {
-        marks[0] = mark1;
-        marks[1] = mark2;
-        marks[2] = mark3;
-        marks[3] = mark4;
-        marks[4] = mark5;
+    public void gpaSetter(double gpa1, double gpa2, double gpa3, double gpa4, double gpa5) {
 
-        for(int i = 0; i < 5; i++){
-            if(marks[i] >= 80 && marks[i] <= 100){
-                gpa[i] = 4.00;
-            }
-            else if(marks[i] < 80 && marks[i] >= 75){
-                gpa[i] = 3.75;
-            }
-            else if(marks[i] < 75 && marks[i] >= 70){
-                gpa[i] = 3.50;
-            }
-            else if(marks[i] < 70 && marks[i] >= 65){
-                gpa[i] = 3.25;
-            }
-            else if(marks[i] < 65 && marks[i] >= 60){
-                gpa[i] = 3.00;
-            }
-            else if(marks[i] < 60 && marks[i] >= 55){
-                gpa[i] = 2.75;
-            }
-            else if(marks[i] < 55 && marks[i] >= 50){
-                gpa[i] = 2.50;
-            }
-            else if(marks[i] < 50 && marks[i] >= 45){
-                gpa[i] = 2.25;
-            }
-            else if(marks[i] < 45 && marks[i] >= 40){
-                gpa[i] = 2.00;
-            }
-            else if(marks[i] < 40 && marks[i] >= 0){
-                gpa[i] = 0.00;
-            }
-            else{
-                cgpacalculated.setText("invalid input");
-            }
-
+            gpa[0] = gpa1;
+            gpa[1] = gpa2;
+            gpa[2] = gpa3;
+            gpa[3] = gpa4;
+            gpa[4] = gpa5;
+            for(int i = 0; i < 5; i++){
+                if(gpa[i] > 4.00 || gpa[i] < 0.00){
+                   gpa[i] = 0;
+                }
 
         }
 
