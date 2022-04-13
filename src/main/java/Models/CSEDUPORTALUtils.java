@@ -15,6 +15,13 @@ import java.io.IOException;
 import java.sql.*;
 
 public class CSEDUPORTALUtils  {
+    private static String StudentRegistrationNumber;
+    public static void setStudentRegistration(String Reg){
+        StudentRegistrationNumber = Reg;
+    }
+    public static String getStudentRegistration(){
+        return StudentRegistrationNumber ;
+    }
 
 
     public static void changeScence(ActionEvent event, String fxmlFile, String Title, String StudentName){
@@ -123,6 +130,7 @@ public class CSEDUPORTALUtils  {
                 userInsert.setString(7,registration);
                 userInsert.executeUpdate();
                 DBDATAGETTER.courseGenerate(String.valueOf(year),String.valueOf(semester),Name);
+                setStudentRegistration(registration);
                 changeScence(event,"DashboardScreen.fxml","Dashboard",null);
             }
         } catch (SQLException e) {
@@ -178,6 +186,7 @@ public class CSEDUPORTALUtils  {
 
                     if(retrivedPassword.equals(Password)){
                         DBDATAGETTER.courseGenerate(retrivedYear,retrivedSemester,retrivedName);
+                        setStudentRegistration(retrivedRegistration);
                         changeScence(event,"DashboardScreen.fxml","Dashboard",null);
 
                     }

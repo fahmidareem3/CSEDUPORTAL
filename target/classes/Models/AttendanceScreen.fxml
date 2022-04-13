@@ -25,40 +25,40 @@
                   <AnchorPane layoutY="257.0" prefHeight="52.0" prefWidth="872.0" styleClass="CGPACalculatorItembg" stylesheets="@../CSS/CGPACalculator.Css">
                      <children>
                         <Text layoutX="388.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="87%" />
-                        <Text layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
-                        <Button layoutX="760.0" layoutY="9.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="96.0" style="-fx-font-weight: 700;" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../CSS/CGPACalculator.Css" text="Details" textFill="WHITE" />
+                        <Text fx:id="coursename5" layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
+                        <Button layoutX="760.0" layoutY="9.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-font-weight: 700;" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../CSS/CGPACalculator.Css" text="Details" textFill="WHITE" />
                         <Text layoutX="568.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="Above Average" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutY="205.0" prefHeight="52.0" prefWidth="878.0" styleClass="CGPACalculatorItembgWhite" stylesheets="@../CSS/CGPACalculator.Css">
                      <children>
                         <Text layoutX="388.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="87%" />
-                        <Text layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
-                        <Button layoutX="760.0" layoutY="11.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="96.0" style="-fx-font-weight: 700;" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../CSS/CGPACalculator.Css" text="Details" textFill="WHITE" />
+                        <Text fx:id="coursename4" layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
+                        <Button layoutX="760.0" layoutY="11.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-font-weight: 700;" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../CSS/CGPACalculator.Css" text="Details" textFill="WHITE" />
                         <Text layoutX="568.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="Above Average" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutY="153.0" prefHeight="52.0" prefWidth="879.0" styleClass="CGPACalculatorItembg" stylesheets="@../CSS/CGPACalculator.Css">
                      <children>
                         <Text layoutX="388.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="87%" />
-                        <Text layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
-                        <Button layoutX="760.0" layoutY="9.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="96.0" style="-fx-font-weight: 700;" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../CSS/CGPACalculator.Css" text="Details" textFill="WHITE" />
+                        <Text fx:id="coursename3" layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
+                        <Button layoutX="760.0" layoutY="9.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-font-weight: 700;" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../CSS/CGPACalculator.Css" text="Details" textFill="WHITE" />
                         <Text layoutX="568.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="Above Average" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="2.0" layoutY="101.0" prefHeight="52.0" prefWidth="877.0" styleClass="CGPACalculatorItembgWhite" stylesheets="@../CSS/CGPACalculator.Css">
                      <children>
                         <Text layoutX="388.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="87%" />
-                        <Text layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
-                        <Button layoutX="760.0" layoutY="12.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="96.0" style="-fx-font-weight: 700;" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../CSS/CGPACalculator.Css" text="Details" textFill="WHITE" />
+                        <Text fx:id="coursename2" layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
+                        <Button layoutX="760.0" layoutY="12.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-font-weight: 700;" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../CSS/CGPACalculator.Css" text="Details" textFill="WHITE" />
                         <Text layoutX="568.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="Above Average" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutY="54.0" prefHeight="52.0" prefWidth="878.0" styleClass="CGPACalculatorItembg" stylesheets="@../CSS/CGPACalculator.Css">
                      <children>
                         <Text layoutX="388.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="87%" />
-                        <Text layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="Object Oriented Programming" />
-                        <Button layoutX="760.0" layoutY="9.0" mnemonicParsing="false"  prefHeight="32.0" prefWidth="96.0" style="-fx-font-weight: 700;" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../CSS/CGPACalculator.Css" text="Details" textFill="WHITE" />
+                        <Text fx:id="coursename1" layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="Object Oriented Programming" />
+                        <Button layoutX="760.0" layoutY="9.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-font-weight: 700;" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../CSS/CGPACalculator.Css" text="Details" textFill="WHITE" />
                         <Text layoutX="568.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="Above Average" />
                      </children>
                   </AnchorPane>

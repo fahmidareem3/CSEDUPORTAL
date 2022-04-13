@@ -16,4 +16,8 @@ public interface ClassroomInterface {
     void setClassScheduleList(String ClassScheduleDay,String classScheduleTime);
     ArrayList<classSchedule>getClassSchedueList();
 
+    void setEnrolledStudentList(String Reg);
+    ArrayList<String>getEnrolledStudentList();
+    Boolean isStudentEnrolled(String Reg);
+
 }

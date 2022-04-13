@@ -10,6 +10,7 @@ public class Classroom extends Semester implements ClassroomInterface{
     ArrayList<Book>BookList = new ArrayList<>();
     ArrayList<Student>StudentList = new ArrayList<>();
     ArrayList<classSchedule>ClassScheduleList = new ArrayList<>();
+    ArrayList<String> EnrolledStudentList = new ArrayList<>();
 
     public Classroom() {
     }
@@ -72,6 +73,25 @@ public class Classroom extends Semester implements ClassroomInterface{
     @Override
     public ArrayList<classSchedule> getClassSchedueList() {
         return ClassScheduleList;
+    }
+
+    @Override
+    public void setEnrolledStudentList(String Reg) {
+        EnrolledStudentList.add(Reg);
+        System.out.println(EnrolledStudentList.get(0));
+    }
+
+    @Override
+    public ArrayList<String> getEnrolledStudentList() {
+        return EnrolledStudentList;
+    }
+
+    @Override
+    public Boolean isStudentEnrolled(String Reg) {
+        for(int i = 0 ; i < EnrolledStudentList.size();i++ ){
+            if(EnrolledStudentList.get(i) == Reg)return true;
+        }
+        return false;
     }
 
 }
