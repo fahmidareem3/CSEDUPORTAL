@@ -8,5 +8,8 @@
         <outputRelativeToContentRoot value="true" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CSEDUPORTAL" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

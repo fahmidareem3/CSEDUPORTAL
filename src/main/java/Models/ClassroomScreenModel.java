@@ -1,7 +1,5 @@
 package Models;
 
-import Classhirerchy.Classroom;
-
 import java.util.ArrayList;
 
 public class ClassroomScreenModel {
