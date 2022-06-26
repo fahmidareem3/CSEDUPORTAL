@@ -63,13 +63,13 @@
       <AnchorPane prefHeight="627.0" prefWidth="937.0" styleClass="cgpascreen" stylesheets="@../CSS/CGPACalculator.Css" BorderPane.alignment="CENTER">
          <children>
             <Text layoutX="333.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenHeader" text="CALCULATE CGPA" />
-            <Text layoutX="205.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="YEAR II SEMESTER I" />
+            <Text fx:id="semesterCode" layoutX="205.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="YEAR II SEMESTER I" />
             <AnchorPane layoutX="838.0" layoutY="20.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../CSS/DashboardScreen.css">
                <children>
                   <Text layoutX="19.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesIcon" text="S" />
                </children>
             </AnchorPane>
-            <Text layoutX="822.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenStudentName" text="Shahriar Rumel" />
+            <Text fx:id="studentName" layoutX="822.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenStudentName" text="Shahriar Rumel" />
             <AnchorPane layoutX="27.0" layoutY="177.0" prefHeight="398.0" prefWidth="534.0" styleClass="CGPACalculatorTable" stylesheets="@../CSS/CGPACalculator.Css">
                <children>
                   <AnchorPane layoutY="257.0" prefHeight="52.0" prefWidth="533.0" styleClass="CGPACalculatorItembg" stylesheets="@../CSS/CGPACalculator.Css">

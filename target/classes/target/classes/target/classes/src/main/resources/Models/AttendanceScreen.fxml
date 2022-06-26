@@ -14,10 +14,10 @@
       <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../CSS/CGPACalculator.Css" BorderPane.alignment="CENTER">
          <children>
             <Text layoutX="332.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClasses" text="ATTENDANCE SUMMARY" />
-            <Text layoutX="834.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenStudentName" text="Shahriar Rumel" />
-            <AnchorPane layoutX="850.0" layoutY="14.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../CSS/DashboardScreen.css">
+            <Text fx:id="studentName" layoutX="822.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenStudentName" text="Shahriar Rumel" />
+            <AnchorPane layoutX="838.0" layoutY="20.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../CSS/DashboardScreen.css">
                <children>
-                  <Text layoutX="16.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesIcon" text="S" />
+                  <Text layoutX="19.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesIcon" text="S" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="29.0" layoutY="185.0" prefHeight="326.0" prefWidth="879.0" styleClass="CGPACalculatorTable" stylesheets="@../CSS/CGPACalculator.Css">
@@ -68,7 +68,7 @@
                   <Text layoutX="788.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="More" />
                </children>
             </AnchorPane>
-            <Text layoutX="405.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="YEAR II SEMESTER I" />
+            <Text fx:id="semesterCode" layoutX="405.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="YEAR II SEMESTER I" />
          </children>
       </AnchorPane>
    </center>

@@ -1,9 +1,6 @@
 package Controllers;
 
-import Models.CGPACalculator;
-import Models.CSEDUPORTALUtils;
-import Models.DBDATAGETTER;
-import Models.NavigationHandler;
+import Models.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -74,6 +71,11 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
     @FXML
     private ImageView LogoutImage;
 
+    @FXML
+    private Text studentName;
+
+    @FXML Text semesterCode;
+
 
 
     @Override
@@ -92,7 +94,7 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
                 CSEDUPORTALUtils.changeScenceforMouseEvent(mouseEvent,"CGPACalculatorScreen.fxml","CGPA Calculator",null);
             }
         });
-//        studentName.setText(getStudentName());
+        studentName.setText(DBDATAGETTER.getStudentName());
 //        upcomingclassname1.setText(getUpcomingList());
 //        upcomingclassteachername1.setText(getTeacherName());
 
@@ -114,6 +116,8 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
         coursecredit3.setText(CourseCredit.get(2));
         coursecredit4.setText(CourseCredit.get(3));
         coursecredit5.setText(CourseCredit.get(4));
+
+        semesterCode.setText(new GenerateSemesterCode().GetSemesterCode());
 
 
 

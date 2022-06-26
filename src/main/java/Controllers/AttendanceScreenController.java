@@ -1,8 +1,6 @@
 package Controllers;
 
-import Models.AttendanceModel;
-import Models.CSEDUPORTALUtils;
-import Models.NavigationHandler;
+import Models.*;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -41,6 +39,11 @@ public class AttendanceScreenController extends AttendanceModel implements Initi
     @FXML
     private Text coursename5;
 
+    @FXML
+    private Text studentName;
+
+    @FXML Text semesterCode;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -58,5 +61,10 @@ public class AttendanceScreenController extends AttendanceModel implements Initi
         coursename3.setText(getCourseName().get(2));
         coursename4.setText(getCourseName().get(3));
         coursename5.setText(getCourseName().get(4));
+
+        studentName.setText(DBDATAGETTER.getStudentName());
+
+        semesterCode.setText(new GenerateSemesterCode().GetSemesterCode());
+
     }
 }
