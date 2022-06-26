@@ -6,12 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CSEDUPORTAL" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="CSEDUPORTAL" target="17" />
-      <module name="Test" target="17" />
+      <module name="Cseduportal01" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

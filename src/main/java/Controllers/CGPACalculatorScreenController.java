@@ -140,13 +140,13 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
         String t3 = Textfield3.getText();
         String t4 = Textfield4.getText();
         String t5 = Textfield5.getText();
-
-        double gpa1 = Double.parseDouble(t1);
-        double gpa2 = Double.parseDouble(t2);
-        double gpa3 = Double.parseDouble(t3);
-        double gpa4 = Double.parseDouble(t4);
-        double gpa5 = Double.parseDouble(t5);
-        super.gpaSetter(gpa1,gpa2,gpa3,gpa4,gpa5);
+//
+//        double gpa1 = Double.parseDouble(t1);
+//        double gpa2 = Double.parseDouble(t2);
+//        double gpa3 = Double.parseDouble(t3);
+//        double gpa4 = Double.parseDouble(t4);
+//        double gpa5 = Double.parseDouble(t5);
+        super.gradeSetter(t1,t2,t3,t4,t5);
 
         super.CgpaCalculator();
 
@@ -159,7 +159,7 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
         Textfield4.setText(null);
         Textfield5.setText(null);
 
-        super.gpaSetter(0,0,0,0,0);
+        super.gradeSetter("F","F","F","F","F");
         super.reset();
     }
 }
