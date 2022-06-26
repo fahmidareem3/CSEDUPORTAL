@@ -1,5 +1,6 @@
 package Controllers;
 
+import Models.AttendanceModel;
 import Models.CSEDUPORTALUtils;
 import Models.NavigationHandler;
 import javafx.event.EventHandler;
@@ -12,7 +13,7 @@ import javafx.scene.text.Text;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AttendanceScreenController implements Initializable {
+public class AttendanceScreenController extends AttendanceModel implements Initializable {
     //Navigation
     @FXML
     private Text home;
@@ -29,6 +30,18 @@ public class AttendanceScreenController implements Initializable {
     @FXML
     private ImageView LogoutImage;
 
+    @FXML
+    private Text coursename1;
+    @FXML
+    private Text coursename2;
+    @FXML
+    private Text coursename3;
+    @FXML
+    private Text coursename4;
+    @FXML
+    private Text coursename5;
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -40,5 +53,10 @@ public class AttendanceScreenController implements Initializable {
                 CSEDUPORTALUtils.changeScenceforMouseEvent(mouseEvent,"LoginScreen.fxml","Log in",null);
             }
         });
+        coursename1.setText(getCourseName().get(0));
+        coursename2.setText(getCourseName().get(1));
+        coursename3.setText(getCourseName().get(2));
+        coursename4.setText(getCourseName().get(3));
+        coursename5.setText(getCourseName().get(4));
     }
 }

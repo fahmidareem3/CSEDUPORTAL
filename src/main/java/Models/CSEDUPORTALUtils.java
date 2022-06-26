@@ -15,6 +15,13 @@ import java.io.IOException;
 import java.sql.*;
 
 public class CSEDUPORTALUtils  {
+    private static String StudentRegistrationNumber;
+    public static void setStudentRegistration(String Reg){
+        StudentRegistrationNumber = Reg;
+    }
+    public static String getStudentRegistration(){
+        return StudentRegistrationNumber ;
+    }
 
 
     public static void changeScence(ActionEvent event, String fxmlFile, String Title, String StudentName){
@@ -40,9 +47,6 @@ public class CSEDUPORTALUtils  {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle(Title);
         stage.setScene(new Scene(root,1100,680));
-//        stage.getIcons().add(new Image("CSEDUPORTALPRIMARY.png"));
-//        Image image = new Image("/image/icons/CSEDUPORTALPRIMARY.png");
-//        stage.getIcons().add(image);
         stage.show();
     }
     public static void changeScenceWindow(WindowEvent event, String fxmlFile, String Title, String StudentName){
@@ -125,6 +129,8 @@ public class CSEDUPORTALUtils  {
                 userInsert.setString(6, String.valueOf(roll));
                 userInsert.setString(7,registration);
                 userInsert.executeUpdate();
+                DBDATAGETTER.courseGenerate(String.valueOf(year),String.valueOf(semester),Name);
+                setStudentRegistration(registration);
                 changeScence(event,"DashboardScreen.fxml","Dashboard",null);
             }
         } catch (SQLException e) {
@@ -162,7 +168,7 @@ public class CSEDUPORTALUtils  {
         ResultSet resultSet = null;
         try{
             connection = DriverManager.getConnection("jdbc:mysql://localhost/cseduportal","root","user");
-            preparedStatement = connection.prepareStatement("SELECT Registration,Password FROM student WHERE Registration = ? ");
+            preparedStatement = connection.prepareStatement("SELECT Registration,Password,Year,Semester,Name FROM student WHERE Registration = ? ");
             preparedStatement.setString(1,Registration);
             resultSet = preparedStatement.executeQuery();
             if(!resultSet.isBeforeFirst() || Registration ==null){
@@ -174,12 +180,15 @@ public class CSEDUPORTALUtils  {
                 while(resultSet.next()) {
                     String retrivedPassword = resultSet.getString("Password");
                     String retrivedRegistration = resultSet.getString("Registration");
-//                    String retrivedYear = resultSet.getString("Year");
-//                    String retrivedSemester = resultSet.getString("Semester");
+                    String retrivedYear = resultSet.getString("Year");
+                    String retrivedSemester = resultSet.getString("Semester");
+                    String retrivedName = resultSet.getString("Name");
 
                     if(retrivedPassword.equals(Password)){
+                        DBDATAGETTER.courseGenerate(retrivedYear,retrivedSemester,retrivedName);
+                        setStudentRegistration(retrivedRegistration);
                         changeScence(event,"DashboardScreen.fxml","Dashboard",null);
-                        DBDATAGETTER.courseGenerate("1","1");
+
                     }
                     else{
                         System.out.println("Password did not match");

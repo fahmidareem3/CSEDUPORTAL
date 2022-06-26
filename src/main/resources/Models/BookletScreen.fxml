@@ -71,18 +71,12 @@
                               <Image url="@../assets/Booklet/EDITION-min.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="12.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="294.9931640625" />
+                        <Text fx:id="bookName1" layoutX="12.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="294.9931640625" />
                         <Text layoutX="14.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="62.9931640625" />
-                        <Text layoutX="84.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="82.9931640625" />
-                        <Text layoutX="241.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="CSE - 2102" wrappingWidth="57.9931640625" />
+                        <Text fx:id="authorName1" layoutX="81.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="133.9931640625" />
+                        <Text fx:id="courseCode1" layoutX="241.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="CSE - 2102" wrappingWidth="65.9931640625" />
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="850.0" layoutY="14.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../CSS/DashboardScreen.css">
-                     <children>
-                        <Text layoutX="16.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesIcon" text="S" />
-                     </children>
-                  </AnchorPane>
-                  <Text layoutX="834.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenStudentName" text="Shahriar Rumel" />
                   <AnchorPane layoutX="360.0" layoutY="150.0" prefHeight="232.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../CSS/BookletScreen.css">
                      <children>
                         <ImageView fitHeight="125.0" fitWidth="110.0" layoutX="105.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
@@ -90,10 +84,10 @@
                               <Image url="@../assets/Booklet/EDITION-min.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="12.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="294.9931640625" />
+                        <Text fx:id="bookName2" layoutX="12.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="294.9931640625" />
                         <Text layoutX="14.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="62.9931640625" />
-                        <Text layoutX="84.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="82.9931640625" />
-                        <Text layoutX="241.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="CSE - 2102" wrappingWidth="57.9931640625" />
+                        <Text fx:id="authorName2" layoutX="84.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="130.9931640625" />
+                        <Text fx:id="courseCode2" layoutX="242.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="CSE - 2102" wrappingWidth="64.9931640625" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="691.0" layoutY="150.0" prefHeight="232.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../CSS/BookletScreen.css">
@@ -103,10 +97,10 @@
                               <Image url="@../assets/Booklet/EDITION-min.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="12.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="294.9931640625" />
+                        <Text fx:id="bookName3" layoutX="12.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="294.9931640625" />
                         <Text layoutX="14.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="62.9931640625" />
-                        <Text layoutX="84.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="82.9931640625" />
-                        <Text layoutX="241.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="CSE - 2102" wrappingWidth="57.9931640625" />
+                        <Text fx:id="authorName3" layoutX="80.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="134.9931640625" />
+                        <Text fx:id="courseCode3" layoutX="240.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="CSE - 2102" wrappingWidth="66.9931640625" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="31.0" layoutY="398.0" prefHeight="232.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../CSS/BookletScreen.css">
@@ -116,10 +110,10 @@
                               <Image url="@../assets/Booklet/EDITION-min.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="12.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="294.9931640625" />
+                        <Text fx:id="bookName4" layoutX="12.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="294.9931640625" />
                         <Text layoutX="14.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="62.9931640625" />
-                        <Text layoutX="84.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="82.9931640625" />
-                        <Text layoutX="241.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="CSE - 2102" wrappingWidth="57.9931640625" />
+                        <Text fx:id="authorName4" layoutX="81.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="133.9931640625" />
+                        <Text fx:id="courseCode4" layoutX="240.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="CSE - 2102" wrappingWidth="66.9931640625" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="360.0" layoutY="398.0" prefHeight="232.0" prefWidth="319.0" styleClass="BookletScreenItem" stylesheets="@../CSS/BookletScreen.css">
@@ -129,12 +123,18 @@
                               <Image url="@../assets/Booklet/EDITION-min.png" />
                            </image>
                         </ImageView>
-                        <Text layoutX="12.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="294.9931640625" />
+                        <Text fx:id="bookName5" layoutX="12.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemHeader" text="Introduction To Java Programming" wrappingWidth="294.9931640625" />
                         <Text layoutX="14.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemWrittenBy" text="Written By" wrappingWidth="62.9931640625" />
-                        <Text layoutX="84.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="82.9931640625" />
-                        <Text layoutX="241.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="CSE - 2102" wrappingWidth="57.9931640625" />
+                        <Text fx:id="authorName5" layoutX="84.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="Y. Daniel Liang" wrappingWidth="122.9931640625" />
+                        <Text fx:id="courseCode5" layoutX="236.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenItemAuthor" text="CSE - 2102" wrappingWidth="68.9931640625" />
                      </children>
                   </AnchorPane>
+                  <AnchorPane layoutX="838.0" layoutY="20.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../CSS/DashboardScreen.css">
+                     <children>
+                        <Text layoutX="19.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesIcon" text="S" />
+                     </children>
+                  </AnchorPane>
+                  <Text fx:id="studentName" layoutX="822.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="BookletScreenStudentName" text="Shahriar Rumel" />
                </children>
             </AnchorPane>
          </content>

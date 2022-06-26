@@ -15,7 +15,7 @@
      -fx-background-color: linear-gradient(to top,hsba(266, 65%, 45%, 1),hsba(347, 11%, 95%, 1));
 }
 .BookletScreenItemHeader,.BookletScreenItemWrittenBy,.BookletScreenItemAuthor{
-    -fx-font-size:18px;
+    -fx-font-size:16px;
     -fx-line-spacing:-5px;
     -fx-font-weight:800;
     -fx-fill:#ffffff;
