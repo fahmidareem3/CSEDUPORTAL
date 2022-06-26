@@ -37,6 +37,7 @@
 .ClassroomScreenEnrolledButton,.ClassroomScreenEnrolledButtonSecondary{
     -fx-background-color:#05B958;
     -fx-background-radius:76px;
+    -fx-cursor:hand;
 }
 .ClassroomScreenEnrolledButtonSecondary{
     -fx-background-color:#E02A2A;

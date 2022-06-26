@@ -10,7 +10,7 @@ public interface ClassroomInterface {
     String getCourseCode();
     void setBook(String BookName, String AuthorName);
     ArrayList<Book> getBook();
-    void setStudentList(String Name, String Email , String Password, int Year, int Semester, int RollNumber, int RegistrationNumber);
+    void setStudentList(String Name, String Email, int Year, int Semester, int RollNumber, int RegistrationNumber);
     ArrayList<Student>getStudentList();
 
     void setClassScheduleList(String ClassScheduleDay,String classScheduleTime);

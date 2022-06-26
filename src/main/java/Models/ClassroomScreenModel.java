@@ -1,34 +1,21 @@
 package Models;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class ClassroomScreenModel {
     protected static ArrayList<String> CourseName = new ArrayList<>();
     protected static ArrayList<String> CourseCode = new ArrayList<>();
-    protected static String StudentName ;
     protected static ArrayList<String> TeacherName = new ArrayList<>();
     protected static ArrayList<Classroom> ClassroomData = new ArrayList<>();
-    protected static ArrayList<Boolean> EnrolledList = new ArrayList<>();
 
     public ClassroomScreenModel() {
         for(int i = 0 ; i < 5 ; i++){
             ClassroomData.add(DATAHUB.DataProvider().getYearList().get(0).getSemesterList().get(0).getClassroomList().get(i));
         }
     }
-
-    public ArrayList<Boolean> getEnrolledList(){
-        for(int i = 0 ; i < 5 ; i++){
-            boolean flag = false;
-            for(int j = 0 ; j < ClassroomData.get(i).getEnrolledStudentList().size();j++){
-                if(ClassroomData.get(i).getEnrolledStudentList().get(j) == CSEDUPORTALUtils.getStudentRegistration()){
-                    EnrolledList.add(true);
-                    flag = true;
-                    break;
-                }
-            }
-            if(!flag) EnrolledList.add(false);
-        }
-        return EnrolledList;
+    public void addStudent(String Name,int i){
+        ClassroomData.get(i).setStudentList(Name,CSEDUPORTALUtils.getStudentEmail(),Integer.parseInt(CSEDUPORTALUtils.getStudentYear()),Integer.parseInt(CSEDUPORTALUtils.getStudentSemester()),Integer.parseInt(CSEDUPORTALUtils.getStudentRoll()),Integer.parseInt(CSEDUPORTALUtils.getStudentRegistration()));
     }
     public ArrayList<String> getCourseName(){
         for(int i = 0 ; i < 5 ; i++){

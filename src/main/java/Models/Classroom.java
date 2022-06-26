@@ -1,6 +1,7 @@
 package Models;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Classroom extends Semester implements ClassroomInterface{
     private String Name;
@@ -56,8 +57,8 @@ public class Classroom extends Semester implements ClassroomInterface{
     }
 
     @Override
-    public void setStudentList(String Name, String Email , String Password, int Year, int Semester, int RollNumber, int RegistrationNumber ) {
-        StudentList.add(new Student(Name, Email , Password, Year, Semester, RollNumber, RegistrationNumber ));
+    public void setStudentList(String Name, String Email , int Year, int Semester, int RollNumber, int RegistrationNumber ) {
+        StudentList.add(new Student(Name, Email ,Year, Semester, RollNumber, RegistrationNumber ));
     }
 
     @Override
@@ -78,7 +79,6 @@ public class Classroom extends Semester implements ClassroomInterface{
     @Override
     public void setEnrolledStudentList(String Reg) {
         EnrolledStudentList.add(Reg);
-        System.out.println(EnrolledStudentList.get(0));
     }
 
     @Override
@@ -87,9 +87,9 @@ public class Classroom extends Semester implements ClassroomInterface{
     }
 
     @Override
-    public Boolean isStudentEnrolled(String Reg) {
-        for(int i = 0 ; i < EnrolledStudentList.size();i++ ){
-            if(EnrolledStudentList.get(i) == Reg)return true;
+    public Boolean isStudentEnrolled(String Name) {
+        for(int i = 0 ; i < StudentList.size();i++ ){
+            if(Objects.equals(StudentList.get(i).getStudentName(), Name))return true;
         }
         return false;
     }

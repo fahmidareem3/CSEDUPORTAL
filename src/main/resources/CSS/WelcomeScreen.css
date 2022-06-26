@@ -25,7 +25,7 @@
     -fx-border:0;
     -fx-background-color: #D7171E;
     -fx-text-fill:#ffffff;
-    -fx-cursor:pointer;
+    -fx-cursor:hand;
 }
 .WelcomeLogin{
      -fx-font-size:18px;

@@ -5,23 +5,77 @@ public class Student extends Classroom implements StudentInterface {
     private int Year;
     private int Semester ;
     private String Email;
-    private String Password;
-    private int RollNumber;
-    private int RegistrationNumber;
 
-    public Student() {
 
-    }
-    public Student(String Name, String Email , String Password, int Year, int Semester, int RollNumber, int RegistrationNumber ) {
+    public Student(String Name, String Email , int Year, int Semester, int RollNumber, int RegistrationNumber ) {
         this.Name = Name;
         this.Email = Email;
-        this.Password = Password;
         this.Year = Year;
         this.Semester = Semester;
         this.RollNumber = RollNumber;
         this.RegistrationNumber = RegistrationNumber;
 
     }
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    @Override
+    public int getYear() {
+        return Year;
+    }
+
+    @Override
+    public void setYear(int year) {
+        Year = year;
+    }
+
+    @Override
+    public int getSemester() {
+        return Semester;
+    }
+
+    @Override
+    public void setSemester(int semester) {
+        Semester = semester;
+    }
+
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+
+    public int getRollNumber() {
+        return RollNumber;
+    }
+
+    public void setRollNumber(int rollNumber) {
+        RollNumber = rollNumber;
+    }
+
+    public int getRegistrationNumber() {
+        return RegistrationNumber;
+    }
+
+    public void setRegistrationNumber(int registrationNumber) {
+        RegistrationNumber = registrationNumber;
+    }
+
+    private int RollNumber;
+    private int RegistrationNumber;
+
+    public Student() {
+
+    }
+
 
     @Override
     public void setStudentName(String Name) {
