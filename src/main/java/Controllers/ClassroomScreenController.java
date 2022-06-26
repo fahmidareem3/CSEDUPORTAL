@@ -1,9 +1,6 @@
 package Controllers;
 
-import Models.CSEDUPORTALUtils;
-import Models.ClassroomScreenModel;
-import Models.DATAHUB;
-import Models.NavigationHandler;
+import Models.*;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -16,6 +13,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class ClassroomScreenController extends ClassroomScreenModel  implements Initializable  {
+
+    @FXML Text studentName;
     //Navigation
     @FXML
     private Text home;
@@ -119,7 +118,7 @@ public class ClassroomScreenController extends ClassroomScreenModel  implements 
             }
         });
 
-
+        studentName.setText(DBDATAGETTER.getStudentName());
         classroomcode1.setText(getCourseCode().get(0));
         classroomcode2.setText(getCourseCode().get(1));
         classroomcode3.setText(getCourseCode().get(2));

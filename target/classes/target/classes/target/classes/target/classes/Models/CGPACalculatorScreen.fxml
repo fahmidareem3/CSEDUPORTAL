@@ -74,7 +74,7 @@
                <children>
                   <AnchorPane layoutY="257.0" prefHeight="52.0" prefWidth="533.0" styleClass="CGPACalculatorItembg" stylesheets="@../CSS/CGPACalculator.Css">
                      <children>
-                        <TextField fx:id="Textfield5" alignment="CENTER" layoutX="356.0" layoutY="6.0" prefHeight="38.0" prefWidth="160.0" promptText="Enter Mark" styleClass="markInputField" stylesheets="@../CSS/CGPACalculator.Css" />
+                        <TextField fx:id="Textfield5" alignment="CENTER" layoutX="356.0" layoutY="6.0" prefHeight="38.0" prefWidth="160.0" promptText="Enter Grade" styleClass="markInputField" stylesheets="@../CSS/CGPACalculator.Css" />
                         <Text fx:id="coursecredit5" layoutX="239.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
                         <Text fx:id="coursecode5" layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
                      </children>
@@ -83,32 +83,32 @@
                      <children>
                         <Text fx:id="coursecredit4" layoutX="239.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
                         <Text fx:id="coursecode4" layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
-                        <TextField fx:id="Textfield4" alignment="CENTER" layoutX="356.0" layoutY="6.0" prefHeight="38.0" prefWidth="160.0" promptText="Enter Mark" styleClass="markInputField" stylesheets="@../CSS/CGPACalculator.Css" />
+                        <TextField fx:id="Textfield4" alignment="CENTER" layoutX="356.0" layoutY="6.0" prefHeight="38.0" prefWidth="160.0" promptText="Enter Grade" styleClass="markInputField" stylesheets="@../CSS/CGPACalculator.Css" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutY="153.0" prefHeight="52.0" prefWidth="533.0" styleClass="CGPACalculatorItembg" stylesheets="@../CSS/CGPACalculator.Css">
                      <children>
                         <Text fx:id="coursecredit3" layoutX="239.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
                         <Text fx:id="coursecode3" layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
-                        <TextField fx:id="Textfield3" alignment="CENTER" layoutX="356.0" layoutY="6.0" prefHeight="38.0" prefWidth="160.0" promptText="Enter Mark" styleClass="markInputField" stylesheets="@../CSS/CGPACalculator.Css" />
+                        <TextField fx:id="Textfield3" alignment="CENTER" layoutX="356.0" layoutY="6.0" prefHeight="38.0" prefWidth="160.0" promptText="Enter Grade" styleClass="markInputField" stylesheets="@../CSS/CGPACalculator.Css" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="2.0" layoutY="101.0" prefHeight="52.0" prefWidth="529.0" styleClass="CGPACalculatorItembgWhite" stylesheets="@../CSS/CGPACalculator.Css">
                      <children>
                         <Text fx:id="coursecredit2" layoutX="239.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
                         <Text fx:id="coursecode2" layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
-                        <TextField fx:id="Textfield2" alignment="CENTER" layoutX="356.0" layoutY="9.0" prefHeight="38.0" prefWidth="160.0" promptText="Enter Mark" styleClass="markInputField" stylesheets="@../CSS/CGPACalculator.Css" />
+                        <TextField fx:id="Textfield2" alignment="CENTER" layoutX="356.0" layoutY="9.0" prefHeight="38.0" prefWidth="160.0" promptText="Enter Grade" styleClass="markInputField" stylesheets="@../CSS/CGPACalculator.Css" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutY="54.0" prefHeight="52.0" prefWidth="534.0" styleClass="CGPACalculatorItembg" stylesheets="@../CSS/CGPACalculator.Css">
                      <children>
                         <Text fx:id="coursecredit1" layoutX="239.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="1.5" />
                         <Text fx:id="coursecode1" layoutX="45.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorCourseCode" text="CSE - 2101" />
-                        <TextField fx:id="Textfield1" alignment="CENTER" layoutX="356.0" layoutY="6.0" prefHeight="38.0" prefWidth="160.0" promptText="Enter Mark" styleClass="markInputField" stylesheets="@../CSS/CGPACalculator.Css" />
+                        <TextField fx:id="Textfield1" alignment="CENTER" layoutX="356.0" layoutY="6.0" prefHeight="38.0" prefWidth="160.0" promptText="Enter Grade" styleClass="markInputField" stylesheets="@../CSS/CGPACalculator.Css" />
                      </children>
                   </AnchorPane>
                   <Text layoutX="204.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="Course Credit" />
-                  <Text layoutX="417.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="Marks" />
+                  <Text layoutX="417.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="Grade" />
                   <Text layoutX="37.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="Course Name" />
                   <Button layoutX="111.0" layoutY="330.0" mnemonicParsing="false" onAction="#CalculateCgpa" prefHeight="41.0" prefWidth="312.0" style="-fx-font-weight: 700;" styleClass="CGPAScreenCalculatorTItleBox" stylesheets="@../CSS/CGPACalculator.Css" text="Calculate CGPA" textFill="WHITE" />
                </children>

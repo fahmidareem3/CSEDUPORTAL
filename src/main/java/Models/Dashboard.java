@@ -21,6 +21,14 @@ public class Dashboard {
         }
         return CourseName;
     }
+    public void setStudentName(){
+       StudentName = DBDATAGETTER.getStudentName();
+
+    }
+    public String getStudentName(){
+       return StudentName;
+
+    }
 
     public ArrayList<String> getTeacherName(){
         for(int i = 0 ; i < 5 ; i++){

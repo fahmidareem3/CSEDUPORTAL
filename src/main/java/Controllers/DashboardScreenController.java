@@ -1,8 +1,6 @@
 package Controllers;
 
-import Models.CSEDUPORTALUtils;
-import Models.Dashboard;
-import Models.NavigationHandler;
+import Models.*;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -67,20 +65,23 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     private ImageView LogoutImage;
 
     private String name;
-    private ArrayList<String>CourseNameList = new ArrayList<>();
-    private ArrayList<String>TeacherNameList = new ArrayList<>();
+
+    private final ArrayList<String>CourseNameList = new ArrayList<>();
+    private final ArrayList<String>TeacherNameList = new ArrayList<>();
 
     public DashboardScreenController() {
         super();
-//        setName(super.getName());
+        setName(super.getStudentName());
         setUpcomingList(super.getCourseName());
         setTeacherName(super.getTeacherName());
     }
 
     public void setName(String Name){
+        System.out.println(Name);
         this.name = Name;
     }
     public String getStudentName() {
+        System.out.println(this.name);
         return this.name;
     }
     public void setUpcomingList(ArrayList<String> result){
@@ -118,7 +119,7 @@ public class DashboardScreenController extends Dashboard implements Initializabl
                 CSEDUPORTALUtils.changeScenceforMouseEvent(mouseEvent,"CGPACalculatorScreen.fxml","CGPA Calculator",null);
             }
         });
-        studentName.setText(getStudentName());
+        studentName.setText(DBDATAGETTER.getStudentName());
         upcomingclassname1.setText(getUpcomingList().get(0));
         upcomingclassteachername1.setText(getTeacherNameList().get(0));
         upcomingclassname2.setText(getUpcomingList().get(1));
