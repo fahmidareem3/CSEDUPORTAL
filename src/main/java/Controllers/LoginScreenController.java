@@ -1,6 +1,8 @@
 package Controllers;
 
 import Models.CSEDUPORTALUtils;
+import Models.DATAHUB;
+import Models.DBDATAGETTER;
 import Models.Login;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -39,6 +41,8 @@ public class LoginScreenController extends Login implements Initializable {
                 if(!userRegistration.getText().equals("")){
 
                     CSEDUPORTALUtils.loginUser(actionEvent,userRegistration.getText(),userPassword.getText());
+                    System.out.println(DBDATAGETTER.getSemester().isEmpty());
+                    DATAHUB.DataProvider();
                 }else{
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setContentText("Registration Can't Be Empty");

@@ -1,8 +1,6 @@
 package Controllers;
 
-import Models.AttendanceModel;
-import Models.CSEDUPORTALUtils;
-import Models.NavigationHandler;
+import Models.*;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -11,6 +9,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
 import java.net.URL;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class AttendanceScreenController extends AttendanceModel implements Initializable {
@@ -41,6 +40,16 @@ public class AttendanceScreenController extends AttendanceModel implements Initi
     @FXML
     private Text coursename5;
 
+    @FXML
+    private Text studentName;
+
+    @FXML
+    private Text semesterCode;
+
+    @FXML
+
+    private Text ProfileIcon;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -58,5 +67,12 @@ public class AttendanceScreenController extends AttendanceModel implements Initi
         coursename3.setText(getCourseName().get(2));
         coursename4.setText(getCourseName().get(3));
         coursename5.setText(getCourseName().get(4));
+
+        studentName.setText(DBDATAGETTER.getStudentName());
+
+        semesterCode.setText(new GenerateSemesterCode().GetSemesterCode());
+
+        ProfileIcon.setText(String.valueOf(DBDATAGETTER.getStudentName().charAt(0)).toUpperCase(Locale.ROOT));
+
     }
 }

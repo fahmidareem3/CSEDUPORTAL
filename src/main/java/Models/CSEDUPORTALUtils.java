@@ -16,6 +16,43 @@ import java.sql.*;
 
 public class CSEDUPORTALUtils  {
     private static String StudentRegistrationNumber;
+    private static String StudentEmail;
+    private static String StudentRoll;
+    private static String StudentYear;
+    private static String StudentSemester;
+
+    public static String getStudentYear() {
+        return StudentYear;
+    }
+
+    public static void setStudentYear(String studentYear) {
+        StudentYear = studentYear;
+    }
+
+    public static String getStudentSemester() {
+        return StudentSemester;
+    }
+
+    public static void setStudentSemester(String studentSemester) {
+        StudentSemester = studentSemester;
+    }
+
+    public static String getStudentRoll() {
+        return StudentRoll;
+    }
+
+    public static void setStudentRoll(String studentRoll) {
+        StudentRoll = studentRoll;
+    }
+
+    public static String getStudentEmail() {
+        return StudentEmail;
+    }
+
+    public static void setStudentEmail(String studentEmail) {
+        StudentEmail = studentEmail;
+    }
+
     public static void setStudentRegistration(String Reg){
         StudentRegistrationNumber = Reg;
     }
@@ -113,26 +150,34 @@ public class CSEDUPORTALUtils  {
 
             resultSet = checkUserExist.executeQuery();
 
-            if(resultSet.isBeforeFirst()){
-                System.out.println("User Already Exist");
+            if(Name.isEmpty() || Email.isEmpty() || Password.isEmpty()|| semester.isEmpty() || year.isEmpty() || roll.isEmpty() || registration.isEmpty() ){
                 Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setContentText("User Already Exist");
+                alert.setContentText("Please fill in all the fields");
                 alert.show();
+            }else{
+                if(resultSet.isBeforeFirst()){
+                    System.out.println("User Already Exist");
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setContentText("User Already Exist");
+                    alert.show();
+                }
+                else{
+                    userInsert = connection.prepareStatement("INSERT INTO student (Name,Email,Password,Year,Semester,Roll,Registration) VALUES (?,?,?,?,?,?,? )");
+                    userInsert.setString(1,Name);
+                    userInsert.setString(2,Email);
+                    userInsert.setString(3,Password);
+                    userInsert.setString(4, String.valueOf(year));
+                    userInsert.setString(5, String.valueOf(semester));
+                    userInsert.setString(6, String.valueOf(roll));
+                    userInsert.setString(7,registration);
+                    userInsert.executeUpdate();
+                    DBDATAGETTER.courseGenerate(String.valueOf(year),String.valueOf(semester),Name);
+                    setStudentRegistration(registration);
+                    changeScence(event,"DashboardScreen.fxml","Dashboard",null);
+                }
             }
-            else{
-                userInsert = connection.prepareStatement("INSERT INTO student (Name,Email,Password,Year,Semester,Roll,Registration) VALUES (?,?,?,?,?,?,? )");
-                userInsert.setString(1,Name);
-                userInsert.setString(2,Email);
-                userInsert.setString(3,Password);
-                userInsert.setString(4, String.valueOf(year));
-                userInsert.setString(5, String.valueOf(semester));
-                userInsert.setString(6, String.valueOf(roll));
-                userInsert.setString(7,registration);
-                userInsert.executeUpdate();
-                DBDATAGETTER.courseGenerate(String.valueOf(year),String.valueOf(semester),Name);
-                setStudentRegistration(registration);
-                changeScence(event,"DashboardScreen.fxml","Dashboard",null);
-            }
+
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -168,7 +213,7 @@ public class CSEDUPORTALUtils  {
         ResultSet resultSet = null;
         try{
             connection = DriverManager.getConnection("jdbc:mysql://localhost/cseduportal","root","user");
-            preparedStatement = connection.prepareStatement("SELECT Registration,Password,Year,Semester,Name FROM student WHERE Registration = ? ");
+            preparedStatement = connection.prepareStatement("SELECT Registration,Password,Email,Roll,Year,Semester,Name FROM student WHERE Registration = ? ");
             preparedStatement.setString(1,Registration);
             resultSet = preparedStatement.executeQuery();
             if(!resultSet.isBeforeFirst() || Registration ==null){
@@ -183,10 +228,16 @@ public class CSEDUPORTALUtils  {
                     String retrivedYear = resultSet.getString("Year");
                     String retrivedSemester = resultSet.getString("Semester");
                     String retrivedName = resultSet.getString("Name");
+                    String retrivedRoll = resultSet.getString("Roll");
+                    String retrivedEmail = resultSet.getString("Email");
 
                     if(retrivedPassword.equals(Password)){
                         DBDATAGETTER.courseGenerate(retrivedYear,retrivedSemester,retrivedName);
                         setStudentRegistration(retrivedRegistration);
+                        setStudentEmail(retrivedEmail);
+                        setStudentRoll(retrivedRoll);
+                        setStudentYear(retrivedYear);
+                        setStudentSemester(retrivedSemester);
                         changeScence(event,"DashboardScreen.fxml","Dashboard",null);
 
                     }

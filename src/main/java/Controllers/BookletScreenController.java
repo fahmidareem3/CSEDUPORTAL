@@ -2,6 +2,7 @@ package Controllers;
 
 import Models.CSEDUPORTALUtils;
 import Models.DBDATAGETTER;
+import Models.GenerateSemesterCode;
 import Models.NavigationHandler;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -11,6 +12,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
 import java.net.URL;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class BookletScreenController  implements Initializable {
@@ -70,6 +72,10 @@ public class BookletScreenController  implements Initializable {
     @FXML
     private Text courseCode5;
 
+    @FXML Text semesterCode;
+    @FXML
+    private  Text ProfileIcon;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -100,5 +106,9 @@ public class BookletScreenController  implements Initializable {
         courseCode3.setText(DBDATAGETTER.getCourseBooks().get(2).getCourseCode());
         courseCode4.setText(DBDATAGETTER.getCourseBooks().get(3).getCourseCode());
         courseCode5.setText(DBDATAGETTER.getCourseBooks().get(4).getCourseCode());
+
+        semesterCode.setText(new GenerateSemesterCode().GetSemesterCode());
+
+        ProfileIcon.setText(String.valueOf(DBDATAGETTER.getStudentName().charAt(0)).toUpperCase(Locale.ROOT));
     }
 }
