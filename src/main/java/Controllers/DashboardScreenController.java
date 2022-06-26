@@ -11,6 +11,7 @@ import javafx.scene.text.Text;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class DashboardScreenController extends Dashboard implements Initializable  {
@@ -18,6 +19,9 @@ public class DashboardScreenController extends Dashboard implements Initializabl
 
     @FXML
     private ImageView cgpaCalculatorIcon;
+
+    @FXML
+    private Text ProfileIcon;
 
     @FXML
     private AnchorPane CgpaCalculatorPane;
@@ -77,11 +81,9 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     }
 
     public void setName(String Name){
-        System.out.println(Name);
         this.name = Name;
     }
     public String getStudentName() {
-        System.out.println(this.name);
         return this.name;
     }
     public void setUpcomingList(ArrayList<String> result){
@@ -120,6 +122,7 @@ public class DashboardScreenController extends Dashboard implements Initializabl
             }
         });
         studentName.setText(DBDATAGETTER.getStudentName());
+        ProfileIcon.setText(String.valueOf(DBDATAGETTER.getStudentName().charAt(0)).toUpperCase(Locale.ROOT));
         upcomingclassname1.setText(getUpcomingList().get(0));
         upcomingclassteachername1.setText(getTeacherNameList().get(0));
         upcomingclassname2.setText(getUpcomingList().get(1));

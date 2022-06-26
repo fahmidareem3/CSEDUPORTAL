@@ -10,6 +10,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 
 import java.net.URL;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class ClassroomScreenController extends ClassroomScreenModel  implements Initializable  {
@@ -89,6 +90,9 @@ public class ClassroomScreenController extends ClassroomScreenModel  implements 
     @FXML
     private  Text enrollstatus5;
 
+    @FXML
+    private  Text ProfileIcon;
+
 
 
 
@@ -136,6 +140,8 @@ public class ClassroomScreenController extends ClassroomScreenModel  implements 
         classroomteacher3.setText(getTeacherName().get(2));
         classroomteacher4.setText(getTeacherName().get(3));
         classroomteacher5.setText(getTeacherName().get(4));
+
+        ProfileIcon.setText(String.valueOf(DBDATAGETTER.getStudentName().charAt(0)).toUpperCase(Locale.ROOT));
 
         if(!getEnrolledList().get(0)) {
             classroombutton1.setStyle("-fx-background-color: #E02A2A");

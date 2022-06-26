@@ -13,6 +13,7 @@ import javafx.scene.text.Text;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class CGPACalculatorScreenController extends CGPACalculator implements Initializable {
@@ -74,7 +75,11 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
     @FXML
     private Text studentName;
 
-    @FXML Text semesterCode;
+    @FXML
+    private  Text semesterCode;
+
+    @FXML
+    private Text ProfileIcon;
 
 
 
@@ -118,6 +123,9 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
         coursecredit5.setText(CourseCredit.get(4));
 
         semesterCode.setText(new GenerateSemesterCode().GetSemesterCode());
+
+
+        ProfileIcon.setText(String.valueOf(DBDATAGETTER.getStudentName().charAt(0)).toUpperCase(Locale.ROOT));
 
 
 

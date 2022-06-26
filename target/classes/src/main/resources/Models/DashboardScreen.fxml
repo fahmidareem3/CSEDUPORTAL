@@ -91,7 +91,7 @@
             </AnchorPane>
             <AnchorPane layoutX="838.0" layoutY="20.0" prefHeight="48.0" prefWidth="48.0" styleClass="DashboardScreenStudentImageBackground" stylesheets="@../CSS/DashboardScreen.css">
                <children>
-                  <Text layoutX="19.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesIcon" text="S" />
+                  <Text fx:id="ProfileIcon" layoutX="19.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesIcon" text="S" />
                </children></AnchorPane>
             <Text fx:id="studentName" layoutX="822.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenStudentName" text="Shahriar Rumel" />
             <AnchorPane layoutX="614.0" layoutY="308.0" prefHeight="138.0" prefWidth="309.0" styleClass="DashboardScreenTotalClassesBelowAverage" stylesheets="@../CSS/DashboardScreen.css">

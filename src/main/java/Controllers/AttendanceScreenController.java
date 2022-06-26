@@ -9,6 +9,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
 import java.net.URL;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class AttendanceScreenController extends AttendanceModel implements Initializable {
@@ -42,7 +43,12 @@ public class AttendanceScreenController extends AttendanceModel implements Initi
     @FXML
     private Text studentName;
 
-    @FXML Text semesterCode;
+    @FXML
+    private Text semesterCode;
+
+    @FXML
+
+    private Text ProfileIcon;
 
 
     @Override
@@ -65,6 +71,8 @@ public class AttendanceScreenController extends AttendanceModel implements Initi
         studentName.setText(DBDATAGETTER.getStudentName());
 
         semesterCode.setText(new GenerateSemesterCode().GetSemesterCode());
+
+        ProfileIcon.setText(String.valueOf(DBDATAGETTER.getStudentName().charAt(0)).toUpperCase(Locale.ROOT));
 
     }
 }
