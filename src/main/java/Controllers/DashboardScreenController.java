@@ -11,6 +11,7 @@ import javafx.scene.text.Text;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class DashboardScreenController extends Dashboard implements Initializable  {
@@ -18,6 +19,9 @@ public class DashboardScreenController extends Dashboard implements Initializabl
 
     @FXML
     private ImageView cgpaCalculatorIcon;
+
+    @FXML
+    private Text ProfileIcon;
 
     @FXML
     private AnchorPane CgpaCalculatorPane;
@@ -45,6 +49,32 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     @FXML
     private Text upcomingclassteachername5;
 
+    @FXML
+    private Text upcomingclasstime1;
+    @FXML
+    private Text upcomingclasstime2;
+    @FXML
+    private Text upcomingclasstime3;
+    @FXML
+    private Text upcomingclasstime4;
+    @FXML
+    private Text upcomingclasstime5;
+
+
+    @FXML
+    private Text upcomingclassdate1;
+    @FXML
+    private Text upcomingclassdate2;
+    @FXML
+    private Text upcomingclassdate3;
+    @FXML
+    private Text upcomingclassdate4;
+    @FXML
+    private Text upcomingclassdate5;
+
+    @FXML
+    private  Text totalClassToday;
+
 
 
 
@@ -66,6 +96,8 @@ public class DashboardScreenController extends Dashboard implements Initializabl
 
     private String name;
 
+
+
     private final ArrayList<String>CourseNameList = new ArrayList<>();
     private final ArrayList<String>TeacherNameList = new ArrayList<>();
 
@@ -77,11 +109,9 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     }
 
     public void setName(String Name){
-        System.out.println(Name);
         this.name = Name;
     }
     public String getStudentName() {
-        System.out.println(this.name);
         return this.name;
     }
     public void setUpcomingList(ArrayList<String> result){
@@ -120,16 +150,33 @@ public class DashboardScreenController extends Dashboard implements Initializabl
             }
         });
         studentName.setText(DBDATAGETTER.getStudentName());
+        ProfileIcon.setText(String.valueOf(DBDATAGETTER.getStudentName().charAt(0)).toUpperCase(Locale.ROOT));
         upcomingclassname1.setText(getUpcomingList().get(0));
         upcomingclassteachername1.setText(getTeacherNameList().get(0));
+        upcomingclasstime1.setText(DBDATAGETTER.getClassRoutines().get(0).getTime());
+        upcomingclassdate1.setText(DBDATAGETTER.getClassRoutines().get(0).getDate());
+
         upcomingclassname2.setText(getUpcomingList().get(1));
         upcomingclassteachername2.setText(getTeacherNameList().get(1));
+        upcomingclasstime2.setText(DBDATAGETTER.getClassRoutines().get(1).getTime());
+        upcomingclassdate2.setText(DBDATAGETTER.getClassRoutines().get(1).getDate());
+
         upcomingclassname3.setText(getUpcomingList().get(2));
         upcomingclassteachername3.setText(getTeacherNameList().get(2));
+        upcomingclasstime3.setText(DBDATAGETTER.getClassRoutines().get(2).getTime());
+        upcomingclassdate3.setText(DBDATAGETTER.getClassRoutines().get(2).getDate());
+
         upcomingclassname4.setText(getUpcomingList().get(3));
         upcomingclassteachername4.setText(getTeacherNameList().get(3));
+        upcomingclasstime4.setText(DBDATAGETTER.getClassRoutines().get(3).getTime());
+        upcomingclassdate4.setText(DBDATAGETTER.getClassRoutines().get(3).getDate());
+
         upcomingclassname5.setText(getUpcomingList().get(4));
         upcomingclassteachername5.setText(getTeacherNameList().get(4));
+        upcomingclasstime5.setText(DBDATAGETTER.getClassRoutines().get(4).getTime());
+        upcomingclassdate5.setText(DBDATAGETTER.getClassRoutines().get(4).getDate());
+
+        totalClassToday.setText(String.valueOf(getTotalClassForToday()));
 
     }
 

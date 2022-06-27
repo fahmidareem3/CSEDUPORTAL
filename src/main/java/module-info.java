@@ -8,4 +8,6 @@ module Models {
     exports Models;
     exports Controllers;
     opens Controllers to javafx.fxml;
+    exports Models.ClassHierarchy;
+    opens Models.ClassHierarchy to javafx.fxml;
 }

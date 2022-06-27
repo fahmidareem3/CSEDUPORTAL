@@ -1,5 +1,7 @@
 package Models;
 
+import Models.ClassHierarchy.BookInterface;
+
 public class Book implements BookInterface {
     private String BookName;
     private String AuthorName;

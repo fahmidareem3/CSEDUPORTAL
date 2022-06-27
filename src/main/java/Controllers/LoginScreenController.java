@@ -1,7 +1,8 @@
 package Controllers;
 
 import Models.CSEDUPORTALUtils;
-import Models.Login;
+import Models.DATAHUB;
+import Models.DBDATAGETTER;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -14,7 +15,7 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoginScreenController extends Login implements Initializable {
+public class LoginScreenController implements Initializable {
     @FXML
     private  Button LoginScreenSignup;
 
@@ -39,6 +40,8 @@ public class LoginScreenController extends Login implements Initializable {
                 if(!userRegistration.getText().equals("")){
 
                     CSEDUPORTALUtils.loginUser(actionEvent,userRegistration.getText(),userPassword.getText());
+//                    System.out.println(DBDATAGETTER.getSemester().isEmpty());
+                    DATAHUB.DataProvider();
                 }else{
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setContentText("Registration Can't Be Empty");

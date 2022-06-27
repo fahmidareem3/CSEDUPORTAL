@@ -1,5 +1,7 @@
 package Models;
 
+import Models.ClassHierarchy.CSEDU;
+
 public class DATAHUB {
 
     public static CSEDU DataProvider(){
@@ -14,7 +16,7 @@ public class DATAHUB {
             );
 
         }
-        CSEDUDEPT.getYearList().get(0).getSemesterList().get(0).getClassroomList().get(1).setStudentList(DBDATAGETTER.getStudentName(),null,null,1,1,0,0);
+//        CSEDUDEPT.getYearList().get(0).getSemesterList().get(0).getClassroomList().get(1).setStudentList(DBDATAGETTER.getStudentName(),CSEDUPORTALUtils.getStudentEmail(),Integer.parseInt(CSEDUPORTALUtils.getStudentYear()),Integer.parseInt(CSEDUPORTALUtils.getStudentSemester()),Integer.parseInt(CSEDUPORTALUtils.getStudentRoll()),Integer.parseInt(CSEDUPORTALUtils.getStudentRegistration()));
 
         return CSEDUDEPT;
     }

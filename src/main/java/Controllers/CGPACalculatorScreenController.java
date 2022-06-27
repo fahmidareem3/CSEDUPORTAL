@@ -1,9 +1,6 @@
 package Controllers;
 
-import Models.CGPACalculator;
-import Models.CSEDUPORTALUtils;
-import Models.DBDATAGETTER;
-import Models.NavigationHandler;
+import Models.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -16,6 +13,7 @@ import javafx.scene.text.Text;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class CGPACalculatorScreenController extends CGPACalculator implements Initializable {
@@ -74,6 +72,15 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
     @FXML
     private ImageView LogoutImage;
 
+    @FXML
+    private Text studentName;
+
+    @FXML
+    private  Text semesterCode;
+
+    @FXML
+    private Text ProfileIcon;
+
 
 
     @Override
@@ -92,7 +99,7 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
                 CSEDUPORTALUtils.changeScenceforMouseEvent(mouseEvent,"CGPACalculatorScreen.fxml","CGPA Calculator",null);
             }
         });
-//        studentName.setText(getStudentName());
+        studentName.setText(DBDATAGETTER.getStudentName());
 //        upcomingclassname1.setText(getUpcomingList());
 //        upcomingclassteachername1.setText(getTeacherName());
 
@@ -115,6 +122,11 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
         coursecredit4.setText(CourseCredit.get(3));
         coursecredit5.setText(CourseCredit.get(4));
 
+        semesterCode.setText(new GenerateSemesterCode().GetSemesterCode());
+
+
+        ProfileIcon.setText(String.valueOf(DBDATAGETTER.getStudentName().charAt(0)).toUpperCase(Locale.ROOT));
+
 
 
 
@@ -128,13 +140,13 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
         String t3 = Textfield3.getText();
         String t4 = Textfield4.getText();
         String t5 = Textfield5.getText();
-
-        double gpa1 = Double.parseDouble(t1);
-        double gpa2 = Double.parseDouble(t2);
-        double gpa3 = Double.parseDouble(t3);
-        double gpa4 = Double.parseDouble(t4);
-        double gpa5 = Double.parseDouble(t5);
-        super.gpaSetter(gpa1,gpa2,gpa3,gpa4,gpa5);
+//
+//        double gpa1 = Double.parseDouble(t1);
+//        double gpa2 = Double.parseDouble(t2);
+//        double gpa3 = Double.parseDouble(t3);
+//        double gpa4 = Double.parseDouble(t4);
+//        double gpa5 = Double.parseDouble(t5);
+        super.gradeSetter(t1,t2,t3,t4,t5);
 
         super.CgpaCalculator();
 
@@ -147,7 +159,7 @@ public class CGPACalculatorScreenController extends CGPACalculator implements In
         Textfield4.setText(null);
         Textfield5.setText(null);
 
-        super.gpaSetter(0,0,0,0,0);
+        super.gradeSetter("F","F","F","F","F");
         super.reset();
     }
 }

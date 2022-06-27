@@ -12,6 +12,7 @@ public class DBDATAGETTER {
     protected static ArrayList<String>CourseCode = new ArrayList<>();
     protected static ArrayList<String>CourseCredit = new ArrayList<>();
     protected static ArrayList<CourseBook>CourseBooks = new ArrayList<>();
+    protected static ArrayList<ClassRoutine>ClassRoutines = new ArrayList<>();
 
 
     private static String Year;
@@ -59,6 +60,10 @@ public class DBDATAGETTER {
     public static ArrayList<CourseBook> getCourseBooks(){
         getBookListData(Year,Semester);
         return CourseBooks;
+    }
+    public static ArrayList<ClassRoutine> getClassRoutines(){
+        getClassRoutine(Year,Semester);
+        return ClassRoutines;
     }
     public static void getUserData(String  year, String semester){
         Connection connection = null;
@@ -154,12 +159,64 @@ public class DBDATAGETTER {
                     if(retrivedYear.equals(year) && retrivedSemester.equals(semester)){
                         CourseBooks.add(new CourseBook(retrivedBooks,retrivedAuthors,retrivedCourseCode));
                     }
-                    else{
-//                        System.out.println("No Data Found");
-//                        Alert alert = new Alert(Alert.AlertType.ERROR);
-//                        alert.setContentText("Can't Find Semester!");
-//                        alert.show();
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+            if(resultSet != null){
+                try{
+                    resultSet.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if(preparedStatement != null){
+                try{
+                    preparedStatement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }if(connection != null){
+                try{
+                    connection.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public static void getClassRoutine(String  year, String semester){
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        try{
+            connection = DriverManager.getConnection("jdbc:mysql://localhost/cseduportal","root","user");
+            preparedStatement = connection.prepareStatement("SELECT Year,Semester,Date,Time FROM classroutine WHERE Year = ?");
+            preparedStatement.setString(1,year);
+
+            resultSet = preparedStatement.executeQuery();
+
+            if(!resultSet.isBeforeFirst()){
+                System.out.println("Book Not Found");
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setContentText("Book Not Found");
+                alert.show();
+            }else{
+                while(resultSet.next()) {
+                    String retrivedYear = resultSet.getString("Year");
+                    String retrivedSemester = resultSet.getString("Semester");
+                    String retrivedDate = resultSet.getString("Date");
+                    String retrivedTime = resultSet.getString("Time");
+
+
+
+                    if(retrivedYear.equals(year) && retrivedSemester.equals(semester)){
+                        ClassRoutines.add(new ClassRoutine(retrivedDate,retrivedTime));
                     }
+
                 }
             }
         } catch (SQLException e) {

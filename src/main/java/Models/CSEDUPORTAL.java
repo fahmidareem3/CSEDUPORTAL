@@ -7,6 +7,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class CSEDUPORTAL extends Application {
     public void start(Stage stage) throws IOException {
@@ -16,7 +17,7 @@ public class CSEDUPORTAL extends Application {
 
         stage.setTitle("CSEDU PORTAL");
         stage.setScene(scene);
-        Image image = new Image(getClass().getResourceAsStream("/assets/CSEDULOGO.png"));
+        Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/assets/CSEDULOGO.png")));
         stage.getIcons().add(image);
         stage.show();
     }
