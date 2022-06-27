@@ -73,6 +73,12 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     private Text upcomingclassdate5;
 
     @FXML
+    private Text AboveAverageCount;
+
+    @FXML
+    private Text BelowAverageCount;
+
+    @FXML
     private  Text totalClassToday;
 
 
@@ -131,9 +137,11 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     public ArrayList<String> getTeacherNameList() {
         return TeacherNameList;
     }
+    public int countBelowAverage;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        countBelowAverage=0;
 
         NavigationHandler.HandleNavigation(home,classroom,attendance,booklet,cgpa,logout);
 
@@ -177,6 +185,19 @@ public class DashboardScreenController extends Dashboard implements Initializabl
         upcomingclassdate5.setText(DBDATAGETTER.getClassRoutines().get(4).getDate());
 
         totalClassToday.setText(String.valueOf(getTotalClassForToday()));
+
+        for(int j=0; j<5; j++)
+        {
+            if (DBDATAGETTER.getPercentageOfAttendence().get(j) < 50)
+            {
+                countBelowAverage++;
+            }
+
+        }
+
+
+        BelowAverageCount.setText(String.valueOf(countBelowAverage));
+        AboveAverageCount.setText(String.valueOf(5-countBelowAverage));
 
     }
 
