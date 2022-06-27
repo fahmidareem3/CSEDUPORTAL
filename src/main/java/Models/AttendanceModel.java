@@ -1,5 +1,7 @@
 package Models;
 
+import Models.ClassHierarchy.Classroom;
+
 import java.util.ArrayList;
 
 public class AttendanceModel {

@@ -1,4 +1,6 @@
-package Models;
+package Models.ClassHierarchy;
+
+import Models.Book;
 
 import java.util.ArrayList;
 import java.util.Objects;

@@ -1,4 +1,4 @@
-package Models;
+package Models.ClassHierarchy;
 
 public interface classScheduleInterface {
     void setClassSchedule(String classSchedule);

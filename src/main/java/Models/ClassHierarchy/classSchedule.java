@@ -1,4 +1,4 @@
-package Models;
+package Models.ClassHierarchy;
 
 public class classSchedule implements classScheduleInterface{
     private String ClassDay;

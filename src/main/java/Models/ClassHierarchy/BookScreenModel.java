@@ -1,4 +1,4 @@
-package Models;
+package Models.ClassHierarchy;
 
 import java.util.ArrayList;
 

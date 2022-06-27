@@ -1,5 +1,7 @@
 package Models;
 
+import Models.ClassHierarchy.CSEDU;
+
 public class DATAHUB {
 
     public static CSEDU DataProvider(){

@@ -1,4 +1,4 @@
-package Models;
+package Models.ClassHierarchy;
 
 public class Student extends Classroom implements StudentInterface {
     private String Name;
