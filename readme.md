@@ -16,7 +16,6 @@
 
 - **[Project Interface](#project-interface)**
 - **[References](#references)**
-- **[License](#license)**
 - **[Author Info](#author-info)**
 
 ---
