@@ -30,7 +30,7 @@
             <AnchorPane layoutX="614.0" layoutY="149.0" prefHeight="135.0" prefWidth="309.0" styleClass="DashboardScreenTotalClasses" stylesheets="@../CSS/DashboardScreen.css">
                <children>
                   <Text fx:id="upcomingclassname12" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardScreenUpcomingClassesItemDate" text="Total Classes Today" />
-                  <Text fx:id="upcomingclassname52" layoutX="41.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardAttendanceNumber" text="5" wrappingWidth="49.751953125" />
+                  <Text fx:id="totalClassToday" layoutX="41.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DashboardAttendanceNumber" text="5" wrappingWidth="49.751953125" />
                   <ImageView fitHeight="95.0" fitWidth="135.0" layoutX="200.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../assets/Dashboard/Schedule.png" />

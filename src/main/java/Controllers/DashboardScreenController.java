@@ -72,6 +72,9 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     @FXML
     private Text upcomingclassdate5;
 
+    @FXML
+    private  Text totalClassToday;
+
 
 
 
@@ -92,6 +95,8 @@ public class DashboardScreenController extends Dashboard implements Initializabl
     private ImageView LogoutImage;
 
     private String name;
+
+
 
     private final ArrayList<String>CourseNameList = new ArrayList<>();
     private final ArrayList<String>TeacherNameList = new ArrayList<>();
@@ -170,6 +175,8 @@ public class DashboardScreenController extends Dashboard implements Initializabl
         upcomingclassteachername5.setText(getTeacherNameList().get(4));
         upcomingclasstime5.setText(DBDATAGETTER.getClassRoutines().get(4).getTime());
         upcomingclassdate5.setText(DBDATAGETTER.getClassRoutines().get(4).getDate());
+
+        totalClassToday.setText(String.valueOf(getTotalClassForToday()));
 
     }
 

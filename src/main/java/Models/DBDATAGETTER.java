@@ -159,12 +159,6 @@ public class DBDATAGETTER {
                     if(retrivedYear.equals(year) && retrivedSemester.equals(semester)){
                         CourseBooks.add(new CourseBook(retrivedBooks,retrivedAuthors,retrivedCourseCode));
                     }
-                    else{
-//                        System.out.println("No Data Found");
-//                        Alert alert = new Alert(Alert.AlertType.ERROR);
-//                        alert.setContentText("Can't Find Semester!");
-//                        alert.show();
-                    }
                 }
             }
         } catch (SQLException e) {
@@ -222,12 +216,7 @@ public class DBDATAGETTER {
                     if(retrivedYear.equals(year) && retrivedSemester.equals(semester)){
                         ClassRoutines.add(new ClassRoutine(retrivedDate,retrivedTime));
                     }
-                    else{
-//                        System.out.println("No Data Found");
-//                        Alert alert = new Alert(Alert.AlertType.ERROR);
-//                        alert.setContentText("Can't Find Semester!");
-//                        alert.show();
-                    }
+
                 }
             }
         } catch (SQLException e) {

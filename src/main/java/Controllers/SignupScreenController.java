@@ -16,9 +16,9 @@ public class SignupScreenController  implements Initializable {
     @FXML
     private Button SignupScreenLogin;
     @FXML
-    private ChoiceBox signupSemesterChoicebox;
+    private ChoiceBox<String> signupSemesterChoicebox;
     @FXML
-    private ChoiceBox signupYearChoicebox;
+    private ChoiceBox<String> signupYearChoicebox;
     @FXML
     private TextField studentName;
     @FXML
@@ -37,10 +37,10 @@ public class SignupScreenController  implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         signupSemesterChoicebox.getItems().addAll("1","2");
-        signupSemesterChoicebox.setValue("1");
+        signupSemesterChoicebox.setValue("Enter Semester");
 
         signupYearChoicebox.getItems().addAll("1","2","3","4");
-        signupYearChoicebox.setValue("2");
+        signupYearChoicebox.setValue("Enter Year");
 
         SignupScreenLogin.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -52,7 +52,7 @@ public class SignupScreenController  implements Initializable {
         signupbutton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                CSEDUPORTALUtils.signUpUser(actionEvent,studentName.getText(),studentEmail.getText(),studentPassword.getText(), (String) signupSemesterChoicebox.getValue(), (String) signupYearChoicebox.getValue(),studentRoll.getText(),studentReg.getText());
+                CSEDUPORTALUtils.signUpUser(actionEvent,studentName.getText(),studentEmail.getText(),studentPassword.getText(), signupSemesterChoicebox.getValue(), signupYearChoicebox.getValue(),studentRoll.getText(),studentReg.getText());
             }
         });
     }

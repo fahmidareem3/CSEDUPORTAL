@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 public class AttendanceModel {
     protected static ArrayList<String> CourseName = new ArrayList<>();
-    protected static String StudentName ;
     protected static ArrayList<Classroom> ClassroomData = new ArrayList<>();
 
     public AttendanceModel() {

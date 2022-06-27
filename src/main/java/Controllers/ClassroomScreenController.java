@@ -192,7 +192,6 @@ public class ClassroomScreenController extends ClassroomScreenModel  implements 
                 enrollstatus5.setText("Enrolled");
                 classroombutton5.setStyle("-fx-background-color: #05B958");
 
-
             }
         });
 

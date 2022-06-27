@@ -3,6 +3,7 @@ package Models;
 import Models.ClassHierarchy.Classroom;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Dashboard {
     protected static ArrayList<String> CourseName = new ArrayList<>();
@@ -37,5 +38,19 @@ public class Dashboard {
             TeacherName.add(ClassroomData.get(i).getClassroomTeacherName());
         }
         return TeacherName;
+    }
+    public int getTotalClassForToday() {
+        int i = 0;
+
+        for (int k = 0; k < 4; k++) {
+            i=i+1;
+            for (int l = k+1; l < 5; l++) {
+                if (DBDATAGETTER.getClassRoutines().get(k).getDate().equals(DBDATAGETTER.getClassRoutines().get(l).getDate())) {
+                    i=i+1;
+                }
+            }
+            break;
+        }
+        return i;
     }
 }

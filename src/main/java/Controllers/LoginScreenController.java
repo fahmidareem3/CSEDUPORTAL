@@ -40,7 +40,7 @@ public class LoginScreenController implements Initializable {
                 if(!userRegistration.getText().equals("")){
 
                     CSEDUPORTALUtils.loginUser(actionEvent,userRegistration.getText(),userPassword.getText());
-                    System.out.println(DBDATAGETTER.getSemester().isEmpty());
+//                    System.out.println(DBDATAGETTER.getSemester().isEmpty());
                     DATAHUB.DataProvider();
                 }else{
                     Alert alert = new Alert(Alert.AlertType.ERROR);
