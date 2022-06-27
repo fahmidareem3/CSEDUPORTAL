@@ -14,9 +14,8 @@
     - _[Installation](#installation)_
     - _[Build and Run](#build-and-Run)_
 
-- **[Project Interface](#demo)**
+- **[Project Interface](#project-interface)**
 - **[References](#references)**
-- **[License](#license)**
 - **[Author Info](#author-info)**
 
 ---
