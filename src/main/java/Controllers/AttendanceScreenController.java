@@ -116,8 +116,6 @@ public class AttendanceScreenController extends AttendanceModel implements Initi
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-//        countBelowAverage=0;
-
         ArrayList getAttendancePercentage = DBDATAGETTER.getPercentageOfAttendence();
         attendancepercentageforcourse1.setText(getAttendancePercentage.get(0) +"%" );
         attendancepercentageforcourse2.setText(getAttendancePercentage.get(1) +"%" );
@@ -130,7 +128,6 @@ public class AttendanceScreenController extends AttendanceModel implements Initi
 
             if (DBDATAGETTER.getPercentageOfAttendence().get(j) < 50) {
 
-//                countBelowAverage++;
                 Text  txt = new Text ();
                 if (j == 0) {
                     txt = status1;

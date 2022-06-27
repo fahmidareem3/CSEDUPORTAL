@@ -97,9 +97,6 @@ public class SetAttendanceScreenController implements Initializable {
   LecturechoiceBox.setOnAction((event) -> {
             int selectedIndex = LecturechoiceBox.getSelectionModel().getSelectedIndex();
             Object selectedItem = LecturechoiceBox.getSelectionModel().getSelectedItem();
-
-            System.out.println("Selection made: [" + selectedIndex + "] " + selectedItem);
-            System.out.println("   ChoiceBox.getValue(): " + LecturechoiceBox.getValue());
             LectureTitle = String.valueOf(LecturechoiceBox.getValue());
              });
 

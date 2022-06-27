@@ -185,9 +185,6 @@ public class CSEDUPORTALUtils  {
                         attendenceinsert.setString(1, registration);
                         attendenceinsert.setString(2,id);
                         attendenceinsert.executeUpdate();
-
-
-
                     }
 
 

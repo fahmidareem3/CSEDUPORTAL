@@ -137,7 +137,6 @@ public class DBDATAGETTER {
 
             if(!resultSet.isBeforeFirst()){
                 System.out.println("User Not Found");
-                System.out.println("printed from kala");
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setContentText("User Not Found");
                 alert.show();
