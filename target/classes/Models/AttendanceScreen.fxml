@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
@@ -8,7 +14,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AttendanceScreenController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AttendanceScreenController">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../CSS/CGPACalculator.Css" BorderPane.alignment="CENTER">
          <children>
@@ -68,7 +74,7 @@
                </children>
             </AnchorPane>
             <Text fx:id="semesterCode" layoutX="405.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="CGPAScreenCalculatorTitle" text="YEAR II SEMESTER I" />
-            <Button fx:id="setAttendancebutton" layoutX="372.0" layoutY="580.0" mnemonicParsing="false" text="Set Attendance" />
+            <Button fx:id="setAttendancebutton" layoutX="372.0" layoutY="580.0" mnemonicParsing="false" styleClass="AttendanceStatusButtonSecondary" stylesheets="@../CSS/AttendanceScreen.css" text="Set Attendance" />
          </children>
       </AnchorPane>
    </center>
