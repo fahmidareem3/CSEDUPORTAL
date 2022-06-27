@@ -142,6 +142,8 @@ public class CSEDUPORTALUtils  {
         PreparedStatement userInsert = null;
         PreparedStatement checkUserExist = null;
         ResultSet resultSet = null;
+        PreparedStatement checkLectureAttendance = null;
+        PreparedStatement attendenceinsert = null;
 
         try{
             connection = DriverManager.getConnection("jdbc:mysql://localhost/cseduportal","root","user");
@@ -171,7 +173,25 @@ public class CSEDUPORTALUtils  {
                     userInsert.setString(6, String.valueOf(roll));
                     userInsert.setString(7,registration);
                     userInsert.executeUpdate();
-                    DBDATAGETTER.courseGenerate(String.valueOf(year),String.valueOf(semester),Name);
+
+                    checkLectureAttendance = connection.prepareStatement("SELECT lectures.id FROM cseduportal.lectures Inner Join course on lectures.CourseCode = course.CourseCode   where course.Year = ? and course.Semester = ?");
+                    checkLectureAttendance.setString(1 , year);
+                    checkLectureAttendance.setString(2 , semester);
+                    resultSet = checkLectureAttendance.executeQuery();
+
+                    while (resultSet.next()) {
+                        String id = resultSet.getString("id");
+                        attendenceinsert = connection.prepareStatement("INSERT INTO `attendance`(  `Registration_Id`, `Lecture_Id`, `IsAttended`) VALUES (?,?,0)");
+                        attendenceinsert.setString(1, registration);
+                        attendenceinsert.setString(2,id);
+                        attendenceinsert.executeUpdate();
+
+
+
+                    }
+
+
+                    DBDATAGETTER.courseGenerate(String.valueOf(year),String.valueOf(semester),Name, registration);
                     setStudentRegistration(registration);
                     changeScence(event,"DashboardScreen.fxml","Dashboard",null);
                 }
@@ -232,7 +252,7 @@ public class CSEDUPORTALUtils  {
                     String retrivedEmail = resultSet.getString("Email");
 
                     if(retrivedPassword.equals(Password)){
-                        DBDATAGETTER.courseGenerate(retrivedYear,retrivedSemester,retrivedName);
+                        DBDATAGETTER.courseGenerate(retrivedYear,retrivedSemester,retrivedName, retrivedRegistration);
                         setStudentRegistration(retrivedRegistration);
                         setStudentEmail(retrivedEmail);
                         setStudentRoll(retrivedRoll);
