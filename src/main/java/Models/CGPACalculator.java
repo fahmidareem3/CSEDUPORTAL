@@ -18,7 +18,7 @@ public class CGPACalculator  {
 
 //    @Override
 //    public void start(Stage stage) throws Exception {
-//        FXMLLoader fxmlLoader = new FXMLLoader(CSEDUPORTAL.class.getResource("CGPACalculatorScreen.fxml"));
+//        FXMLLoader fxmlLoader = new FXMLLoader(Models.CSEDUPORTAL.class.getResource("CGPACalculatorScreen.fxml"));
 //        Scene scene = new Scene(fxmlLoader.load(), 1100, 680);
 //        stage.setTitle("CGPA Calculator");
 //        stage.setScene(scene);

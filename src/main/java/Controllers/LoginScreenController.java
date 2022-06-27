@@ -3,7 +3,6 @@ package Controllers;
 import Models.CSEDUPORTALUtils;
 import Models.DATAHUB;
 import Models.DBDATAGETTER;
-import Models.Login;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -16,7 +15,7 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoginScreenController extends Login implements Initializable {
+public class LoginScreenController implements Initializable {
     @FXML
     private  Button LoginScreenSignup;
 
